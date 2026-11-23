@@ -1,0 +1,9 @@
+# Field guide and local communication
+
+Open **Field guide** in the sidebar or Keeper settings. Select the bestiary, buildings, Inferno, decorations or training manual. Search within the selected section using the displayed name or description. The guide includes all 27 ordinary monsters, four Cage champions, Krallen, current structures, 84 decorative items and original field notes. Statistics are the remake's base-tier values. Gameplay guide opens the practical primer on construction, hatching and raids.
+
+The sign-in screen, sidebar and Keeper settings contain a language selector. English, French, German, Portuguese, Spanish and Turkish use the six dictionaries from the supplied game. Recovered names and descriptions appear in the guide and signed-in catalog. Frequently used navigation and authentication labels have translations. Some newer dialogs, messages and entries without recovered descriptions use English. Keeper names, alliance names, signs and chat text retain their authors' wording. The browser saves its preference per installation.
+
+**Realm chat** opens the shared channel for your map edition. A keeper without an operational Map Room enters the starting channel. A keeper with a Map Room enters their regional map edition's channel. Opening a cavern adds the Inferno channel. Posts are limited to 200 characters and each room shows its latest 100 messages. A quiet room's history expires after 30 days. Mute a keeper beside their message and use **Muted keepers** to hear from them again. Messages update while the chat is open and survive reconnects. Alliance discussion remains private to its members.
+
+Chat uses authenticated PHP sessions and ordinary HTTP requests on XAMPP. The history bounds, sender cooldown, ignore list and channels follow the recovered chat service. The word filter uses the recovered client's patterns.

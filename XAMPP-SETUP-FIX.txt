@@ -1,0 +1,50 @@
+BACKYARD MONSTERS REBORN 0.13.0 - XAMPP INSTALLATION AND UPGRADE
+
+Keep app, public, bin and var together in the game folder beneath htdocs.
+Do not copy the whole game folder inside public. Keep your existing database
+and var/config.php if already installed. Never delete a world to apply this update.
+
+EXISTING WORLD - UPGRADE WITHOUT RUNNING SETUP
+
+1. Stop Apache in the XAMPP Control Panel and any optional world worker.
+   Leave MySQL running. Back up the game folder and database.
+2. Replace application files with the new release, keeping the existing var
+   folder intact. Use the update archive only with an existing 0.12.0
+   installation. Older supported worlds need the complete 0.13.0 release.
+3. Open Command Prompt in the game folder and run:
+      UPGRADE-WORLD.cmd --check
+      UPGRADE-WORLD.cmd --apply
+   The first command checks the installed world. The second saves SQL/JSON
+   backups and updates the installed world. Version 0.13.0 uses schema 3.
+4. Once the upgrade completes, restart Apache and open your usual localhost
+   game URL. Sign in with your existing keeper.
+   Read docs/UPGRADING.md for migration, backup and recovery details.
+
+NEW WORLD - LOCAL DATABASE SETUP ONLY
+
+1. Start Apache and MySQL in the XAMPP Control Panel.
+2. Open the setup URL for your folder, for example:
+      http://localhost/backyard-monsters/public/setup.php
+   If the game contents are directly in htdocs, use:
+      http://localhost/public/setup.php
+3. For an unchanged local XAMPP installation use:
+      Host: 127.0.0.1
+      Port: 3306 (or the MySQL port shown in XAMPP)
+      Database: backyard_reborn
+      Database user: root
+      Database password: leave empty
+   Use your own database credentials if you changed them.
+4. Click Test database connection, then Install world.
+   If you used a non-empty database password, enter it again after the test.
+5. Setup installs the world and 1,000 bots at zero rank points.
+   THERE IS NO PLAYER ACCOUNT FORM IN SETUP.
+6. Click Open the game. Its own screen handles player registration/login.
+7. Keep the signed-in game open. The browser advances the bots automatically
+   while at least one human is online. Bots pause when the last player leaves.
+   START-XAMPP.cmd is an optional worker and follows the same presence rule.
+
+If the database contains an existing world but its private config is missing,
+restore the matching config from your backup. Do not delete the world.
+
+PHP 8.2 or newer with PDO MySQL is required.
+Read docs/XAMPP.md for additional details.

@@ -1,0 +1,29 @@
+.inferno-hero{padding:26px 22px;margin:0 0 18px;border:1px solid #714638;border-radius:15px;background:linear-gradient(107deg,#241620e8,#321b1d8c 65%,#48222133),url(art/inferno-terrain.webp) 60% 55%/cover;color:#fff0db}.inferno-hero .eyebrow{color:#ffae75}.inferno-hero h2{margin:.3em 0 0}.inferno-hero p{color:#f9d1a6;margin:7px 0 0}
+.inferno-structures{display:grid;gap:6px}.inferno-structure{display:grid;grid-template-columns:50px minmax(0,1fr) auto;gap:12px;align-items:center;border-bottom:1px solid var(--line,#344442);padding:7px 0}.inferno-structure img{width:50px;height:52px;object-fit:contain}.inferno-structure small{display:block;color:#b8c3ba;margin-top:3px}
+.resource.inferno-bone .resource-icon{color:#eee0bd}.resource.inferno-coal .resource-icon{color:#ada6c4}.resource.inferno-sulfur .resource-icon{color:#f2d979}.resource.inferno-magma .resource-icon{color:#fd9268}
+@media(max-width:520px){.inferno-structure{grid-template-columns:36px minmax(0,1fr);gap:8px}.inferno-structure img{width:36px}.inferno-structure button{grid-column:2;justify-self:start}}
+
+.inferno-search{display:flex;gap:8px;align-items:center;margin:10px 0}.inferno-search .search{flex:1;min-width:0}
+.ascension-roster{margin:12px 0 18px}.ascension-row{display:grid;grid-template-columns:50px minmax(0,1fr) auto;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #37433e}.ascension-row img{width:50px;height:52px;object-fit:contain}.ascension-row small{display:block;color:#b8c3ba}.ascension-step{display:flex;align-items:center;gap:8px}.ascension-step output{min-width:1.6em;text-align:center}
+@media(max-width:480px){.ascension-row{grid-template-columns:38px 1fr;gap:5px}.ascension-row img{width:38px}.ascension-step{grid-column:2}}
+
+.emergence-board header {
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:132px;
+  border-bottom:1px solid #68513e;background:radial-gradient(ellipse at right,#58312855,transparent 72%);
+}
+.emergence-board header img {width:clamp(95px,24%,160px);height:126px;object-fit:contain}
+.emergence-board .emergence-finale {
+  min-height:205px;align-items:flex-end;padding:18px;border-radius:9px;
+  background:linear-gradient(0deg,#12191bf5 0%,#10171c25 85%),url('art/emergence-finale.webp') center 43%/cover;
+}
+.emergence-board .emergence-track {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;padding:0;gap:5px;margin:14px 0}
+.emergence-track li {display:grid;justify-items:center;border-bottom:2px solid #434b47;padding:0 2px 4px;color:#a8b2a9;font-variant-numeric:tabular-nums}
+.emergence-track img {width:100%;height:58px;object-fit:contain;opacity:.5}
+.emergence-track .raised {border-color:#eab46c;color:#f7d3a9}.emergence-track .raised img{opacity:1}
+.emergence-envoy {display:flex;align-items:center;gap:12px;padding:9px 12px;margin:14px 0;border-left:3px solid #bc704b;background:#55322c38}
+.emergence-envoy img {width:68px;height:82px;object-fit:cover;border-radius:5px}.emergence-envoy h3,.emergence-envoy p{margin:3px 0}
+.emergence-board .baiter-roster {display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.emergence-board .baiter-roster li {display:flex;align-items:center;gap:5px;padding:3px 7px;border:1px solid #46554c;border-radius:6px}
+.emergence-board .baiter-roster img {width:28px;height:28px;object-fit:contain}.emergence-board footer{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.emergence-quake-label {position:absolute;top:15%;left:50%;transform:translateX(-50%);padding:8px 14px;border:1px solid #ad6948;border-radius:6px;background:#15201eee;color:#ffe0a3;pointer-events:none;z-index:2;white-space:nowrap}
+@media(max-width:500px){.emergence-track img{height:38px}.emergence-envoy{align-items:flex-start}.emergence-envoy img{width:45px;height:60px}.emergence-board footer .button{flex:1 1 auto}}

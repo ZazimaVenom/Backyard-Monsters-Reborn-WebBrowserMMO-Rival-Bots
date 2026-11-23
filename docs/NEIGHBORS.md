@@ -1,0 +1,9 @@
+# Friends, mystery sacks and keeper mail
+
+Open **Neighbors** from the sidebar. Search with at least two letters of a registered player's keeper name. Two letters match the beginning of a name. Three or more match anywhere in the name. Invitations appear for both parties. Sending a request to someone who has already invited you accepts their invitation. Each player can have 500 accepted friends and 50 outgoing invitations.
+
+**Visit** opens a friend's actual yard. **Write** opens a private in-game conversation. Messages remain available after signing out. The Mail tab lists recent conversations and unread counts. Use **Earlier messages** to page through history. Removing a friendship stops further messages and gifts. Either participant can still read their shared history.
+
+**Send sack** sends an accepted friend a free mystery sack. Each sender can give each friend one sack per rolling 24 hours. A recipient can hold up to 20 sacks. Open the Mystery sacks tab to collect them. A sack contains one of the four home resources. Ordinary sacks contain 2–4% of storage capacity. One in four uses 7–12%. The server fixes the resource and percentage at dispatch, and the amount on first opening. If the store fills, the remainder can be collected later. Your bank and the sack balance update in one transaction. A repeat visit or duplicate claim pays only what remains.
+
+The player-defined friendship and limits follow the supplied Refitted friendship and gift services, its FriendConfig and GiftConfig files, and the reward bands in the Flash client's GIFTS.as. Bot competition is available in alliances, invasions and rankings. Personal correspondence and gift exchanges are between human accounts. Messages stay on this game server. The remake uses per-friend conversation history and does not implement Facebook delivery or email alerts.

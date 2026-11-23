@@ -1,0 +1,926 @@
+{
+  "28": {
+    "name": "American Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "29": {
+    "name": "British Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "30": {
+    "name": "Australian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "31": {
+    "name": "Brazilian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "32": {
+    "name": "European Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "33": {
+    "name": "French Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "34": {
+    "name": "Indonesian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "35": {
+    "name": "Italian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "36": {
+    "name": "Malaysian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "37": {
+    "name": "Dutch Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "38": {
+    "name": "New Zealand Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "39": {
+    "name": "Norwegian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "40": {
+    "name": "Polish Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "41": {
+    "name": "Swedish Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "42": {
+    "name": "Turkish Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "43": {
+    "name": "Canadian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "44": {
+    "name": "Danish Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "45": {
+    "name": "German Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "46": {
+    "name": "Filipino Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "47": {
+    "name": "Singaporean Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "48": {
+    "name": "Austrian Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "49": {
+    "name": "Pirate Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 250,
+    "limit": 0,
+    "materials": {
+      "twig": 1000,
+      "pebble": 500
+    }
+  },
+  "50": {
+    "name": "Peace Flag",
+    "group": "Flags",
+    "size": 0.4,
+    "shiny": 250,
+    "limit": 0,
+    "materials": {
+      "twig": 1000,
+      "pebble": 500
+    }
+  },
+  "55": {
+    "name": "Acorn",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "56": {
+    "name": "Beehive",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "57": {
+    "name": "Bird House",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "58": {
+    "name": "Camping Tent",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "59": {
+    "name": "Childrens Jax",
+    "group": "Backyard",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "60": {
+    "name": "Red Gnome",
+    "group": "Backyard",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "61": {
+    "name": "Blue Gnome",
+    "group": "Backyard",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "62": {
+    "name": "Green Gnome",
+    "group": "Backyard",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "63": {
+    "name": "Hammock",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "64": {
+    "name": "Lawn Chair",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "65": {
+    "name": "Outhouse",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "66": {
+    "name": "Pinecone",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "67": {
+    "name": "Rock",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "68": {
+    "name": "Toy Raceway",
+    "group": "Backyard",
+    "size": 2.0,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "69": {
+    "name": "Scarecrow",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "70": {
+    "name": "Sun Dial",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "71": {
+    "name": "Tiki Torch",
+    "group": "Backyard",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "72": {
+    "name": "Walnut",
+    "group": "Backyard",
+    "size": 0.6,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "73": {
+    "name": "Tombstone",
+    "group": "Backyard",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "74": {
+    "name": "Dead Pokey",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "75": {
+    "name": "Dead Octo-Ooze",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "76": {
+    "name": "Dead Bolt",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "77": {
+    "name": "Dead Bandito",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "78": {
+    "name": "Dead Brain",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "79": {
+    "name": "Dead Crabatron",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "80": {
+    "name": "Dead D.A.V.E.",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "81": {
+    "name": "Dead Eye-ra",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "82": {
+    "name": "Dead Fang",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "83": {
+    "name": "Dead Fink",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "84": {
+    "name": "Dead Ichi",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "85": {
+    "name": "Dead Project-X",
+    "group": "Monster effigies",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "86": {
+    "name": "Blackberry Bush",
+    "group": "Plants",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "87": {
+    "name": "Bonsai Tree",
+    "group": "Plants",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "88": {
+    "name": "Cactus",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "89": {
+    "name": "Monster Fly Trap",
+    "group": "Plants",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "90": {
+    "name": "Thorns",
+    "group": "Plants",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "91": {
+    "name": "Pink Flowers",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "92": {
+    "name": "Purple Flowers",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "93": {
+    "name": "Red Flowers",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "94": {
+    "name": "White Flowers",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "95": {
+    "name": "Yellow Flowers",
+    "group": "Plants",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "96": {
+    "name": "Baseball Trophy",
+    "group": "Trophies",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "97": {
+    "name": "Football Trophy",
+    "group": "Trophies",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "98": {
+    "name": "Soccer Trophy",
+    "group": "Trophies",
+    "size": 0.8,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "99": {
+    "name": "Statue of Liberty",
+    "group": "Landmarks",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "100": {
+    "name": "Eiffel Tower",
+    "group": "Landmarks",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "101": {
+    "name": "Big Ben",
+    "group": "Landmarks",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "102": {
+    "name": "Swimming Pool",
+    "group": "Landmarks",
+    "size": 2.0,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "103": {
+    "name": "Pond",
+    "group": "Landmarks",
+    "size": 2.0,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "104": {
+    "name": "Zen Garden",
+    "group": "Landmarks",
+    "size": 2.0,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "105": {
+    "name": "Fountain",
+    "group": "Landmarks",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "106": {
+    "name": "Tea Garden",
+    "group": "Landmarks",
+    "size": 2.0,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "107": {
+    "name": "Monster Skull",
+    "group": "Collectibles",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "108": {
+    "name": "Puzzle Cube (unsolved)",
+    "group": "Collectibles",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "109": {
+    "name": "Puzzle Cube (solved)",
+    "group": "Collectibles",
+    "size": 0.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "110": {
+    "name": "D.A.V.E. Pumpkin",
+    "group": "Collectibles",
+    "size": 0.8,
+    "shiny": 1000,
+    "limit": 0,
+    "materials": {
+      "twig": 4000,
+      "pebble": 2000
+    }
+  },
+  "111": {
+    "name": "Mini-Pumpkin",
+    "group": "Collectibles",
+    "size": 0.4,
+    "shiny": 0,
+    "limit": 6,
+    "materials": {
+      "twig": 250,
+      "pebble": 100
+    }
+  },
+  "120": {
+    "name": "Golden Big Gulp",
+    "group": "Trophies",
+    "size": 1.4,
+    "shiny": 150,
+    "limit": 0,
+    "materials": {
+      "twig": 600,
+      "pebble": 300
+    }
+  },
+  "121": {
+    "name": "Victory Totem Pole · Invasion I",
+    "group": "Trophies",
+    "size": 0.8,
+    "shiny": 0,
+    "limit": 0,
+    "materials": {
+      "twig": 250,
+      "pebble": 100
+    }
+  },
+  "131": {
+    "name": "Victory Totem Pole · Invasion II",
+    "group": "Trophies",
+    "size": 0.8,
+    "shiny": 0,
+    "limit": 0,
+    "materials": {
+      "twig": 250,
+      "pebble": 100
+    }
+  },
+  "135": {
+    "name": "Golden D.A.V.E. Statue",
+    "group": "Trophies",
+    "size": 1.4,
+    "shiny": 0,
+    "limit": 0,
+    "materials": {
+      "twig": 250,
+      "pebble": 100
+    }
+  }
+}

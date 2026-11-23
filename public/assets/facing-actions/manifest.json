@@ -1,0 +1,546 @@
+{
+  "version": "0.13.0",
+  "description": "Additional opposing stride and combat release by camera angle",
+  "files": [
+    {
+      "file": "balthazar-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 494882,
+      "sha256": "a179bae84cd104ee592cd9182b16186a686b52ae1d35aa3a2417d443367cd33d"
+    },
+    {
+      "file": "balthazar-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 435892,
+      "sha256": "61b5e181302e76ad9abee37e679b72dedfd77f8c47451230d681c77c21ea7c94"
+    },
+    {
+      "file": "bandito-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 435984,
+      "sha256": "c10eba54d7da8fd5278f9a51798db6d56190cf40ec0099389da072cd314ff535"
+    },
+    {
+      "file": "bandito-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 405470,
+      "sha256": "b26b328aedbcf8813fb2d92b7b0de8b30d2432e872f7c667ba6e8ab1ca122999"
+    },
+    {
+      "file": "bolt-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 393776,
+      "sha256": "ffca257185d1dfd5c8f2827710007299b32f0508df63e9f208699785c41bfff8"
+    },
+    {
+      "file": "bolt-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 331880,
+      "sha256": "b598e302cc04177a6e10df25b7594b2ddf3bc531bba0647750ba211cb68f164e"
+    },
+    {
+      "file": "brain-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 454912,
+      "sha256": "1d75b4a0f5d292d66a1ab9ee7f25f07693701685f27505cc00f53b8383c024db"
+    },
+    {
+      "file": "brain-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 457308,
+      "sha256": "201a8483eb4829402fc04bf0c3ffe7beee14dc70b4d7cb6e844b5a0b8eaa554c"
+    },
+    {
+      "file": "crabatron-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 421064,
+      "sha256": "280ade6994f02ea2f6742ad4d2c8e0f7d568e20ec6ed088aec6437207eb00305"
+    },
+    {
+      "file": "crabatron-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 497274,
+      "sha256": "ee3d6b3f41af22f2651f4a613e9df3d5692d48b30824ca0511ebaacf8ab68873"
+    },
+    {
+      "file": "dave-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 448096,
+      "sha256": "a839d39cc125ce1f9a0b09b79926b6e8f9867b37ce6db3333e13c8dd6640a1c1"
+    },
+    {
+      "file": "dave-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 469910,
+      "sha256": "31927ddcbfa72dd400a04e4c87108f9ca4c1268472ee6f8d97f09df5f1daa047"
+    },
+    {
+      "file": "eyera-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 318314,
+      "sha256": "7d70674c315189f374242820398567e92be0a6c07dc70614c028388246fb3d53"
+    },
+    {
+      "file": "eyera-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 453798,
+      "sha256": "43c0b0756650a6ddeecce2be9ac968e92c3ee4cf5e931120777100340767ad0a"
+    },
+    {
+      "file": "fang-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 374278,
+      "sha256": "83f9d719fae767738544164f08716e18e0f59f9fd60bb5d86d14047adeb16d87"
+    },
+    {
+      "file": "fang-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 416430,
+      "sha256": "ebb1505fb0cd68140c5b8fb7a945b7645140ed5375680f48adb4dd291c1633fb"
+    },
+    {
+      "file": "fink-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 412716,
+      "sha256": "92071ed0bf3e425f68f3603ef118e5b5f1fd10323f72514da7431a1ce16b7c26"
+    },
+    {
+      "file": "fink-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 435100,
+      "sha256": "579619cf20ab457d2385537f73f74de95ca39ee01c7df96d14562ae232f4ea9b"
+    },
+    {
+      "file": "grokus-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 415954,
+      "sha256": "0c7aa0e1d92b0627c8d99be40fc42cb7717903b6a62f113a1a2e767eba1f2786"
+    },
+    {
+      "file": "grokus-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 528656,
+      "sha256": "f14af3d53c50b55245da0083d3f6345d2f4871775e840d45f0a7661c3cbaa393"
+    },
+    {
+      "file": "ichi-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 479760,
+      "sha256": "3f24721cada6e2cf41ed2074afc94cde5a85a49836df8be5b57dbd96910ff4ea"
+    },
+    {
+      "file": "ichi-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 375020,
+      "sha256": "d5624a80447418b322aa06d14e184e713cb4e2b95831300f779a5f2e3cae31fd"
+    },
+    {
+      "file": "kingwormzer-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 434540,
+      "sha256": "a5973dffbe056fd240d04bab959f4fb442fae1df8dd230590a4f4a7b5902565e"
+    },
+    {
+      "file": "kingwormzer-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 379200,
+      "sha256": "ea3064a88207b2a46080980ff6aab2dc57ab36467a8d97d7f36095fb762a92f0"
+    },
+    {
+      "file": "malphus-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 428708,
+      "sha256": "5844fcaaeedf495e49b65d44441c367fb4f52e0a333df43a96400bb2c93a4d00"
+    },
+    {
+      "file": "malphus-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 518662,
+      "sha256": "2f7c29929c5a3e2220c8c2c902d715f7034bf19abaac066a1acf1d78c27ffb74"
+    },
+    {
+      "file": "octo-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 447340,
+      "sha256": "ab853032da7cd0d78565dc00c904fe33e99718f131968feeedaa553cc8f0ac41"
+    },
+    {
+      "file": "octo-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 360156,
+      "sha256": "811a9f0dd63f0506476ed9b7c9c2b12770e1068fca9fe50a41d42720f457b5be"
+    },
+    {
+      "file": "pokey-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 367550,
+      "sha256": "7a43819f41159b94614fafa7222d7f5f70269b2c0426556b2efa094b5223ad9a"
+    },
+    {
+      "file": "pokey-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 353704,
+      "sha256": "3a095382f299b5046abc547772250feffa18383f3655797b9f205b7907a949c9"
+    },
+    {
+      "file": "projectx-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 448326,
+      "sha256": "73f30373bd21a6df19d14af98a327f6612a3d676ff935412230bf28d154e9c58"
+    },
+    {
+      "file": "projectx-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 506824,
+      "sha256": "1c742982fbd1fa9df5f9d4854cc1ab5c45cf3496b23c1e6f77ed19ae7df2f922"
+    },
+    {
+      "file": "rezghul-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 440564,
+      "sha256": "67160fb95aad7c9b4f0cf1299132ab5aade78436c819d65b441acc87a2368be5"
+    },
+    {
+      "file": "rezghul-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 470802,
+      "sha256": "5f893a1b14a8a896373636db0fd6ea3a3aef607899416998a973fab99696e086"
+    },
+    {
+      "file": "sabnox-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 363830,
+      "sha256": "5d94ffcf5f2bba85bc0ea37918f96d050d15b2038cc4b67a7db609a588d57fbb"
+    },
+    {
+      "file": "sabnox-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 371562,
+      "sha256": "6e51f287ae6d95f16f83e96e055294ae48db725de92022e476e64a0e22614a26"
+    },
+    {
+      "file": "slimeattikus-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 389406,
+      "sha256": "401ee100484d94a784d76d3013a21da0b35a8d621893516f701371aec3c48a60"
+    },
+    {
+      "file": "slimeattikus-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 494018,
+      "sha256": "04b087aacd45a34440345c2cd452eb0f5a5110f40138b8fee320f057c0cd600f"
+    },
+    {
+      "file": "slimeattikusmini-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 233772,
+      "sha256": "b1c3637d6463c731f425c5bb0e66647d35f93bc4b23a6056cfdc82b9298170b3"
+    },
+    {
+      "file": "slimeattikusmini-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 212180,
+      "sha256": "87845371ee95838a6d8afa06694fd0cc094154c8b315bf082a08346149a37604"
+    },
+    {
+      "file": "spurtz-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 433210,
+      "sha256": "8e58f9ce709c79bdca81fcb26a4fa70efa6d64500ba2995c89bf9665261c0730"
+    },
+    {
+      "file": "spurtz-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 392632,
+      "sha256": "210452c4589a7cb51d7b11ec5a41076c1550873d3d833eaeb3b43cc8a8aa7866"
+    },
+    {
+      "file": "teratorn-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 646488,
+      "sha256": "3527b4b28533b95bcd91933a2a84c8f90f5e7f17c05250f7d0c8255297ff9851"
+    },
+    {
+      "file": "teratorn-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 471790,
+      "sha256": "ba288c9cf79b71ebdcf61f99a5b958a093892045b85e796a768a9531cc1a2f26"
+    },
+    {
+      "file": "valgos-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 428206,
+      "sha256": "4c7a7bcaf253b1a482c47fc9146d8a2990f35475607c03f9ac3bcfe31e74d0e6"
+    },
+    {
+      "file": "valgos-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 462848,
+      "sha256": "f1c05349c6f3464e35626879aaba35d6fac416a94c61eb8ac3b227b2b6650366"
+    },
+    {
+      "file": "vorg-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 576598,
+      "sha256": "b20ccbb318be91228852686d0ce5e01c201c1e269693e2269f72a78498914f96"
+    },
+    {
+      "file": "vorg-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 571960,
+      "sha256": "5933b27077292e01b6141bb9b6a385955c211c71c85f3c5706b6addc58e01d75"
+    },
+    {
+      "file": "wormzer-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 305724,
+      "sha256": "050d0bd6315520de39e071df1bb4ec5d831603f7cf7ab2e8cb896d00ed8e33d6"
+    },
+    {
+      "file": "wormzer-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 360836,
+      "sha256": "f90ecb302811516de323172d9d048012ef98e50d4cede0e5624158b7745cc36c"
+    },
+    {
+      "file": "zafreeti-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 454960,
+      "sha256": "5d90055538e18c3b4e901812ea42c2e3609f5ab0deb6ec80f15f521487c84167"
+    },
+    {
+      "file": "zafreeti-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 649574,
+      "sha256": "597cd2bb0b03e6dddd71b5a380951df87c505d4c010ac06cb966c2d275105cc9"
+    },
+    {
+      "file": "zagnoid-stride.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 441342,
+      "sha256": "4d6528bf3067714572dd5cb1fd84420a035cd93d300ade1fdf8a5c971b67f46b"
+    },
+    {
+      "file": "zagnoid-strike.webp",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "bytes": 533670,
+      "sha256": "f0d39f285f7c782623752f30ad768fd87b1de73f396518b4f4e1feefbaae2473"
+    }
+  ]
+}

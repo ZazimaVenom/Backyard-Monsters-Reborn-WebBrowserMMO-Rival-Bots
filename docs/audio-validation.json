@@ -1,0 +1,251 @@
+{
+  "release": "0.13.0",
+  "decoder": "ffmpeg float32",
+  "files": [
+    {
+      "file": "theme.ogg",
+      "bytes": 856766,
+      "decoded_samples": 5644800,
+      "clipped_samples": 0,
+      "peak": 0.864786
+    },
+    {
+      "file": "battle.ogg",
+      "bytes": 764969,
+      "decoded_samples": 4233600,
+      "clipped_samples": 0,
+      "peak": 0.843664
+    },
+    {
+      "file": "build.wav",
+      "bytes": 132344,
+      "decoded_samples": 66150,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "collect.wav",
+      "bytes": 167624,
+      "decoded_samples": 83790,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "hatch.wav",
+      "bytes": 238184,
+      "decoded_samples": 119070,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "hit.wav",
+      "bytes": 44144,
+      "decoded_samples": 22050,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "shot.wav",
+      "bytes": 54728,
+      "decoded_samples": 27342,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "victory.wav",
+      "bytes": 485144,
+      "decoded_samples": 242550,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "defeat.wav",
+      "bytes": 458684,
+      "decoded_samples": 229320,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "explode.wav",
+      "bytes": 194084,
+      "decoded_samples": 97020,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "heal.wav",
+      "bytes": 141164,
+      "decoded_samples": 70560,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "burrow.wav",
+      "bytes": 149984,
+      "decoded_samples": 74970,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "laser.wav",
+      "bytes": 88244,
+      "decoded_samples": 44100,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "fling.wav",
+      "bytes": 114704,
+      "decoded_samples": 57330,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "champion.wav",
+      "bytes": 282284,
+      "decoded_samples": 141120,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "champion-retreat.wav",
+      "bytes": 247004,
+      "decoded_samples": 123480,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "feed.wav",
+      "bytes": 158804,
+      "decoded_samples": 79380,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "evolve.wav",
+      "bytes": 564524,
+      "decoded_samples": 282240,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "research.wav",
+      "bytes": 238184,
+      "decoded_samples": 119070,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "catapult.wav",
+      "bytes": 167624,
+      "decoded_samples": 83790,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "catapult-impact.wav",
+      "bytes": 247004,
+      "decoded_samples": 123480,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "boost.wav",
+      "bytes": 202904,
+      "decoded_samples": 101430,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "blink.wav",
+      "bytes": 84716,
+      "decoded_samples": 42336,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "venom.wav",
+      "bytes": 105884,
+      "decoded_samples": 52920,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "aerial.wav",
+      "bytes": 84716,
+      "decoded_samples": 42336,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "heavytrap.wav",
+      "bytes": 190556,
+      "decoded_samples": 95256,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "baiter.wav",
+      "bytes": 172916,
+      "decoded_samples": 86436,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "siren.wav",
+      "bytes": 239948,
+      "decoded_samples": 119952,
+      "clipped_samples": 0,
+      "peak": 0.789978
+    },
+    {
+      "file": "expedition.ogg",
+      "bytes": 492101,
+      "decoded_samples": 3937248,
+      "clipped_samples": 0,
+      "peak": 0.802354
+    },
+    {
+      "file": "defense.ogg",
+      "bytes": 397376,
+      "decoded_samples": 3048192,
+      "clipped_samples": 0,
+      "peak": 0.810654
+    },
+    {
+      "file": "quest.wav",
+      "bytes": 317564,
+      "decoded_samples": 158760,
+      "clipped_samples": 0,
+      "peak": 0.639984
+    },
+    {
+      "file": "sack.wav",
+      "bytes": 202904,
+      "decoded_samples": 101430,
+      "clipped_samples": 0,
+      "peak": 0.639984
+    },
+    {
+      "file": "inferno.ogg",
+      "bytes": 414179,
+      "decoded_samples": 4163040,
+      "clipped_samples": 0,
+      "peak": 0.784332
+    },
+    {
+      "file": "event.ogg",
+      "bytes": 531836,
+      "decoded_samples": 3969000,
+      "clipped_samples": 0,
+      "peak": 0.797121
+    },
+    {
+      "file": "emergence-quake.wav",
+      "bytes": 529244,
+      "decoded_samples": 264600,
+      "clipped_samples": 0,
+      "peak": 0.679993
+    }
+  ]
+}

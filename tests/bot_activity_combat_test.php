@@ -1,0 +1,37 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__.'/../app/BattleService.php';
+$checks=0;
+function activityCombatCheck(bool $value,string $label):void{global $checks;++$checks;if(!$value){throw new RuntimeException('FAIL: '.$label);}}
+$clock=['online'=>true,'activeSeconds'=>100,'pausedSeconds'=>2000,'epoch'=>23];
+$state=['attacker'=>['is_bot'=>true],'created_at'=>1,'elapsed'=>12.5,'units'=>[['id'=>'u1','hp'=>173]],'botPlan'=>[['troops'=>['pokey'=>3],'x'=>1.0,'y'=>2.0]]];
+$before=$state;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,9000)===12.5,'legacy bot battle adopts saved elapsed without offline catch-up');
+activityCombatCheck($state['_activity_clock']===['epoch'=>23,'activeSeconds'=>100,'elapsed'=>12.5],'new clock anchor contains only persisted timeline fields');
+$withoutClock=$state;unset($withoutClock['_activity_clock']);activityCombatCheck($withoutClock===$before,'adoption preserves original battle units plan and start time');
+activityCombatCheck(BattleService::activityElapsed($state,$clock,99999)===12.5,'wall time alone cannot advance bot invasion');
+$clock['activeSeconds']=118;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,99999)===30.5,'active world time advances bot invasion normally');
+$state['elapsed']=30.5;$clock['online']=false;$clock['activeSeconds']=130;$clock['pausedSeconds']=90000;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,100000)===30.5,'no-human interval preserves combat elapsed');
+$clock['pausedSeconds']=900000;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,1000000)===30.5,'arbitrarily long offline time cannot consume monsters or settle rankings');
+$clock['online']=true;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,1000000)===42.5,'resumption spends only unprocessed online seconds');
+$state['elapsed']=42.5;$clock['activeSeconds']=99;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,1000000)===42.5,'clock correction cannot rewind saved combat');
+$clock['epoch']=24;$clock['activeSeconds']=0;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,1000000)===42.5,'new clock epoch safely reanchors legacy combat');
+activityCombatCheck($state['_activity_clock']===['epoch'=>24,'activeSeconds'=>0,'elapsed'=>42.5],'epoch reset keeps accumulated combat instead of replaying units');
+$clock['activeSeconds']=10;
+activityCombatCheck(BattleService::activityElapsed($state,$clock,1000000)===52.5,'new epoch subsequently advances only new active time');
+$human=['attacker'=>['is_bot'=>false],'created_at'=>990,'elapsed'=>2.0];$humanBefore=$human;$clock['online']=false;
+activityCombatCheck(BattleService::activityElapsed($human,$clock,1010)===20.0,'human initiated battle retains existing real-time contract');
+activityCombatCheck($human===$humanBefore,'human battle receives no bot clock metadata');
+$human['elapsed']=30.0;activityCombatCheck(BattleService::activityElapsed($human,$clock,1010)===30.0,'human battle elapsed never moves backward');
+$neutral=['attacker'=>['id'=>2],'created_at'=>900,'elapsed'=>0.0];
+activityCombatCheck(BattleService::activityElapsed($neutral,$clock,1000)===100.0,'historical human attacker without bot flag retains wall-time behavior');
+$bad=$state;$bad['_activity_clock']='invalid';
+activityCombatCheck(BattleService::activityElapsed($bad,$clock,1000)===42.5,'malformed optional anchor safely adopts current elapsed');
+activityCombatCheck(is_array($bad['_activity_clock']),'malformed optional anchor is repaired additively');
+echo "Bot activity combat clock: $checks assertions passed.\n";

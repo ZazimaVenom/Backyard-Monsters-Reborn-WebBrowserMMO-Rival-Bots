@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {infernoMonsterAction,renderInfernoMonsters} from '../public/assets/inferno-monsters.js';
+const option={reason:null,seconds:50,cost:{magma:42}},s={name:'Spurtz',description:'Scorches <ground>',art:'spurtz.png',hp:400,damage:160,size:15,unlocked:true,level:1,train:option,unlock:option,research:option};
+const v={revision:4,queue:[{type:'spurtz',id:3,ready_at:1234,paid:42,lane:7}],study:null,discovery:null,used:135,capacity:400,army:{spurtz:8},options:{spurtz:s,zagnoid:{...s,name:'Zagnoid',unlocked:false,unlock:{...option,reason:'Locker level required'}}}};
+const html=renderInfernoMonsters(v);
+for(const text of ['Spurtz','Scorches &lt;ground&gt;','Incubator 7','42 Magma paid','data-countdown="1234"','data-order-rev="4"','Locker level required','8 ready','135 / 400','Study level 2'])assert.ok(html.includes(text),text);
+for(const [lane,action] of [['train','infernoTrain'],['research','infernoResearch'],['unlock','infernoUnlock']])assert.deepEqual(infernoMonsterAction({dataset:{cavernMonster:lane,species:'spurtz',orderRev:'4'}}),{action,type:'spurtz',monsterRevision:4});
+assert.deepEqual(infernoMonsterAction({dataset:{cavernMonster:'cancel',lane:'train',egg:'3',orderRev:'4'}}),{action:'infernoCancel',lane:'train',id:3,monsterRevision:4});
+assert.equal(infernoMonsterAction({dataset:{}}),null);
+console.log('Inferno monster controls: 15 checks passed.');

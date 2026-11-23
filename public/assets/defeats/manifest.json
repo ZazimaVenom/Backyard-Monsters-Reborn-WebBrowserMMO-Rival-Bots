@@ -1,0 +1,546 @@
+{
+  "version": "0.13.0",
+  "description": "Confirmed combat defeats and guardian retreats",
+  "files": [
+    {
+      "file": "balthazar-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 280792,
+      "sha256": "49218d2b31ed7ca3cb67ddd7c6a17431c9d7d7b755b76e32a2f3767cbb983f34"
+    },
+    {
+      "file": "bandito-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 307358,
+      "sha256": "24669c1b25fa0b2937211b377a85585e91546e37ca25e287d5a9ff1f6e7c262d"
+    },
+    {
+      "file": "bolt-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 260144,
+      "sha256": "17580592a8502a0e9041e0440270851b932e406d47ebf9f7493690f6d6e7f876"
+    },
+    {
+      "file": "brain-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 287824,
+      "sha256": "329495adb7838ebc9a27cdbf41c55933e3121279aa25da39cdf42c45111cfbee"
+    },
+    {
+      "file": "crabatron-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 353104,
+      "sha256": "571f06baaa0170413d57e642ea29eeede1b70583e790410cbf71ddc79cacc531"
+    },
+    {
+      "file": "dave-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 298694,
+      "sha256": "6827539cf3bd4e227464032d6015a871f2f4f7bc842ed8d8c6bbc6421faf20a5"
+    },
+    {
+      "file": "drull-e1-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 212390,
+      "sha256": "b6ab315327b9461f009032b9502545bb20958c1efb644534b36d5fae24993c83"
+    },
+    {
+      "file": "drull-e2-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 217556,
+      "sha256": "14f6e619b9d8d07bd5d05c1ce9d8a124ce65d4924d6bca1a0f329d7e3fffeed2"
+    },
+    {
+      "file": "drull-e3-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 280758,
+      "sha256": "d6909c3a1f4aa901d3fb9f9d949eb600d0252ddc2a967c53ec46b00ff4b0d879"
+    },
+    {
+      "file": "drull-e4-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 261482,
+      "sha256": "3e0e6943028b64b773d638b8fe8c83bb22a9d256de82c1c6248090a9c798aa5e"
+    },
+    {
+      "file": "drull-e5-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 282142,
+      "sha256": "946bf8b2151c090183fd746708874f22b30c52d1fbfc290d99146103cf481bca"
+    },
+    {
+      "file": "drull-e6-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 300508,
+      "sha256": "5507e040285b507f9dcd9900944f04ed2d9a1b363a7c54fe9c5edf8b24f4873a"
+    },
+    {
+      "file": "eyera-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 199946,
+      "sha256": "91b8670a23fe55e50eebec79a54bdf03fb919a90086063c102fda774128fc690"
+    },
+    {
+      "file": "fang-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 216442,
+      "sha256": "6f6b9b6135f1f0acf0f2b65dd28bfa3f3f7fafe1018c4c6e1bead449def4851b"
+    },
+    {
+      "file": "fink-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 296008,
+      "sha256": "03e44890e04d3ebb9fe0e404b39fd1a5f123a2cfe723500d35c2e5a2af22e1dc"
+    },
+    {
+      "file": "fomor-e1-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 199824,
+      "sha256": "bab30e973fb63ed62e25137cdd73cc56f5b1a56ae3f3824f33efe9fb6ebb8671"
+    },
+    {
+      "file": "fomor-e2-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 195072,
+      "sha256": "c8239395aa71637a691649609cd26100ee47999eb79fc42b89f4b0ea21a7deb5"
+    },
+    {
+      "file": "fomor-e3-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 231462,
+      "sha256": "bdf2e23398a86ebc06e98e79399f933522ad97819bd335bedba1fe0a064f2df3"
+    },
+    {
+      "file": "fomor-e4-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 229658,
+      "sha256": "7b321614a1f81584787a6c7e997c5e1e56a6feaf11c5ee5c37da34314581d6e8"
+    },
+    {
+      "file": "fomor-e5-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 248170,
+      "sha256": "cbd373401e33b8ccb982ff72e011a1b9f7c900a11335067f289995c7013cf061"
+    },
+    {
+      "file": "fomor-e6-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 280480,
+      "sha256": "73d2d2dc500b1db07a4406a42dba9b7fa06479647bc59124e5f3ae475531a177"
+    },
+    {
+      "file": "gorgo-e1-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 226860,
+      "sha256": "ee15db2725ca823baedbac91ac21b4c57ce5729792bb2d29bdb64858f06b3ba9"
+    },
+    {
+      "file": "gorgo-e2-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 241088,
+      "sha256": "a7dcfb0ac3e633776fcee10a7c713099dcee0ed5409d2ac986baa849bf1d8da1"
+    },
+    {
+      "file": "gorgo-e3-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 249514,
+      "sha256": "efe2caee9aa8b9cd650c3d33287e7f1d136d14a0311849496a2797b37ee51768"
+    },
+    {
+      "file": "gorgo-e4-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 236618,
+      "sha256": "1dd8c45029c63d94b0bdaa6f7793c2a274f6dbe7003a09a535239cc686f87475"
+    },
+    {
+      "file": "gorgo-e5-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 269998,
+      "sha256": "8e29aa504d2ff5b7996b6a01c3208ddb373b87389bae1f455f80fde34b354711"
+    },
+    {
+      "file": "gorgo-e6-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 277124,
+      "sha256": "01167fb38301c1f94f5d10a109fc101487304c2bdcbe7bd53e26d722cecbe874"
+    },
+    {
+      "file": "grokus-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 262196,
+      "sha256": "c64b3c9d3eff4984cb004995f93352d703f019cefd88abd0e31cbf19c9fa6b3c"
+    },
+    {
+      "file": "ichi-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 297042,
+      "sha256": "dcb95928a2fed8f846ec318177a3bd6887a185839f19139d113ad0fa26b35b1a"
+    },
+    {
+      "file": "kingwormzer-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 277820,
+      "sha256": "7ae4a2b0d02016a430d5c9207ebff86873ab3899b4e350529d40caaa31920478"
+    },
+    {
+      "file": "korath-e1-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 259478,
+      "sha256": "d7e094d2bc09d95bf34579c8bab211d487d781cf01633e71196962cdb390e193"
+    },
+    {
+      "file": "korath-e2-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 254678,
+      "sha256": "6afea9523b98a2fd63579af49c14d04cf71f7da008cfe37682cf237976ee31eb"
+    },
+    {
+      "file": "korath-e3-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 236118,
+      "sha256": "e5ffadc8ac2aed875bbbcbeb5f4efed074b39127eaaecdabcaab7eb71367f279"
+    },
+    {
+      "file": "korath-e4-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 209004,
+      "sha256": "09fc2e27379c395d13c2c278a70eec485190aa4a33f45e04c810f004b0a296aa"
+    },
+    {
+      "file": "korath-e5-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 221158,
+      "sha256": "3f6129328ad3cdb77f2b6d32d69283edf34434bf040e38c78bad9794d389e804"
+    },
+    {
+      "file": "korath-e6-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 272914,
+      "sha256": "4ca659ede806ff63b10cffc8b14206f98784cd56240d8a25fc96bb720faaca80"
+    },
+    {
+      "file": "krallen-p0-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 260994,
+      "sha256": "109680e8f71b50fccddbdce4af7c0d7d159986981b46867a0fe283cb57e11591"
+    },
+    {
+      "file": "krallen-p1-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 287174,
+      "sha256": "7e2966c6fcd63756063916f117e10f17009f3df31f88267e7ebaf551b479a786"
+    },
+    {
+      "file": "krallen-p2-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 308450,
+      "sha256": "c706ed0e7b125595ddbfa595be516fe83545e6e2349c2302b80852de6df79ebc"
+    },
+    {
+      "file": "malphus-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 294852,
+      "sha256": "2e029ef863b282685467b443392e067c148294c495200c32cef1927426c36e47"
+    },
+    {
+      "file": "octo-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 231918,
+      "sha256": "d2456b6c1013779d7471f182284d27a07aadb4a73efc50ad9ff732aa22b0e6b6"
+    },
+    {
+      "file": "pokey-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 223090,
+      "sha256": "c618c3f680adcbde05f87acae1a13be9433df906032871e2a42caf2d83694658"
+    },
+    {
+      "file": "projectx-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 323796,
+      "sha256": "22205568ccbe24cfbc90c12d6483629fdbdba6e4b526738ee8ec6924b404a998"
+    },
+    {
+      "file": "rezghul-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 286492,
+      "sha256": "47f7eb45ec8ed9a0c776a2e37e267103d7f827a8a5b4f83c225a3ce2cf1eaa5c"
+    },
+    {
+      "file": "sabnox-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 267966,
+      "sha256": "136977fb5671536750de7c26e5e2f632e05d75f0e8694903932a5e086ba1b50f"
+    },
+    {
+      "file": "slimeattikus-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 227344,
+      "sha256": "e23b0e57ce92d2c766f85a990a110a7b10d51a62d2c28a02bdca52cd6ef9c646"
+    },
+    {
+      "file": "slimeattikusmini-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 138698,
+      "sha256": "3e88b7b9828c0b73d7cfeae40204ba50d1baf0309245d17752a67b0b91d90972"
+    },
+    {
+      "file": "spurtz-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 120538,
+      "sha256": "9e6fc9b158ed82e3c34bf71971d60fd2ba15414bda775045efe47b54bab1d437"
+    },
+    {
+      "file": "teratorn-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 278984,
+      "sha256": "635731da114bf326c2dad4c664e374bca9a9cdbd6333492e0d313648bd57c29a"
+    },
+    {
+      "file": "valgos-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 229584,
+      "sha256": "e04a39d1eff4c0a97061f58fdbb7142ec356e90482d37b1c3a63f22ab7ddcfd1"
+    },
+    {
+      "file": "vorg-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 299492,
+      "sha256": "27592c0d3ba9ed501fcdae3fa28b5a14eb9c6644ba5f65215c2d297a3df37f26"
+    },
+    {
+      "file": "wormzer-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 222248,
+      "sha256": "855b8bb367be562042697e1c31c9299a137c2e51bd0ade432141810dd06e5e37"
+    },
+    {
+      "file": "zafreeti-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 320964,
+      "sha256": "89c8482aa959151164264c076b497b7fa05882e0e5a831dce8bca57c01526c69"
+    },
+    {
+      "file": "zagnoid-defeat.webp",
+      "width": 1024,
+      "height": 1024,
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "bytes": 259868,
+      "sha256": "994f005e404e82bb71e84df85b1ff03e2008dffaef369cb77badf069d2685c0a"
+    }
+  ]
+}
