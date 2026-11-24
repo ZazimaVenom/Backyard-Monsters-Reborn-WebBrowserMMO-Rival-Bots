@@ -1,0 +1,4 @@
+Default full-folder build completed successfully through scripts/Build-Client.ps1.
+46 core checks and 17 embedded-pack checks passed.
+Windows x64 executable, icon, native/.NET/WPF/WebView2 supporting files and all 1,136 assets were produced.
+Validation used the installed .NET 10 SDK and PowerShell on Linux to cross-compile Windows output. Windows SDK bootstrap and live Windows gameplay were not run here.

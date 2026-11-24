@@ -1,0 +1,21 @@
+.chaos-header{display:flex;gap:14px;align-items:center;margin:0 22px 18px 0}
+.chaos-header img{width:80px;height:80px;object-fit:contain}
+.chaos-header h2{margin:0}
+.chaos-header p,.chaos-device p{color:var(--muted);line-height:1.5}
+.chaos-header p{margin:6px 0 0}
+.chaos-tabs,.chaos-cost{display:flex;flex-wrap:wrap;gap:7px}
+.chaos-tabs{margin-bottom:14px}
+.chaos-tabs [aria-pressed=true]{border-color:var(--lime);color:var(--lime)}
+.chaos-job,.chaos-device{border:1px solid #c9dda324;background:#142b23;border-radius:10px;padding:14px}
+.chaos-job,.chaos-device header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.chaos-job{margin-bottom:10px;border-color:#d5bc784a}
+.chaos-job p,.chaos-device p{margin:5px 0}
+.chaos-job small,.chaos-device small{display:block;font-size:11px;color:#dec698}
+.chaos-cards{display:grid;gap:9px}
+.chaos-device h3{margin:0;font-size:15px}
+.chaos-device header span{color:var(--lime);font-size:11px}
+.chaos-device p{font-size:12px}
+.chaos-cost{align-items:center;margin:9px 0;color:#d7d8b9;font-size:11px}
+.chaos-cost span{display:flex;align-items:center;gap:4px}
+.chaos-cost .icon{width:13px;height:13px}
+.chaos-device button{margin-top:8px}

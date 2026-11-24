@@ -1,0 +1,582 @@
+{
+  "sampleRate": 44100,
+  "channels": 2,
+  "files": [
+    {
+      "file": "pokey-call.ogg",
+      "species": "pokey",
+      "cue": "call",
+      "family": "peep",
+      "seconds": 0.538,
+      "bytes": 12380,
+      "sha256": "e3e339d837007dc2fddcc070ac691746579bee4f5fc4052d97172d06528502c3"
+    },
+    {
+      "file": "pokey-defeat.ogg",
+      "species": "pokey",
+      "cue": "defeat",
+      "family": "peep",
+      "seconds": 0.5812,
+      "bytes": 12504,
+      "sha256": "02b96d88e4e79ae84bc89a5c3449fb4deeaef96c6dd9cdb90393bc4c464b354b"
+    },
+    {
+      "file": "octo-call.ogg",
+      "species": "octo",
+      "cue": "call",
+      "family": "bubble",
+      "seconds": 0.758,
+      "bytes": 14238,
+      "sha256": "7f77a3831f43901e31f03af853e8da792c00312d05973d8bbce048ec19925f7d"
+    },
+    {
+      "file": "octo-defeat.ogg",
+      "species": "octo",
+      "cue": "defeat",
+      "family": "bubble",
+      "seconds": 0.821,
+      "bytes": 15414,
+      "sha256": "4e679eb5fcf4a25eede81f4f86a759e5a25fd520443459da209fe7d3a13a4ce9"
+    },
+    {
+      "file": "bolt-call.ogg",
+      "species": "bolt",
+      "cue": "call",
+      "family": "chirr",
+      "seconds": 0.488,
+      "bytes": 12240,
+      "sha256": "de17bf417a84a4aa521d9d473651939d09b434c7454e6239457457f0fed88ed7"
+    },
+    {
+      "file": "bolt-defeat.ogg",
+      "species": "bolt",
+      "cue": "defeat",
+      "family": "chirr",
+      "seconds": 0.5267,
+      "bytes": 12058,
+      "sha256": "25bc79f97b2d885e20ce5c9f06fb175b6972c4d9431c7487f7f4e8de3a000917"
+    },
+    {
+      "file": "fink-call.ogg",
+      "species": "fink",
+      "cue": "call",
+      "family": "chirr",
+      "seconds": 0.708,
+      "bytes": 14654,
+      "sha256": "b402892ff2d2f5631846fa5c1ff2904eb18357d14dc565ec697877aacada4a2f"
+    },
+    {
+      "file": "fink-defeat.ogg",
+      "species": "fink",
+      "cue": "defeat",
+      "family": "chirr",
+      "seconds": 0.7665,
+      "bytes": 15145,
+      "sha256": "cb37a50df26a9f9d8bb26fe328a964f471838599073604b904c75c2de94e8822"
+    },
+    {
+      "file": "eyera-call.ogg",
+      "species": "eyera",
+      "cue": "call",
+      "family": "bubble",
+      "seconds": 0.588,
+      "bytes": 12330,
+      "sha256": "ed7eae79bedda7ff34464411b6064f3f41a37311e0ad36f2cf502c2bfc61e5c3"
+    },
+    {
+      "file": "eyera-defeat.ogg",
+      "species": "eyera",
+      "cue": "defeat",
+      "family": "bubble",
+      "seconds": 0.6357,
+      "bytes": 12883,
+      "sha256": "05c7762522c2d1b35d1e6cd152a14e3350d1c1a49b209fae915033478cd06b67"
+    },
+    {
+      "file": "ichi-call.ogg",
+      "species": "ichi",
+      "cue": "call",
+      "family": "growl",
+      "seconds": 0.778,
+      "bytes": 14428,
+      "sha256": "dd9d6d17e487d0c62437e4cc83606c1d71dbd23524ca4ef77efb3fa043cd28bb"
+    },
+    {
+      "file": "ichi-defeat.ogg",
+      "species": "ichi",
+      "cue": "defeat",
+      "family": "growl",
+      "seconds": 0.8428,
+      "bytes": 15056,
+      "sha256": "06ad5e724a3918a6fa53353558e1e67ca4ed6ce22d6af280d9ada2446c50cfff"
+    },
+    {
+      "file": "bandito-call.ogg",
+      "species": "bandito",
+      "cue": "call",
+      "family": "growl",
+      "seconds": 0.878,
+      "bytes": 15446,
+      "sha256": "349bfac91cb3139f7b6f150512b77c76ab950058dce42cea6403147956844b6a"
+    },
+    {
+      "file": "bandito-defeat.ogg",
+      "species": "bandito",
+      "cue": "defeat",
+      "family": "growl",
+      "seconds": 0.9518,
+      "bytes": 16508,
+      "sha256": "15cf22cae5fb12ba14f7dfa56d87a3110b9e34fbfdda739b450fad6a6776a61d"
+    },
+    {
+      "file": "fang-call.ogg",
+      "species": "fang",
+      "cue": "call",
+      "family": "hiss",
+      "seconds": 0.598,
+      "bytes": 13978,
+      "sha256": "5c9f6753e6472b74d3c6158fcc758946076b4b340466a3bb0fa1d184b51e2c5c"
+    },
+    {
+      "file": "fang-defeat.ogg",
+      "species": "fang",
+      "cue": "defeat",
+      "family": "hiss",
+      "seconds": 0.6466,
+      "bytes": 14541,
+      "sha256": "5bbca59f589507ac31fb98c34f0a2a30f863d1b60976b4dda5fb796aedc93de3"
+    },
+    {
+      "file": "brain-call.ogg",
+      "species": "brain",
+      "cue": "call",
+      "family": "pulse",
+      "seconds": 0.738,
+      "bytes": 14144,
+      "sha256": "6d25b38a1d3aa0a55c09f0691c66bb94929896b8c9d9495e1ad3820b4c6cf22b"
+    },
+    {
+      "file": "brain-defeat.ogg",
+      "species": "brain",
+      "cue": "defeat",
+      "family": "pulse",
+      "seconds": 0.7992,
+      "bytes": 14976,
+      "sha256": "bd74e01a5c19ee626c591b4f17d2dfe9a6808bf07e72275d40431f95b20696a9"
+    },
+    {
+      "file": "crabatron-call.ogg",
+      "species": "crabatron",
+      "cue": "call",
+      "family": "shell",
+      "seconds": 0.748,
+      "bytes": 14891,
+      "sha256": "817ca50bfac9a41b522ef452494dbe76d4f46f5df3bf617d33f87788dbfd35e5"
+    },
+    {
+      "file": "crabatron-defeat.ogg",
+      "species": "crabatron",
+      "cue": "defeat",
+      "family": "shell",
+      "seconds": 0.8101,
+      "bytes": 15503,
+      "sha256": "cc40e702f53ee70f98a4d0a0bca7ff15da029865e352e3b6a0157dd07ae5013c"
+    },
+    {
+      "file": "projectx-call.ogg",
+      "species": "projectx",
+      "cue": "call",
+      "family": "reed",
+      "seconds": 0.708,
+      "bytes": 13964,
+      "sha256": "8bf90316624204427d8baa296d29deb67cc59d0bd7996cc0a298d081180d9168"
+    },
+    {
+      "file": "projectx-defeat.ogg",
+      "species": "projectx",
+      "cue": "defeat",
+      "family": "reed",
+      "seconds": 0.7665,
+      "bytes": 14366,
+      "sha256": "da3193c8f349fbc713c906977e824ea44993c4765c0ad0a32c60a3b4d6ad3de2"
+    },
+    {
+      "file": "dave-call.ogg",
+      "species": "dave",
+      "cue": "call",
+      "family": "machine",
+      "seconds": 0.918,
+      "bytes": 16031,
+      "sha256": "a716e01c278ef99ff4a8c51e530da28fb91b6fec04641599ad4b28d970a0579c"
+    },
+    {
+      "file": "dave-defeat.ogg",
+      "species": "dave",
+      "cue": "defeat",
+      "family": "machine",
+      "seconds": 0.9954,
+      "bytes": 16906,
+      "sha256": "52ae65e2d751c63fdd9baac135b7358d195ca8300c0d3bc07fa682267d233f81"
+    },
+    {
+      "file": "wormzer-call.ogg",
+      "species": "wormzer",
+      "cue": "call",
+      "family": "rasp",
+      "seconds": 0.848,
+      "bytes": 16445,
+      "sha256": "8e2c8e73229a19cf09888ea5b7fad4ec2d5eebe7a9fe08876fad8c052f9d7d1a"
+    },
+    {
+      "file": "wormzer-defeat.ogg",
+      "species": "wormzer",
+      "cue": "defeat",
+      "family": "rasp",
+      "seconds": 0.9191,
+      "bytes": 17142,
+      "sha256": "f59f40f21537f9ecfc196b32f9c416a9a3fa83ae0d22391219e254ab9722ee80"
+    },
+    {
+      "file": "teratorn-call.ogg",
+      "species": "teratorn",
+      "cue": "call",
+      "family": "wing",
+      "seconds": 0.758,
+      "bytes": 15362,
+      "sha256": "b18051ad8124da68ee8bc952d53030f994c3399e35f4a0d05b042eebc1c7fde0"
+    },
+    {
+      "file": "teratorn-defeat.ogg",
+      "species": "teratorn",
+      "cue": "defeat",
+      "family": "wing",
+      "seconds": 0.821,
+      "bytes": 15638,
+      "sha256": "c89ddaffcfc0daead6d7506ca5151a0b5c2675a7e7404a56ef0d1617119c679a"
+    },
+    {
+      "file": "zafreeti-call.ogg",
+      "species": "zafreeti",
+      "cue": "call",
+      "family": "spectral",
+      "seconds": 0.898,
+      "bytes": 16556,
+      "sha256": "e8acaa93849da489e94586cc3b41f0047884c3d16679717d2c1e0c4ee41cc7d1"
+    },
+    {
+      "file": "zafreeti-defeat.ogg",
+      "species": "zafreeti",
+      "cue": "defeat",
+      "family": "spectral",
+      "seconds": 0.9736,
+      "bytes": 17415,
+      "sha256": "f05712f8ab422685fe485f1d13ad0f1987775ccc810c3effa238c1374a170f85"
+    },
+    {
+      "file": "vorg-call.ogg",
+      "species": "vorg",
+      "cue": "call",
+      "family": "wing",
+      "seconds": 0.688,
+      "bytes": 13986,
+      "sha256": "da5801e5be4b05cb2045491a501888100d2cf6d461c0b3c0d519b7c32133da20"
+    },
+    {
+      "file": "vorg-defeat.ogg",
+      "species": "vorg",
+      "cue": "defeat",
+      "family": "wing",
+      "seconds": 0.7447,
+      "bytes": 14503,
+      "sha256": "7a720639c353d33c7f6fde70bdbf892e797481d927ff731c16a38b2f1aac0199"
+    },
+    {
+      "file": "slimeattikus-call.ogg",
+      "species": "slimeattikus",
+      "cue": "call",
+      "family": "bubble",
+      "seconds": 0.958,
+      "bytes": 16469,
+      "sha256": "15dcc3f7f41960b42e4775a294e7361c1228e8516403265632176923465a6437"
+    },
+    {
+      "file": "slimeattikus-defeat.ogg",
+      "species": "slimeattikus",
+      "cue": "defeat",
+      "family": "bubble",
+      "seconds": 1.039,
+      "bytes": 17179,
+      "sha256": "7a54b019dfb1de673e0211e4c1f6d31b5d4ddf33deb7a36b89d66d4fbf50b33b"
+    },
+    {
+      "file": "slimeattikusmini-call.ogg",
+      "species": "slimeattikusmini",
+      "cue": "call",
+      "family": "peep",
+      "seconds": 0.468,
+      "bytes": 11476,
+      "sha256": "1edff35a5e71602e430d083d444f3932dd2d5afd6477a7c03b71e967b90fdf7d"
+    },
+    {
+      "file": "slimeattikusmini-defeat.ogg",
+      "species": "slimeattikusmini",
+      "cue": "defeat",
+      "family": "peep",
+      "seconds": 0.5049,
+      "bytes": 11962,
+      "sha256": "4e28349e52a0445568dcb45c406559e3432d7668e322536df1982e242ecd70d2"
+    },
+    {
+      "file": "rezghul-call.ogg",
+      "species": "rezghul",
+      "cue": "call",
+      "family": "spectral",
+      "seconds": 0.998,
+      "bytes": 17476,
+      "sha256": "8115bbd5fb97115231f752b0eb4ec582fe9f010cda410f9e7cf93081d9c1275a"
+    },
+    {
+      "file": "rezghul-defeat.ogg",
+      "species": "rezghul",
+      "cue": "defeat",
+      "family": "spectral",
+      "seconds": 1.0826,
+      "bytes": 18773,
+      "sha256": "61f9e5d839c8ad602bc577c8bd2144ad21b17d6e5bd280f2f12b4aa56406ccb1"
+    },
+    {
+      "file": "spurtz-call.ogg",
+      "species": "spurtz",
+      "cue": "call",
+      "family": "flame",
+      "seconds": 0.508,
+      "bytes": 12479,
+      "sha256": "63f96ef92fd3036c2f97f74e9a5592bef3dd33eea2f5afa9be75cef122a41965"
+    },
+    {
+      "file": "spurtz-defeat.ogg",
+      "species": "spurtz",
+      "cue": "defeat",
+      "family": "flame",
+      "seconds": 0.5485,
+      "bytes": 12838,
+      "sha256": "4c5e000864730964a8cd91ca2f30c7a7d91e134bf6daecaf84384c9873d5e0a5"
+    },
+    {
+      "file": "zagnoid-call.ogg",
+      "species": "zagnoid",
+      "cue": "call",
+      "family": "bubble",
+      "seconds": 0.808,
+      "bytes": 14862,
+      "sha256": "6826390ec049d92cb653d80088105d23b50a2f299b31b5b0ea7d1881e03e24ad"
+    },
+    {
+      "file": "zagnoid-defeat.ogg",
+      "species": "zagnoid",
+      "cue": "defeat",
+      "family": "bubble",
+      "seconds": 0.8755,
+      "bytes": 15652,
+      "sha256": "2aaf329ef401d35214fa65bd00c23478606e829ab19938a43308e5bf0b229b98"
+    },
+    {
+      "file": "malphus-call.ogg",
+      "species": "malphus",
+      "cue": "call",
+      "family": "shell",
+      "seconds": 0.808,
+      "bytes": 15287,
+      "sha256": "8dc9d105e6e445c5741bcafd0892440f339b14a4b30d7340d502e9f23da01693"
+    },
+    {
+      "file": "malphus-defeat.ogg",
+      "species": "malphus",
+      "cue": "defeat",
+      "family": "shell",
+      "seconds": 0.8755,
+      "bytes": 15897,
+      "sha256": "a60a1849ab059c8a48aad6f5d6106751308b9c203e65585ad12d32a1af9e7add"
+    },
+    {
+      "file": "valgos-call.ogg",
+      "species": "valgos",
+      "cue": "call",
+      "family": "growl",
+      "seconds": 0.878,
+      "bytes": 15683,
+      "sha256": "2b4ee099818028d9ba3651710bbc1cac4c08b882b587c21647061398ed0213b6"
+    },
+    {
+      "file": "valgos-defeat.ogg",
+      "species": "valgos",
+      "cue": "defeat",
+      "family": "growl",
+      "seconds": 0.9518,
+      "bytes": 16941,
+      "sha256": "66bae76490a27e5e3b2b243478257de1e493ff4c6b3f31d3b1653e01c8838c49"
+    },
+    {
+      "file": "balthazar-call.ogg",
+      "species": "balthazar",
+      "cue": "call",
+      "family": "reed",
+      "seconds": 0.818,
+      "bytes": 15512,
+      "sha256": "1186aeca308f6d721ec95cac07151c063f8732dd231670fa07348950a35a54fd"
+    },
+    {
+      "file": "balthazar-defeat.ogg",
+      "species": "balthazar",
+      "cue": "defeat",
+      "family": "reed",
+      "seconds": 0.8864,
+      "bytes": 16240,
+      "sha256": "daf35e57a3cb066c3c48f34965a794dc28a9b4fdcf4c27fd8c6d8d0816d7d20d"
+    },
+    {
+      "file": "grokus-call.ogg",
+      "species": "grokus",
+      "cue": "call",
+      "family": "reed",
+      "seconds": 0.938,
+      "bytes": 16904,
+      "sha256": "0f57909984c0eb5dac32f756299ab48518f22cccb46ef5a549807d036ce53fc4"
+    },
+    {
+      "file": "grokus-defeat.ogg",
+      "species": "grokus",
+      "cue": "defeat",
+      "family": "reed",
+      "seconds": 1.0172,
+      "bytes": 18013,
+      "sha256": "49d63f6004cd3d44f1e91ae5a442526ff55b34ac4814ec76fa1336b2c7b897e5"
+    },
+    {
+      "file": "sabnox-call.ogg",
+      "species": "sabnox",
+      "cue": "call",
+      "family": "hiss",
+      "seconds": 0.878,
+      "bytes": 17689,
+      "sha256": "73aafe4549ab8ccfc4b05645a27bb2cc76c6e4c2104cc3c9bab54d80c17ea68a"
+    },
+    {
+      "file": "sabnox-defeat.ogg",
+      "species": "sabnox",
+      "cue": "defeat",
+      "family": "hiss",
+      "seconds": 0.9518,
+      "bytes": 18530,
+      "sha256": "6a5229f8153805b2adbbae84a00c434e3195831a292fc35d8a4f330ce8012693"
+    },
+    {
+      "file": "kingwormzer-call.ogg",
+      "species": "kingwormzer",
+      "cue": "call",
+      "family": "machine",
+      "seconds": 1.098,
+      "bytes": 18481,
+      "sha256": "76da9168f89cb6c32073357321d9a05c005c7a539b7c44888e57312d95c790d0"
+    },
+    {
+      "file": "kingwormzer-defeat.ogg",
+      "species": "kingwormzer",
+      "cue": "defeat",
+      "family": "machine",
+      "seconds": 1.1916,
+      "bytes": 19321,
+      "sha256": "e8153a5d09c191bbf1547c7183c652a366eaa13f6a302546d42d46a10e01edad"
+    },
+    {
+      "file": "gorgo-call.ogg",
+      "species": "gorgo",
+      "cue": "call",
+      "family": "growl",
+      "seconds": 1.098,
+      "bytes": 18064,
+      "sha256": "fb7c9e286b64c7c1b4e3b5b04eee19372261da97f44441e90302aade39546105"
+    },
+    {
+      "file": "gorgo-defeat.ogg",
+      "species": "gorgo",
+      "cue": "defeat",
+      "family": "growl",
+      "seconds": 1.1916,
+      "bytes": 19605,
+      "sha256": "6d185161524478fd5e2bb6312caa74b724a53be6df7409b7d9b6638e7824ee88"
+    },
+    {
+      "file": "drull-call.ogg",
+      "species": "drull",
+      "cue": "call",
+      "family": "rasp",
+      "seconds": 1.058,
+      "bytes": 18781,
+      "sha256": "f55888ab8184639886273da5b28d58e8b1933054879733b8ff24042f314b4e96"
+    },
+    {
+      "file": "drull-defeat.ogg",
+      "species": "drull",
+      "cue": "defeat",
+      "family": "rasp",
+      "seconds": 1.148,
+      "bytes": 20041,
+      "sha256": "02314fb5f5555e3988ab5e59b587f6e520bb0a646652afcf9ae97f353a44a5a8"
+    },
+    {
+      "file": "fomor-call.ogg",
+      "species": "fomor",
+      "cue": "call",
+      "family": "spectral",
+      "seconds": 1.128,
+      "bytes": 19703,
+      "sha256": "37e8747c5b5c75c3138bc986ee8507409fe99357f0ace6349087970da2e5856f"
+    },
+    {
+      "file": "fomor-defeat.ogg",
+      "species": "fomor",
+      "cue": "defeat",
+      "family": "spectral",
+      "seconds": 1.2243,
+      "bytes": 20872,
+      "sha256": "45fc17647f9bab30fd4271328c5a1cddb76af9b6159bca2c0a9f9d2364e76213"
+    },
+    {
+      "file": "korath-call.ogg",
+      "species": "korath",
+      "cue": "call",
+      "family": "stone",
+      "seconds": 1.168,
+      "bytes": 19310,
+      "sha256": "499e82a84a8cc4fb6776954f967269f4e3baddfeb88efbc34cb5135a1317c0fd"
+    },
+    {
+      "file": "korath-defeat.ogg",
+      "species": "korath",
+      "cue": "defeat",
+      "family": "stone",
+      "seconds": 1.2679,
+      "bytes": 20693,
+      "sha256": "f879203ff8a883f406d6e76092cecf89ef0232235a89637fcbf5dc9d5eeb7377"
+    },
+    {
+      "file": "krallen-call.ogg",
+      "species": "krallen",
+      "cue": "call",
+      "family": "rasp",
+      "seconds": 0.878,
+      "bytes": 16275,
+      "sha256": "2185e0feca667c56abe35462686b12f1cb9e95b4b36d13ce7ad09c36f2f986cc"
+    },
+    {
+      "file": "krallen-defeat.ogg",
+      "species": "krallen",
+      "cue": "defeat",
+      "family": "rasp",
+      "seconds": 0.9518,
+      "bytes": 17293,
+      "sha256": "c066f699a3f746204be903c7187f819f1fda69de0ded4238966cd1620a072691"
+    }
+  ]
+}

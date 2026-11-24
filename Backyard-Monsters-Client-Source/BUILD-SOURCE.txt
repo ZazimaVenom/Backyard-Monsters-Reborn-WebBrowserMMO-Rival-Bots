@@ -1,0 +1,23 @@
+BACKYARD MONSTERS REBORN - CLIENT SOURCE
+
+BUILD ON WINDOWS x64
+
+1. Extract the entire source ZIP into a writable folder.
+2. Double-click Build-Client.cmd.
+3. Open out\Backyard-Monsters-Client\BackyardMonstersClient.exe.
+
+The included Assets folder and manifest are ready to build with. No separate asset download or path configuration is needed.
+
+The builder uses .NET 10 SDK, downloading Microsoft's SDK into the source folder when needed. Internet access is needed for SDK/NuGet downloads. Visual Studio is optional.
+
+The default output is the FULL CLIENT FOLDER: EXE, supporting DLLs, Assets and manifest. Distribute that whole folder to players. Players open the EXE directly.
+
+Edit the files in Client.Windows and Client.Core, then run Build-Client.cmd again. MainWindow.xaml controls the custom interface; MainWindow.xaml.cs controls the client behaviour. See README.md for the project layout and optional build arguments.
+
+To use assets from a different copy of the game:
+Build-Client.cmd -GameSource "C:\xampp\htdocs\Backyard-Monsters-Reborn" -GameVersion "0.13.0"
+
+Use the version matching that game's assets. The server itself is separate and is not modified by this build.
+
+Optional single-EXE format only:
+Build-Client.cmd -Standalone

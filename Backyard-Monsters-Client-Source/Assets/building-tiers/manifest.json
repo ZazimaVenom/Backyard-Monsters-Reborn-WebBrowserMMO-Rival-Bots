@@ -1,0 +1,2248 @@
+{
+ "release": "0.13.0",
+ "count": 224,
+ "total_bytes": 25418224,
+ "description": "Individually painted, isolated upgrade appearances for each supported building level above one. Three advanced towers use the same architecture in both realms.",
+ "assets": [
+  {
+   "file": "surface-townhall-2.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 2,
+   "width": 468,
+   "height": 554,
+   "bytes": 111116,
+   "sha256": "d342166c00625f9e5f29ae8b7a228940cd08f3932303e916d4d627b4643908ac"
+  },
+  {
+   "file": "surface-townhall-3.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 3,
+   "width": 457,
+   "height": 559,
+   "bytes": 113772,
+   "sha256": "23aa5d43865b15461b55bae0b77d6dd8c27bf4fb6f676851f29656b32e028e06"
+  },
+  {
+   "file": "surface-townhall-4.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 4,
+   "width": 487,
+   "height": 573,
+   "bytes": 133806,
+   "sha256": "8dfd719196ceafd8ab3744e5d6e339ce8240176596428203c65ffdc9fa3a0d39"
+  },
+  {
+   "file": "surface-townhall-5.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 5,
+   "width": 534,
+   "height": 588,
+   "bytes": 156122,
+   "sha256": "b0bc8b918874b19f7979a3f2b8949a89158e49da6b0bc6fa895612e6ee8b3a8c"
+  },
+  {
+   "file": "surface-hatchery-2.webp",
+   "realm": "surface",
+   "type": "hatchery",
+   "level": 2,
+   "width": 409,
+   "height": 528,
+   "bytes": 95960,
+   "sha256": "bd38734c2028dec56116c8d34d362e8f3b1bb00f8f8c5c7f13b607de0572882f"
+  },
+  {
+   "file": "surface-hatchery-3.webp",
+   "realm": "surface",
+   "type": "hatchery",
+   "level": 3,
+   "width": 497,
+   "height": 539,
+   "bytes": 116662,
+   "sha256": "b4d531ed39712b132650ecdacd7c26e2d09918f2620d5a3d056c1ec5da00988e"
+  },
+  {
+   "file": "surface-hatchery-4.webp",
+   "realm": "surface",
+   "type": "hatchery",
+   "level": 4,
+   "width": 515,
+   "height": 561,
+   "bytes": 138036,
+   "sha256": "f217e9c737bd7619e213441f7d65c3ebe6cc173e65dacd3d883b0c0acb0e1151"
+  },
+  {
+   "file": "surface-hatchery-5.webp",
+   "realm": "surface",
+   "type": "hatchery",
+   "level": 5,
+   "width": 558,
+   "height": 594,
+   "bytes": 163272,
+   "sha256": "4789c2fc4b16c3b5c9794ca603b99bba1d7b6920b9fb6229a6d8dce2152d2d6a"
+  },
+  {
+   "file": "surface-housing-2.webp",
+   "realm": "surface",
+   "type": "housing",
+   "level": 2,
+   "width": 525,
+   "height": 545,
+   "bytes": 111924,
+   "sha256": "8d09cd15ef9950e031eb48f8474663acc7184a9cf61917ff8bd272e716c6a095"
+  },
+  {
+   "file": "surface-housing-3.webp",
+   "realm": "surface",
+   "type": "housing",
+   "level": 3,
+   "width": 558,
+   "height": 561,
+   "bytes": 131258,
+   "sha256": "f696a8fd7ad5edfc4bb2c2c46ee2482204d9f7f4be2a2a973ca203728b551236"
+  },
+  {
+   "file": "surface-housing-4.webp",
+   "realm": "surface",
+   "type": "housing",
+   "level": 4,
+   "width": 579,
+   "height": 583,
+   "bytes": 145852,
+   "sha256": "c67f69a5fae4643db792a330efdc25acd56bea986a85ea3d120c135feadf0d21"
+  },
+  {
+   "file": "surface-housing-5.webp",
+   "realm": "surface",
+   "type": "housing",
+   "level": 5,
+   "width": 583,
+   "height": 583,
+   "bytes": 154962,
+   "sha256": "1fb569949b77e4d0c9f7f12b53f8244d9b7cdc6996e7d053fd2c995241534733"
+  },
+  {
+   "file": "surface-twig-2.webp",
+   "realm": "surface",
+   "type": "twig",
+   "level": 2,
+   "width": 440,
+   "height": 542,
+   "bytes": 112322,
+   "sha256": "2a69db1ea0b86412de91c3ea58837cd85fa1d386f9730b2c0eada27eab221708"
+  },
+  {
+   "file": "surface-twig-3.webp",
+   "realm": "surface",
+   "type": "twig",
+   "level": 3,
+   "width": 507,
+   "height": 529,
+   "bytes": 129746,
+   "sha256": "e762760d578b639c2dd90063fa3e81a519964b7cf93d8dea1c23fe0449a423da"
+  },
+  {
+   "file": "surface-twig-4.webp",
+   "realm": "surface",
+   "type": "twig",
+   "level": 4,
+   "width": 532,
+   "height": 564,
+   "bytes": 146326,
+   "sha256": "088b6181d3f6f9c404296abf2e52a887da2272b8279a10b219d8654b90361945"
+  },
+  {
+   "file": "surface-twig-5.webp",
+   "realm": "surface",
+   "type": "twig",
+   "level": 5,
+   "width": 595,
+   "height": 571,
+   "bytes": 181888,
+   "sha256": "0f56b3ca4d1a66b11d62bde6bdc84fd94a4d7c89444380a2ba61c261a252c1bb"
+  },
+  {
+   "file": "surface-pebble-2.webp",
+   "realm": "surface",
+   "type": "pebble",
+   "level": 2,
+   "width": 506,
+   "height": 511,
+   "bytes": 110218,
+   "sha256": "5a2af1676862cec20f72c897bc8edbcafd9a3cbbe1b467238bfea5512b48a36c"
+  },
+  {
+   "file": "surface-pebble-3.webp",
+   "realm": "surface",
+   "type": "pebble",
+   "level": 3,
+   "width": 520,
+   "height": 533,
+   "bytes": 121750,
+   "sha256": "fa1d6f386ebe612f491d95dfd892212eec4ba1d90d6b606242f11115ddd33bf5"
+  },
+  {
+   "file": "surface-pebble-4.webp",
+   "realm": "surface",
+   "type": "pebble",
+   "level": 4,
+   "width": 544,
+   "height": 549,
+   "bytes": 133866,
+   "sha256": "5135249759ab38845d4c11f886baac1fe547e0c9cba37481acff0ffc3c11047e"
+  },
+  {
+   "file": "surface-pebble-5.webp",
+   "realm": "surface",
+   "type": "pebble",
+   "level": 5,
+   "width": 559,
+   "height": 556,
+   "bytes": 146702,
+   "sha256": "3740d6f74d7cdef73b94c799c19fbd9447b474714707bb59492351f665e37b67"
+  },
+  {
+   "file": "surface-putty-2.webp",
+   "realm": "surface",
+   "type": "putty",
+   "level": 2,
+   "width": 472,
+   "height": 495,
+   "bytes": 103052,
+   "sha256": "73dd03b2df8cecf9c595a7f3aa04a1fae72f36df0ddf0b5f8938ff99b68fc591"
+  },
+  {
+   "file": "surface-putty-3.webp",
+   "realm": "surface",
+   "type": "putty",
+   "level": 3,
+   "width": 501,
+   "height": 537,
+   "bytes": 119718,
+   "sha256": "d100289e17ed5eb20c8764574fad0d399aff0291ba37756947f3c2ccd30898b6"
+  },
+  {
+   "file": "surface-putty-4.webp",
+   "realm": "surface",
+   "type": "putty",
+   "level": 4,
+   "width": 546,
+   "height": 535,
+   "bytes": 130192,
+   "sha256": "3b69388e1b79c2d0107aaa05d75eb6d0766887f46b49a8320d0b36bbe25d98b1"
+  },
+  {
+   "file": "surface-putty-5.webp",
+   "realm": "surface",
+   "type": "putty",
+   "level": 5,
+   "width": 592,
+   "height": 540,
+   "bytes": 153156,
+   "sha256": "505002b8ea2a0c6789c761204593a391d055b5146be3e5f190d26d1942b83369"
+  },
+  {
+   "file": "surface-goo-2.webp",
+   "realm": "surface",
+   "type": "goo",
+   "level": 2,
+   "width": 403,
+   "height": 569,
+   "bytes": 85284,
+   "sha256": "2ac8e4720d4791a2485339f0eb80c5c504b21d38926feb821615fba46cdca593"
+  },
+  {
+   "file": "surface-goo-3.webp",
+   "realm": "surface",
+   "type": "goo",
+   "level": 3,
+   "width": 463,
+   "height": 583,
+   "bytes": 100856,
+   "sha256": "746ee16a36c2d052849e16c12a5a0453dc2aa6e541ba6fc649e7a9ec81d2f545"
+  },
+  {
+   "file": "surface-goo-4.webp",
+   "realm": "surface",
+   "type": "goo",
+   "level": 4,
+   "width": 489,
+   "height": 604,
+   "bytes": 117408,
+   "sha256": "c478ffd78b75e8fd9e73659009a68b8da410e97414ebf94f105b732ae12a137c"
+  },
+  {
+   "file": "surface-goo-5.webp",
+   "realm": "surface",
+   "type": "goo",
+   "level": 5,
+   "width": 529,
+   "height": 606,
+   "bytes": 137756,
+   "sha256": "e52ec009fb2e3f5b3e56ede786c9dac9e0ba8027155317d32910311d90cffbbd"
+  },
+  {
+   "file": "surface-storage-2.webp",
+   "realm": "surface",
+   "type": "storage",
+   "level": 2,
+   "width": 391,
+   "height": 541,
+   "bytes": 78814,
+   "sha256": "2217d19d769e0324a43bf4c2a71d9bc02981da2ca43264d16eae17308fc7c93d"
+  },
+  {
+   "file": "surface-storage-3.webp",
+   "realm": "surface",
+   "type": "storage",
+   "level": 3,
+   "width": 460,
+   "height": 556,
+   "bytes": 102182,
+   "sha256": "2d270410b0c713b850e03fc889a16d0f9492c6079295992a1e75063489ab1c94"
+  },
+  {
+   "file": "surface-storage-4.webp",
+   "realm": "surface",
+   "type": "storage",
+   "level": 4,
+   "width": 491,
+   "height": 574,
+   "bytes": 110022,
+   "sha256": "2b504ecece9cc7554d0070772ed283c6a4525049166dbb3eb6170e7ffa1b7c8a"
+  },
+  {
+   "file": "surface-storage-5.webp",
+   "realm": "surface",
+   "type": "storage",
+   "level": 5,
+   "width": 520,
+   "height": 584,
+   "bytes": 134322,
+   "sha256": "9ccf789d69600ca316a5b34cdc44ff88059b932572148038915bda74264f8e88"
+  },
+  {
+   "file": "surface-sniper-2.webp",
+   "realm": "surface",
+   "type": "sniper",
+   "level": 2,
+   "width": 335,
+   "height": 555,
+   "bytes": 70190,
+   "sha256": "003196690dd2e00c245993e8d94a6218a78b574f2ca6f6d258d4fb8a8f97966e"
+  },
+  {
+   "file": "surface-sniper-3.webp",
+   "realm": "surface",
+   "type": "sniper",
+   "level": 3,
+   "width": 339,
+   "height": 572,
+   "bytes": 75766,
+   "sha256": "73bded70071224c348542e05247eb57125ce606ac300306a073663f80b4da5bb"
+  },
+  {
+   "file": "surface-sniper-4.webp",
+   "realm": "surface",
+   "type": "sniper",
+   "level": 4,
+   "width": 370,
+   "height": 593,
+   "bytes": 87122,
+   "sha256": "587ba5f75290f5135f23ce4c1409c22ba93977aae4344f56771d1786c1138a05"
+  },
+  {
+   "file": "surface-sniper-5.webp",
+   "realm": "surface",
+   "type": "sniper",
+   "level": 5,
+   "width": 402,
+   "height": 610,
+   "bytes": 104954,
+   "sha256": "3af44c0344d58d15901d890bcae03df59c2ee01dfab7a992839a05035296ffde"
+  },
+  {
+   "file": "surface-cannon-2.webp",
+   "realm": "surface",
+   "type": "cannon",
+   "level": 2,
+   "width": 443,
+   "height": 492,
+   "bytes": 82706,
+   "sha256": "675b6ada1eacd4e9a78d2a750fee9f51ca533234b6b8fb6462522e722cc91dd0"
+  },
+  {
+   "file": "surface-cannon-3.webp",
+   "realm": "surface",
+   "type": "cannon",
+   "level": 3,
+   "width": 477,
+   "height": 524,
+   "bytes": 108750,
+   "sha256": "ed100da7eded156ae6c34a5af52fb594ae853d2bb2b020055c2c1f6b533d0bf0"
+  },
+  {
+   "file": "surface-cannon-4.webp",
+   "realm": "surface",
+   "type": "cannon",
+   "level": 4,
+   "width": 536,
+   "height": 587,
+   "bytes": 125764,
+   "sha256": "e9a19f1bcf1842e1cae92c9d918b10189af59367172bdb58336c5eb4aafcca3c"
+  },
+  {
+   "file": "surface-cannon-5.webp",
+   "realm": "surface",
+   "type": "cannon",
+   "level": 5,
+   "width": 568,
+   "height": 597,
+   "bytes": 141606,
+   "sha256": "491e22ba2f27b57f6a678bedd0995cef0537f0cf4b9f34562cabe255fbdee946"
+  },
+  {
+   "file": "surface-tesla-2.webp",
+   "realm": "surface",
+   "type": "tesla",
+   "level": 2,
+   "width": 329,
+   "height": 515,
+   "bytes": 65990,
+   "sha256": "01c9d78a1e5bd79a3b60797edc42d31e10308665c4b3227deb23b03c54287a07"
+  },
+  {
+   "file": "surface-tesla-3.webp",
+   "realm": "surface",
+   "type": "tesla",
+   "level": 3,
+   "width": 393,
+   "height": 546,
+   "bytes": 83278,
+   "sha256": "786764c2d7bcccbdfd0899c253314619ac7828372104defe66d16679600ff7a9"
+  },
+  {
+   "file": "surface-tesla-4.webp",
+   "realm": "surface",
+   "type": "tesla",
+   "level": 4,
+   "width": 418,
+   "height": 579,
+   "bytes": 93284,
+   "sha256": "8e8c38c315ab72cfc37ab8be0ec831948311f4d8d0e75b0695834d4006a66336"
+  },
+  {
+   "file": "surface-tesla-5.webp",
+   "realm": "surface",
+   "type": "tesla",
+   "level": 5,
+   "width": 471,
+   "height": 597,
+   "bytes": 124380,
+   "sha256": "14fb983687a26bfaa8a40b8d4b7f4cf41837c372390be0090b6ed8560393d296"
+  },
+  {
+   "file": "surface-wall-2.webp",
+   "realm": "surface",
+   "type": "wall",
+   "level": 2,
+   "width": 423,
+   "height": 490,
+   "bytes": 72734,
+   "sha256": "cb9834ece0c73e44720591cd63f13ce6f5bcd55a9bce6adc08cbf7727f9ba962"
+  },
+  {
+   "file": "surface-wall-3.webp",
+   "realm": "surface",
+   "type": "wall",
+   "level": 3,
+   "width": 482,
+   "height": 516,
+   "bytes": 88806,
+   "sha256": "33f99af58870e7a0ecc81e2269bccf4a0fbdb5a976d2309c931c52ffa1f3c5ee"
+  },
+  {
+   "file": "surface-wall-4.webp",
+   "realm": "surface",
+   "type": "wall",
+   "level": 4,
+   "width": 500,
+   "height": 527,
+   "bytes": 99198,
+   "sha256": "4d7e29e35ced01b316ca35962c4bc28efb833843e616e16959725c8fe7c83b7f"
+  },
+  {
+   "file": "surface-wall-5.webp",
+   "realm": "surface",
+   "type": "wall",
+   "level": 5,
+   "width": 543,
+   "height": 556,
+   "bytes": 122058,
+   "sha256": "064c6f279f6b19106d2f696cbf3705e9991275dfbc99dd3e92cc26bc97984941"
+  },
+  {
+   "file": "surface-academy-2.webp",
+   "realm": "surface",
+   "type": "academy",
+   "level": 2,
+   "width": 498,
+   "height": 473,
+   "bytes": 103602,
+   "sha256": "1681cf6f94e9ecd6002bb87d317e6638fcb0136d3f5fd0365e6f67f580df352f"
+  },
+  {
+   "file": "surface-academy-3.webp",
+   "realm": "surface",
+   "type": "academy",
+   "level": 3,
+   "width": 518,
+   "height": 507,
+   "bytes": 110638,
+   "sha256": "7322f439d4725fefe7e4f512fd1167ee9f0aedfefc8e002da151528a857e0282"
+  },
+  {
+   "file": "surface-academy-4.webp",
+   "realm": "surface",
+   "type": "academy",
+   "level": 4,
+   "width": 576,
+   "height": 554,
+   "bytes": 141938,
+   "sha256": "430e8fe4cd973193f8ad41e0c7b2cfd695237d115f06ee7de16751bee6c542b1"
+  },
+  {
+   "file": "surface-academy-5.webp",
+   "realm": "surface",
+   "type": "academy",
+   "level": 5,
+   "width": 592,
+   "height": 560,
+   "bytes": 161684,
+   "sha256": "e55a88a086f512dbabfc72c2a0e6829b94d9b57c89ec084945ebb0882a849a79"
+  },
+  {
+   "file": "surface-baiter-2.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 2,
+   "width": 353,
+   "height": 439,
+   "bytes": 52284,
+   "sha256": "c438b5c9b57302ccc70f605868031388cbd3db05f33cefc625ddd616a15c8442"
+  },
+  {
+   "file": "surface-baiter-3.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 3,
+   "width": 407,
+   "height": 445,
+   "bytes": 61226,
+   "sha256": "a4c1ccc4affd91518c66444f29caf9f751513895c68c043e4fcad92eacb6cea9"
+  },
+  {
+   "file": "surface-baiter-4.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 4,
+   "width": 413,
+   "height": 456,
+   "bytes": 70502,
+   "sha256": "7a2b252c17540603b78a410359dbd6c538dacf31b7bb1696c475cc6f69a8ae33"
+  },
+  {
+   "file": "surface-baiter-5.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 5,
+   "width": 432,
+   "height": 472,
+   "bytes": 71396,
+   "sha256": "552e2e1f9676e7175117f883798386cc3f200472be009fea5defae3d076d123f"
+  },
+  {
+   "file": "surface-baiter-6.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 6,
+   "width": 456,
+   "height": 475,
+   "bytes": 80178,
+   "sha256": "401b2c51016a11532f31708fa598eb9b0d4e5e6fb3b0022f47efb745abb93bdb"
+  },
+  {
+   "file": "surface-baiter-7.webp",
+   "realm": "surface",
+   "type": "baiter",
+   "level": 7,
+   "width": 476,
+   "height": 490,
+   "bytes": 86014,
+   "sha256": "b1a2deee51f81a87cf72967171c5bf22400b457a35973dd7a5c61aef6f64a0e6"
+  },
+  {
+   "file": "surface-flinger-2.webp",
+   "realm": "surface",
+   "type": "flinger",
+   "level": 2,
+   "width": 481,
+   "height": 551,
+   "bytes": 102168,
+   "sha256": "a886f9dac01165e25334df8d70725cf1a51dbe30a935d38100129849aed626bd"
+  },
+  {
+   "file": "surface-flinger-3.webp",
+   "realm": "surface",
+   "type": "flinger",
+   "level": 3,
+   "width": 497,
+   "height": 566,
+   "bytes": 120842,
+   "sha256": "a765bfe852bef430a10671abd3680f7382e848e651c7c2e08b73af57d1e5b76a"
+  },
+  {
+   "file": "surface-flinger-4.webp",
+   "realm": "surface",
+   "type": "flinger",
+   "level": 4,
+   "width": 523,
+   "height": 598,
+   "bytes": 132760,
+   "sha256": "0539285a9a310a68a3c0891d765099b44c05849bb00d532d413fc8e6a25c841f"
+  },
+  {
+   "file": "surface-flinger-5.webp",
+   "realm": "surface",
+   "type": "flinger",
+   "level": 5,
+   "width": 568,
+   "height": 606,
+   "bytes": 167910,
+   "sha256": "7b6b17fce10bf0f477476c1873a945d76856e96642e5f588cd661b4509e3aaf7"
+  },
+  {
+   "file": "surface-locker-2.webp",
+   "realm": "surface",
+   "type": "locker",
+   "level": 2,
+   "width": 334,
+   "height": 491,
+   "bytes": 78262,
+   "sha256": "1c2454e2008e719ea67ab4df9ed823e60294039505ec3f4adf7b5eca61d6d06f"
+  },
+  {
+   "file": "surface-locker-3.webp",
+   "realm": "surface",
+   "type": "locker",
+   "level": 3,
+   "width": 383,
+   "height": 534,
+   "bytes": 98580,
+   "sha256": "00389164d1984c9bdcb67e38c03deb6e73f54ee35d1bb9c4b67217d787083511"
+  },
+  {
+   "file": "surface-locker-4.webp",
+   "realm": "surface",
+   "type": "locker",
+   "level": 4,
+   "width": 392,
+   "height": 541,
+   "bytes": 104632,
+   "sha256": "ed6b4eb7670cb379bef6c275a052bce0b1d0121f4a6265313285ca58e869f5c0"
+  },
+  {
+   "file": "surface-locker-5.webp",
+   "realm": "surface",
+   "type": "locker",
+   "level": 5,
+   "width": 466,
+   "height": 567,
+   "bytes": 140806,
+   "sha256": "425d46f5be1dff0e8ebbcf54e0f82221a15ed44487baddacddbe1ba89d43067e"
+  },
+  {
+   "file": "surface-juicer-2.webp",
+   "realm": "surface",
+   "type": "juicer",
+   "level": 2,
+   "width": 520,
+   "height": 497,
+   "bytes": 96112,
+   "sha256": "e4f79850ff9dc66f60e43b3afc69431ecf9bfd5d4dd004af8fccd45fcc5be0ce"
+  },
+  {
+   "file": "surface-juicer-3.webp",
+   "realm": "surface",
+   "type": "juicer",
+   "level": 3,
+   "width": 515,
+   "height": 513,
+   "bytes": 106734,
+   "sha256": "73e34b3d89b7472ce75811ff4401af8e3513b5de32daba0fbc78654b6861204f"
+  },
+  {
+   "file": "surface-juicer-4.webp",
+   "realm": "surface",
+   "type": "juicer",
+   "level": 4,
+   "width": 542,
+   "height": 552,
+   "bytes": 121308,
+   "sha256": "bad02a15e8b74cae7ad32ec69ff40a7404f0b501b299df1ff2c228001c7bd13b"
+  },
+  {
+   "file": "surface-juicer-5.webp",
+   "realm": "surface",
+   "type": "juicer",
+   "level": 5,
+   "width": 576,
+   "height": 584,
+   "bytes": 145974,
+   "sha256": "2267a371fff8b23eff0ec69be3f188f792c75a51e0f08997533d65685474c58b"
+  },
+  {
+   "file": "surface-laser-2.webp",
+   "realm": "surface",
+   "type": "laser",
+   "level": 2,
+   "width": 384,
+   "height": 476,
+   "bytes": 71864,
+   "sha256": "202b7cd682d4ae252a65663477f3aa2d5ef5fa8e82890991cfd7df8caeac6899"
+  },
+  {
+   "file": "surface-laser-3.webp",
+   "realm": "surface",
+   "type": "laser",
+   "level": 3,
+   "width": 420,
+   "height": 507,
+   "bytes": 84314,
+   "sha256": "38366a5cf0601f84adba837a9c9f5b2b1b2546177fcd91ad605cf12408f6aa82"
+  },
+  {
+   "file": "surface-laser-4.webp",
+   "realm": "surface",
+   "type": "laser",
+   "level": 4,
+   "width": 462,
+   "height": 560,
+   "bytes": 108292,
+   "sha256": "962e3c30d109c0525768a8c911051941eee9c00b52e7e03b0186fa03951af52b"
+  },
+  {
+   "file": "surface-laser-5.webp",
+   "realm": "surface",
+   "type": "laser",
+   "level": 5,
+   "width": 499,
+   "height": 587,
+   "bytes": 122036,
+   "sha256": "87804da8465aa177350b4e25ac1ebe3a766892249d06e55c4fae090ded5d0f4a"
+  },
+  {
+   "file": "surface-aerial-2.webp",
+   "realm": "surface",
+   "type": "aerial",
+   "level": 2,
+   "width": 347,
+   "height": 514,
+   "bytes": 71770,
+   "sha256": "8bbf5657e88cb00e2e1dcad42dcae920958d680be73f4749ccfadf5a56f3edb4"
+  },
+  {
+   "file": "surface-aerial-3.webp",
+   "realm": "surface",
+   "type": "aerial",
+   "level": 3,
+   "width": 394,
+   "height": 548,
+   "bytes": 88788,
+   "sha256": "1add2d91e81fec6ab771266c1582f34b4bd500b759a923fead986f9b0b44cb00"
+  },
+  {
+   "file": "surface-aerial-4.webp",
+   "realm": "surface",
+   "type": "aerial",
+   "level": 4,
+   "width": 423,
+   "height": 578,
+   "bytes": 98300,
+   "sha256": "c19547249aedc54e6f5135dcacb375a9e903fb7237b68681bbede85db3c3ba18"
+  },
+  {
+   "file": "surface-aerial-5.webp",
+   "realm": "surface",
+   "type": "aerial",
+   "level": 5,
+   "width": 468,
+   "height": 588,
+   "bytes": 132038,
+   "sha256": "5d14ead874d2074478154da99b73275432c7a2db78761f593549f5b58cdafd89"
+  },
+  {
+   "file": "surface-bunker-2.webp",
+   "realm": "surface",
+   "type": "bunker",
+   "level": 2,
+   "width": 535,
+   "height": 535,
+   "bytes": 91590,
+   "sha256": "869ee8f259d5fd26d961b59ffa553b48755fd7086f20a15d4eddab2eedea3c58"
+  },
+  {
+   "file": "surface-bunker-3.webp",
+   "realm": "surface",
+   "type": "bunker",
+   "level": 3,
+   "width": 534,
+   "height": 537,
+   "bytes": 103546,
+   "sha256": "74759177ca69e12730c67b03d6d5221799eca29451e7f8438a50e507fc09edda"
+  },
+  {
+   "file": "surface-bunker-4.webp",
+   "realm": "surface",
+   "type": "bunker",
+   "level": 4,
+   "width": 566,
+   "height": 606,
+   "bytes": 125810,
+   "sha256": "33bba11a97d7b059b4e2ad6e0f06edb1baf11f7557d04db8741a3351706ede5b"
+  },
+  {
+   "file": "surface-bunker-5.webp",
+   "realm": "surface",
+   "type": "bunker",
+   "level": 5,
+   "width": 585,
+   "height": 611,
+   "bytes": 146016,
+   "sha256": "a17e6c4e5abea516017fe7cea83dbde75eff60e718daa00392ef7ba468c2a17a"
+  },
+  {
+   "file": "surface-trap-2.webp",
+   "realm": "surface",
+   "type": "trap",
+   "level": 2,
+   "width": 505,
+   "height": 407,
+   "bytes": 60336,
+   "sha256": "f91123792a92065e101b7ee8f5a9b194ee2d790e2a18201ee92b29db9faa0619"
+  },
+  {
+   "file": "surface-trap-3.webp",
+   "realm": "surface",
+   "type": "trap",
+   "level": 3,
+   "width": 536,
+   "height": 432,
+   "bytes": 73076,
+   "sha256": "eb4ff813e6b6f13ccb88436f019d41db0d4aaacc19c49a230b165b920672f1af"
+  },
+  {
+   "file": "surface-trap-4.webp",
+   "realm": "surface",
+   "type": "trap",
+   "level": 4,
+   "width": 558,
+   "height": 493,
+   "bytes": 91922,
+   "sha256": "a2054ad0a1304acc19ec510b19d8c5f0a0175760c5e515e7a27c119e438c0fdf"
+  },
+  {
+   "file": "surface-trap-5.webp",
+   "realm": "surface",
+   "type": "trap",
+   "level": 5,
+   "width": 602,
+   "height": 520,
+   "bytes": 107204,
+   "sha256": "bedc991726916dbeb610b4d83dc66845e826b36cf9f701dff1df263223f2a31e"
+  },
+  {
+   "file": "surface-lab-2.webp",
+   "realm": "surface",
+   "type": "lab",
+   "level": 2,
+   "width": 489,
+   "height": 529,
+   "bytes": 106686,
+   "sha256": "6011097e96e88c36153aabfa318f3d8688d30151590da2c9f8f23bbafbd7a39c"
+  },
+  {
+   "file": "surface-lab-3.webp",
+   "realm": "surface",
+   "type": "lab",
+   "level": 3,
+   "width": 508,
+   "height": 541,
+   "bytes": 116986,
+   "sha256": "b6c0e6f9f2b52d378dee4be99b3909a16e96ebf6ad4b3a18254bc4e19aa0978b"
+  },
+  {
+   "file": "surface-catapult-2.webp",
+   "realm": "surface",
+   "type": "catapult",
+   "level": 2,
+   "width": 453,
+   "height": 467,
+   "bytes": 79312,
+   "sha256": "02f1df2cf345d7322ea66172e17eebb691ddda4c95bee1a80ad53f3dabc19907"
+  },
+  {
+   "file": "surface-catapult-3.webp",
+   "realm": "surface",
+   "type": "catapult",
+   "level": 3,
+   "width": 521,
+   "height": 534,
+   "bytes": 105180,
+   "sha256": "b7d32cac556f7cd991679ff11d02c7063aecb2172598cdcf95bb5ef121ccd9c0"
+  },
+  {
+   "file": "surface-catapult-4.webp",
+   "realm": "surface",
+   "type": "catapult",
+   "level": 4,
+   "width": 555,
+   "height": 591,
+   "bytes": 125114,
+   "sha256": "3e8f3e5125902f72e4af256d0e154895174084dd86e31116e462e89f12c6de9d"
+  },
+  {
+   "file": "surface-championcage-2.webp",
+   "realm": "surface",
+   "type": "championcage",
+   "level": 2,
+   "width": 549,
+   "height": 462,
+   "bytes": 112496,
+   "sha256": "7a6a216f40bdf27fd8361e3f91360d48b187e9a379ec512fa39920314d81eda1"
+  },
+  {
+   "file": "surface-championcage-3.webp",
+   "realm": "surface",
+   "type": "championcage",
+   "level": 3,
+   "width": 586,
+   "height": 480,
+   "bytes": 129466,
+   "sha256": "fff894adbedeeaf2a42f64078a645a752f6aa8c5f81900603472df647725fb3f"
+  },
+  {
+   "file": "surface-championcage-4.webp",
+   "realm": "surface",
+   "type": "championcage",
+   "level": 4,
+   "width": 587,
+   "height": 505,
+   "bytes": 139612,
+   "sha256": "e262b029630da70d3871632016103a94d56503abde6616bf40dc30a8d142fcfd"
+  },
+  {
+   "file": "surface-championcage-5.webp",
+   "realm": "surface",
+   "type": "championcage",
+   "level": 5,
+   "width": 615,
+   "height": 522,
+   "bytes": 165124,
+   "sha256": "5ebcbc24b253bf4663c5689c8107abb10d9efb2a0eeb46d0b6754759b6c2640d"
+  },
+  {
+   "file": "surface-championchamber-2.webp",
+   "realm": "surface",
+   "type": "championchamber",
+   "level": 2,
+   "width": 470,
+   "height": 458,
+   "bytes": 82130,
+   "sha256": "f7ebb2d4e575b5c6e7f9c1d920f3f071a33823c05e573798fc70f398aa65eff6"
+  },
+  {
+   "file": "surface-championchamber-3.webp",
+   "realm": "surface",
+   "type": "championchamber",
+   "level": 3,
+   "width": 521,
+   "height": 483,
+   "bytes": 98284,
+   "sha256": "3c951975b41e016222a0c7a09bdec627a60f481cd8c3c74f4051879c3c68b388"
+  },
+  {
+   "file": "surface-championchamber-4.webp",
+   "realm": "surface",
+   "type": "championchamber",
+   "level": 4,
+   "width": 582,
+   "height": 551,
+   "bytes": 125332,
+   "sha256": "8d18ad0b3735595dbc6ad36f78f073cc2a5569734d0a972d5769f2fe11ee3b92"
+  },
+  {
+   "file": "surface-championchamber-5.webp",
+   "realm": "surface",
+   "type": "championchamber",
+   "level": 5,
+   "width": 620,
+   "height": 582,
+   "bytes": 156682,
+   "sha256": "5ca5fcb4abe105f70d7fe02db569e460cc281cf241319604dc479eae99ee24f9"
+  },
+  {
+   "file": "surface-maproom-2.webp",
+   "realm": "surface",
+   "type": "maproom",
+   "level": 2,
+   "width": 413,
+   "height": 543,
+   "bytes": 103514,
+   "sha256": "6f8dcf3531c6f83fd450e87eb9071c25c73b65c0f197af0bb6973ec015ce771e"
+  },
+  {
+   "file": "surface-maproom-3.webp",
+   "realm": "surface",
+   "type": "maproom",
+   "level": 3,
+   "width": 478,
+   "height": 579,
+   "bytes": 129718,
+   "sha256": "32a24a1b8d00adf67e7ee2d97a490d282ad90f108be67aa1436742dfc8c968cb"
+  },
+  {
+   "file": "surface-outpost-2.webp",
+   "realm": "surface",
+   "type": "outpost",
+   "level": 2,
+   "width": 504,
+   "height": 494,
+   "bytes": 102496,
+   "sha256": "de542ea9a57c0eba430760b5003ccea1d9019f78535b5ce3dab083801d1cdd98"
+  },
+  {
+   "file": "surface-outpost-3.webp",
+   "realm": "surface",
+   "type": "outpost",
+   "level": 3,
+   "width": 556,
+   "height": 545,
+   "bytes": 130382,
+   "sha256": "4582cff7e7e044306db666b9f201475820188301a93d44ba7c6506420e35ed42"
+  },
+  {
+   "file": "surface-outpost-4.webp",
+   "realm": "surface",
+   "type": "outpost",
+   "level": 4,
+   "width": 542,
+   "height": 578,
+   "bytes": 138308,
+   "sha256": "d092174e82cc30ad3a2891bb297a62abb05da15f2fdbf0533a33889f17774274"
+  },
+  {
+   "file": "surface-outpost-5.webp",
+   "realm": "surface",
+   "type": "outpost",
+   "level": 5,
+   "width": 586,
+   "height": 592,
+   "bytes": 169838,
+   "sha256": "9e767166fc2cdbe546d17865353dfaa49247fcdf054689ce7f9cdc2c21ca7770"
+  },
+  {
+   "file": "surface-stronghold-2.webp",
+   "realm": "surface",
+   "type": "stronghold",
+   "level": 2,
+   "width": 427,
+   "height": 496,
+   "bytes": 88564,
+   "sha256": "3b7966a52c0123a5fd2303a64582597f28cff31fad4bfd2b7840ac30e0aaf1bc"
+  },
+  {
+   "file": "surface-stronghold-3.webp",
+   "realm": "surface",
+   "type": "stronghold",
+   "level": 3,
+   "width": 483,
+   "height": 525,
+   "bytes": 112316,
+   "sha256": "fa684a05631340588a64360d3b10c490c4b42c35256082a27ae0772bb899fd90"
+  },
+  {
+   "file": "surface-outpostdefender-2.webp",
+   "realm": "surface",
+   "type": "outpostdefender",
+   "level": 2,
+   "width": 429,
+   "height": 459,
+   "bytes": 78692,
+   "sha256": "cd01e0d35fee96a5aa44e37e885cda2a54e74596720962b6490f20a9a23a22d0"
+  },
+  {
+   "file": "surface-outpostdefender-3.webp",
+   "realm": "surface",
+   "type": "outpostdefender",
+   "level": 3,
+   "width": 486,
+   "height": 488,
+   "bytes": 99632,
+   "sha256": "851bc26422ec076653f69f7409ba91ccd1b9b02ca2afb69a8d2f2082edcaa771"
+  },
+  {
+   "file": "surface-siegelab-2.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 2,
+   "width": 456,
+   "height": 558,
+   "bytes": 93658,
+   "sha256": "2dd56cce9558a1077f6d8d45fd435fa8e0ea80792eb6399a5313de75201d2142"
+  },
+  {
+   "file": "surface-siegelab-3.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 3,
+   "width": 354,
+   "height": 452,
+   "bytes": 67842,
+   "sha256": "ceb91daa1cd2ce7c1a6095b6b0511a1dad065acf8cff17204d8cecef0dd4602c"
+  },
+  {
+   "file": "surface-siegelab-4.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 4,
+   "width": 375,
+   "height": 454,
+   "bytes": 77724,
+   "sha256": "2a6f392dd49106ba08764c0152e5735184df0ad92b2092c4dd11ef02d3bd0136"
+  },
+  {
+   "file": "surface-siegelab-5.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 5,
+   "width": 504,
+   "height": 560,
+   "bytes": 112132,
+   "sha256": "73e88539a4e5f800eee4ce31d0309d2bfcaf7ff7c63996b5db8511d5a12c358a"
+  },
+  {
+   "file": "surface-siegelab-6.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 6,
+   "width": 402,
+   "height": 459,
+   "bytes": 87192,
+   "sha256": "f2a699bc61aa1ff253f1a68f39327dd6953df79cc52f15c5f860f2d5dbd489d8"
+  },
+  {
+   "file": "surface-siegelab-7.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 7,
+   "width": 552,
+   "height": 579,
+   "bytes": 135954,
+   "sha256": "6fae3cbfcf1cdfb3b5fef2936323e17c0a1b2c26f7567ca9ef672fb565a5d6b2"
+  },
+  {
+   "file": "surface-siegelab-8.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 8,
+   "width": 439,
+   "height": 497,
+   "bytes": 105668,
+   "sha256": "147c740fd395b27e86022bd4eddf2b4a7a4135975ead23ed87b7789763a09e72"
+  },
+  {
+   "file": "surface-siegelab-9.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 9,
+   "width": 565,
+   "height": 597,
+   "bytes": 156854,
+   "sha256": "011812aeeafdc3afc52701575364f901c315a62f07d8a6f74d63f1b8f8e6ae16"
+  },
+  {
+   "file": "surface-siegelab-10.webp",
+   "realm": "surface",
+   "type": "siegelab",
+   "level": 10,
+   "width": 447,
+   "height": 505,
+   "bytes": 108886,
+   "sha256": "a198a74312620cd4e5ee664870378a4295d111189b117372ff9dd104e89a7b81"
+  },
+  {
+   "file": "surface-railgun-2.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 2,
+   "width": 539,
+   "height": 478,
+   "bytes": 82318,
+   "sha256": "2bb7f7c282eef591454f4f20609acffbffa617f7afbca21da79dc74b980b2a8b"
+  },
+  {
+   "file": "surface-railgun-3.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 3,
+   "width": 568,
+   "height": 483,
+   "bytes": 98178,
+   "sha256": "47e2264a320463989cc2956a579a52603038178b993e2a2ab385d9b4eeedd62d"
+  },
+  {
+   "file": "surface-railgun-4.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 4,
+   "width": 557,
+   "height": 495,
+   "bytes": 94434,
+   "sha256": "ba17a63d2d00b3c1e8d302be3d4c56e8bcc48e8c5516af75a5e0acf80ddbe68f"
+  },
+  {
+   "file": "surface-railgun-5.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 5,
+   "width": 586,
+   "height": 511,
+   "bytes": 105740,
+   "sha256": "b45ccd4a9f7ea223fffe45de9cce7a58da76776d764bfa1b7deb795438d0f6f6"
+  },
+  {
+   "file": "surface-railgun-6.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 6,
+   "width": 584,
+   "height": 536,
+   "bytes": 107292,
+   "sha256": "542f383064470aaaf52f72686fcb372cbe0258ff10d13e8b99f94d6e173ba7a3"
+  },
+  {
+   "file": "surface-railgun-7.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 7,
+   "width": 607,
+   "height": 564,
+   "bytes": 124008,
+   "sha256": "79a78bedeff55ab44f3a88cb63bee7b89177e4d07f59c200ea5da5fc8b589dc4"
+  },
+  {
+   "file": "surface-railgun-8.webp",
+   "realm": "surface",
+   "type": "railgun",
+   "level": 8,
+   "width": 605,
+   "height": 564,
+   "bytes": 128658,
+   "sha256": "f5809f6d06b73f26e77b8a7122e3ced038d1db91192c52ff5f57ba23b98f9357"
+  },
+  {
+   "file": "surface-quaketower-2.webp",
+   "realm": "surface",
+   "type": "quaketower",
+   "level": 2,
+   "width": 281,
+   "height": 402,
+   "bytes": 52982,
+   "sha256": "5e8e418ae3d848c69f622ed65360e88e8ee1bebbfb60300f96512f037f41289a"
+  },
+  {
+   "file": "surface-quaketower-3.webp",
+   "realm": "surface",
+   "type": "quaketower",
+   "level": 3,
+   "width": 299,
+   "height": 436,
+   "bytes": 61788,
+   "sha256": "642ef63ebf971ab73e8d1b23eca7754f342bb7449605da1bab8cf43b2e1dae24"
+  },
+  {
+   "file": "surface-quaketower-4.webp",
+   "realm": "surface",
+   "type": "quaketower",
+   "level": 4,
+   "width": 315,
+   "height": 443,
+   "bytes": 66576,
+   "sha256": "48eefa3247d95e5d06dfbf11606f3fde2a8b2cbb3ca06e3cd6ac098759685984"
+  },
+  {
+   "file": "surface-quaketower-5.webp",
+   "realm": "surface",
+   "type": "quaketower",
+   "level": 5,
+   "width": 351,
+   "height": 509,
+   "bytes": 80910,
+   "sha256": "a61f31636e5a94071b0b2d398401be0056c71213d506a8f543e45c1fcd1f7aa5"
+  },
+  {
+   "file": "surface-quaketower-6.webp",
+   "realm": "surface",
+   "type": "quaketower",
+   "level": 6,
+   "width": 396,
+   "height": 527,
+   "bytes": 98090,
+   "sha256": "bad3b74c2652587333a5aaab4bdf3299ee43851840cefaedefb300dee78eba5f"
+  },
+  {
+   "file": "surface-infernocannon-2.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 2,
+   "width": 344,
+   "height": 441,
+   "bytes": 57076,
+   "sha256": "d7571503ebbc704b386caa7850a8a9cad47a28f2a861387e8fda63d1969ecf13"
+  },
+  {
+   "file": "surface-infernocannon-3.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 3,
+   "width": 343,
+   "height": 447,
+   "bytes": 63830,
+   "sha256": "6be9ebd2362e7217b7fcd035c79877fc0a530391d704d298203db17854e6e9b4"
+  },
+  {
+   "file": "surface-infernocannon-4.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 4,
+   "width": 343,
+   "height": 452,
+   "bytes": 67284,
+   "sha256": "159169fedd4ec5d412a2614ede209ffd88df8804ccf7a919b09e63a15e946614"
+  },
+  {
+   "file": "surface-infernocannon-5.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 5,
+   "width": 347,
+   "height": 457,
+   "bytes": 71868,
+   "sha256": "7849eb698ad1e9b517779dfd46aa19ff3bd1b11e9dad503c069c6901a696da1f"
+  },
+  {
+   "file": "surface-infernocannon-6.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 6,
+   "width": 357,
+   "height": 461,
+   "bytes": 76250,
+   "sha256": "0901bf410eb347657241572753b7ac83d1fba4b770aca99e11408ba85dd4b02b"
+  },
+  {
+   "file": "surface-infernocannon-7.webp",
+   "realm": "surface",
+   "type": "infernocannon",
+   "level": 7,
+   "width": 394,
+   "height": 479,
+   "bytes": 87718,
+   "sha256": "19abcbca823b73e7cb91ee60803f6036f07c6e72876152e2a2450e0ed8a69f02"
+  },
+  {
+   "file": "surface-magmatower-2.webp",
+   "realm": "surface",
+   "type": "magmatower",
+   "level": 2,
+   "width": 356,
+   "height": 460,
+   "bytes": 60602,
+   "sha256": "50fd67c10c9331fda594854603e6e81c5df6abad5ad49593c8a785e3b4dd55d4"
+  },
+  {
+   "file": "surface-magmatower-3.webp",
+   "realm": "surface",
+   "type": "magmatower",
+   "level": 3,
+   "width": 369,
+   "height": 461,
+   "bytes": 68116,
+   "sha256": "2625fed4002069e7a86cbc45c597264549becab6d28852277c46a5583740e888"
+  },
+  {
+   "file": "surface-magmatower-4.webp",
+   "realm": "surface",
+   "type": "magmatower",
+   "level": 4,
+   "width": 381,
+   "height": 462,
+   "bytes": 72580,
+   "sha256": "776b141bc9077c8df5774beb22a062f52b156612d6f033f792a7ade6304763a7"
+  },
+  {
+   "file": "surface-magmatower-5.webp",
+   "realm": "surface",
+   "type": "magmatower",
+   "level": 5,
+   "width": 407,
+   "height": 485,
+   "bytes": 82908,
+   "sha256": "1b01aa51a8658e685712af2e1f375bb11cb55b8e01defb5830a2e84f5671ec5f"
+  },
+  {
+   "file": "surface-magmatower-6.webp",
+   "realm": "surface",
+   "type": "magmatower",
+   "level": 6,
+   "width": 429,
+   "height": 483,
+   "bytes": 90020,
+   "sha256": "6d84dd6c0efb8b41532716126c3a6dbcf2daacadd789c30967dabd8bd69a6411"
+  },
+  {
+   "file": "surface-spurtzcannon-2.webp",
+   "realm": "surface",
+   "type": "spurtzcannon",
+   "level": 2,
+   "width": 379,
+   "height": 491,
+   "bytes": 69086,
+   "sha256": "395ea091f18255bbe55e63cc986d0e5b53d982af0ba9ac61e22a644f06f9aeff"
+  },
+  {
+   "file": "surface-spurtzcannon-3.webp",
+   "realm": "surface",
+   "type": "spurtzcannon",
+   "level": 3,
+   "width": 414,
+   "height": 509,
+   "bytes": 79570,
+   "sha256": "112db802334d17291d7e785efc34d97a2ddd5f3a6035e58cfb02c97c8013ffc4"
+  },
+  {
+   "file": "surface-spurtzcannon-4.webp",
+   "realm": "surface",
+   "type": "spurtzcannon",
+   "level": 4,
+   "width": 475,
+   "height": 527,
+   "bytes": 97992,
+   "sha256": "c71153519c45780cded50cb63ab047800ad06a4cba5571bd85a8f3de422abd77"
+  },
+  {
+   "file": "surface-spurtzcannon-5.webp",
+   "realm": "surface",
+   "type": "spurtzcannon",
+   "level": 5,
+   "width": 524,
+   "height": 566,
+   "bytes": 124450,
+   "sha256": "a98914fdf28eac5279ef835b76ff0a6ba711b071f40859b3f4e4a87d9185db55"
+  },
+  {
+   "file": "surface-diamondspurtz-2.webp",
+   "realm": "surface",
+   "type": "diamondspurtz",
+   "level": 2,
+   "width": 335,
+   "height": 439,
+   "bytes": 46964,
+   "sha256": "db8ba113fb48709ca903f5eddb7dadd586f6f3f10a628ea886d69c8a357d3998"
+  },
+  {
+   "file": "surface-diamondspurtz-3.webp",
+   "realm": "surface",
+   "type": "diamondspurtz",
+   "level": 3,
+   "width": 383,
+   "height": 477,
+   "bytes": 60610,
+   "sha256": "c97c28d594081aa08e7156b73109e02a5ce34dc1d30370479355601d5f874835"
+  },
+  {
+   "file": "surface-diamondspurtz-4.webp",
+   "realm": "surface",
+   "type": "diamondspurtz",
+   "level": 4,
+   "width": 461,
+   "height": 563,
+   "bytes": 82460,
+   "sha256": "b33ce89ddbea5850b306e5bf20d1d07829daa7ca03440e255ab311cf20fa949b"
+  },
+  {
+   "file": "surface-diamondspurtz-5.webp",
+   "realm": "surface",
+   "type": "diamondspurtz",
+   "level": 5,
+   "width": 520,
+   "height": 581,
+   "bytes": 102086,
+   "sha256": "4a290f5a6f5282953394614836a7d32a08b3197b7ed6d639ab09e64f51d3f929"
+  },
+  {
+   "file": "inferno-townhall-2.webp",
+   "realm": "inferno",
+   "type": "townhall",
+   "level": 2,
+   "width": 461,
+   "height": 420,
+   "bytes": 76844,
+   "sha256": "9a7b1605264fba75b905cf66509d4e3f9f5155d6e4ee07552bde3afbc27e7b63"
+  },
+  {
+   "file": "inferno-townhall-3.webp",
+   "realm": "inferno",
+   "type": "townhall",
+   "level": 3,
+   "width": 481,
+   "height": 437,
+   "bytes": 86342,
+   "sha256": "f36d872b1905b65ca4dd6356ce45cfee72b44e01c25cb1d16ed4d4316e836088"
+  },
+  {
+   "file": "inferno-townhall-4.webp",
+   "realm": "inferno",
+   "type": "townhall",
+   "level": 4,
+   "width": 494,
+   "height": 453,
+   "bytes": 93246,
+   "sha256": "280c9ca570d2d6f96d8b05bb782084c21676a2a4bfb413f93292ab5f5d6f5ca4"
+  },
+  {
+   "file": "inferno-townhall-5.webp",
+   "realm": "inferno",
+   "type": "townhall",
+   "level": 5,
+   "width": 493,
+   "height": 465,
+   "bytes": 96064,
+   "sha256": "304ae20beb24b5818f546fcd32899638e8814cd034c91487c084a7413bb92aae"
+  },
+  {
+   "file": "inferno-townhall-6.webp",
+   "realm": "inferno",
+   "type": "townhall",
+   "level": 6,
+   "width": 500,
+   "height": 468,
+   "bytes": 101716,
+   "sha256": "79718120f55dda4f90d93d6274a9212eb1a4c9e99d92f6145c0229296742ea1b"
+  },
+  {
+   "file": "inferno-twig-2.webp",
+   "realm": "inferno",
+   "type": "twig",
+   "level": 2,
+   "width": 568,
+   "height": 498,
+   "bytes": 128850,
+   "sha256": "0d7ce4321b8e4514d7730a05d07720110abc64e062238c8e1ee26f53a710faaf"
+  },
+  {
+   "file": "inferno-twig-3.webp",
+   "realm": "inferno",
+   "type": "twig",
+   "level": 3,
+   "width": 577,
+   "height": 502,
+   "bytes": 143254,
+   "sha256": "3f2b4a60a4c6ee67903a6d8c529fba2574602df1bb97f1ea5ce637370bcc0eaa"
+  },
+  {
+   "file": "inferno-twig-4.webp",
+   "realm": "inferno",
+   "type": "twig",
+   "level": 4,
+   "width": 617,
+   "height": 568,
+   "bytes": 165224,
+   "sha256": "e7e8d1a1537d7b81d6531e486301391df568c0e8f61e9107666298410a62beab"
+  },
+  {
+   "file": "inferno-twig-5.webp",
+   "realm": "inferno",
+   "type": "twig",
+   "level": 5,
+   "width": 644,
+   "height": 597,
+   "bytes": 182982,
+   "sha256": "f75a4c1afba9901c3dd24c1c8191535b2c158fca1e478c05d3d25d47eaea01e0"
+  },
+  {
+   "file": "inferno-pebble-2.webp",
+   "realm": "inferno",
+   "type": "pebble",
+   "level": 2,
+   "width": 569,
+   "height": 545,
+   "bytes": 113712,
+   "sha256": "b2db8ff9da5ce99ca1045675828898f462c93a7bfc30ebd3eeb88625404b7a04"
+  },
+  {
+   "file": "inferno-pebble-3.webp",
+   "realm": "inferno",
+   "type": "pebble",
+   "level": 3,
+   "width": 590,
+   "height": 554,
+   "bytes": 134330,
+   "sha256": "7d41f5e323c266f41c3e74bcca56ce57e98d671fdd595bf39ca6efcefc9d799d"
+  },
+  {
+   "file": "inferno-pebble-4.webp",
+   "realm": "inferno",
+   "type": "pebble",
+   "level": 4,
+   "width": 597,
+   "height": 601,
+   "bytes": 146492,
+   "sha256": "2750974bdde34527a14609bb7a448e16411b0496466ba343114618c56a5fcae3"
+  },
+  {
+   "file": "inferno-pebble-5.webp",
+   "realm": "inferno",
+   "type": "pebble",
+   "level": 5,
+   "width": 612,
+   "height": 620,
+   "bytes": 171438,
+   "sha256": "a189586e04df5ea430e03939aea38d1432fa2a5bc5519a57f85c4a72f1e69bb8"
+  },
+  {
+   "file": "inferno-putty-2.webp",
+   "realm": "inferno",
+   "type": "putty",
+   "level": 2,
+   "width": 550,
+   "height": 526,
+   "bytes": 116656,
+   "sha256": "0cbe7de4de27f5c7d79aebc357cf0b14e0265dc7cc610efc351cae50243550d9"
+  },
+  {
+   "file": "inferno-putty-3.webp",
+   "realm": "inferno",
+   "type": "putty",
+   "level": 3,
+   "width": 558,
+   "height": 552,
+   "bytes": 132804,
+   "sha256": "c0ba6bbac909607137e0d1325ba6f077c22de65c434ad93fa0bc08c769ca29ae"
+  },
+  {
+   "file": "inferno-putty-4.webp",
+   "realm": "inferno",
+   "type": "putty",
+   "level": 4,
+   "width": 562,
+   "height": 598,
+   "bytes": 152600,
+   "sha256": "f2b4ca53487c4052166ce9dbe75b4542675225f26912c5411c009440516e8c6b"
+  },
+  {
+   "file": "inferno-putty-5.webp",
+   "realm": "inferno",
+   "type": "putty",
+   "level": 5,
+   "width": 587,
+   "height": 607,
+   "bytes": 168816,
+   "sha256": "c3290e2aa1f51d42f0db416a24942ca22b6e302e89743e20f1a39d59ca5d3a38"
+  },
+  {
+   "file": "inferno-goo-2.webp",
+   "realm": "inferno",
+   "type": "goo",
+   "level": 2,
+   "width": 601,
+   "height": 535,
+   "bytes": 105126,
+   "sha256": "fd80a55d3a6adb9733d88e7db1bc4b7cd5c27ced7fe129fbf03096ceb7ab1616"
+  },
+  {
+   "file": "inferno-goo-3.webp",
+   "realm": "inferno",
+   "type": "goo",
+   "level": 3,
+   "width": 603,
+   "height": 530,
+   "bytes": 110898,
+   "sha256": "7a5ace29cfce61d1fa208a53cda2e5e626581d0171ac79e10495ec9494b44002"
+  },
+  {
+   "file": "inferno-goo-4.webp",
+   "realm": "inferno",
+   "type": "goo",
+   "level": 4,
+   "width": 613,
+   "height": 561,
+   "bytes": 123346,
+   "sha256": "d4211d8cad311dfea8c84080e99960351eb9f90187cf279865f3fb6347053577"
+  },
+  {
+   "file": "inferno-goo-5.webp",
+   "realm": "inferno",
+   "type": "goo",
+   "level": 5,
+   "width": 625,
+   "height": 569,
+   "bytes": 135880,
+   "sha256": "e55372d6b1613c5f827cc204b17bf0318ea6aae4cdc26f3c61a1575d3eb1714e"
+  },
+  {
+   "file": "inferno-storage-2.webp",
+   "realm": "inferno",
+   "type": "storage",
+   "level": 2,
+   "width": 564,
+   "height": 541,
+   "bytes": 101156,
+   "sha256": "7bb5accf3cbc4b5c1761cf2072c3e93ad643ce1f7f864c1d147587d2ec719a0a"
+  },
+  {
+   "file": "inferno-storage-3.webp",
+   "realm": "inferno",
+   "type": "storage",
+   "level": 3,
+   "width": 581,
+   "height": 547,
+   "bytes": 105090,
+   "sha256": "1f9f41b5c4f7ab8c87d63aeeb267d3b87494eab2361fc3ff73f56287299fac3e"
+  },
+  {
+   "file": "inferno-storage-4.webp",
+   "realm": "inferno",
+   "type": "storage",
+   "level": 4,
+   "width": 563,
+   "height": 596,
+   "bytes": 127138,
+   "sha256": "365f049b7a7d02811461802d84d6911fd5764466fdd742aefc1d001061bff85f"
+  },
+  {
+   "file": "inferno-storage-5.webp",
+   "realm": "inferno",
+   "type": "storage",
+   "level": 5,
+   "width": 583,
+   "height": 607,
+   "bytes": 138276,
+   "sha256": "7adc0bbd264e55621d102e5b814ed2b08fc34154264a536da0ed1a1341d7a791"
+  },
+  {
+   "file": "inferno-hatchery-2.webp",
+   "realm": "inferno",
+   "type": "hatchery",
+   "level": 2,
+   "width": 522,
+   "height": 561,
+   "bytes": 108372,
+   "sha256": "65b03fcfdea7982e09b258c3cce52e5792b168222a1d7afcb3fa61794f5566b5"
+  },
+  {
+   "file": "inferno-hatchery-3.webp",
+   "realm": "inferno",
+   "type": "hatchery",
+   "level": 3,
+   "width": 566,
+   "height": 567,
+   "bytes": 125578,
+   "sha256": "9fd9975366a43172be00ae7374a5bf0cc6d26b49d19e28e7c2c5dcdfef4e3084"
+  },
+  {
+   "file": "inferno-hatchery-4.webp",
+   "realm": "inferno",
+   "type": "hatchery",
+   "level": 4,
+   "width": 569,
+   "height": 585,
+   "bytes": 132594,
+   "sha256": "75f4dd8f8780171d3b55942747d56d83f84e62637a9b04bd3af12ac769ee95ba"
+  },
+  {
+   "file": "inferno-hatchery-5.webp",
+   "realm": "inferno",
+   "type": "hatchery",
+   "level": 5,
+   "width": 602,
+   "height": 606,
+   "bytes": 155226,
+   "sha256": "c72da8cc06cad6a5840932b7eb0857b098a50ac2f140eb1d482da140f06b1558"
+  },
+  {
+   "file": "inferno-housing-2.webp",
+   "realm": "inferno",
+   "type": "housing",
+   "level": 2,
+   "width": 497,
+   "height": 364,
+   "bytes": 73004,
+   "sha256": "9028675060aa243dbd691304779fac14aa619849f13409e4d793fa70b585f1ef"
+  },
+  {
+   "file": "inferno-housing-3.webp",
+   "realm": "inferno",
+   "type": "housing",
+   "level": 3,
+   "width": 491,
+   "height": 372,
+   "bytes": 80058,
+   "sha256": "f3de2fe2e22e7b292c890f7dc283780411332f10399338328677d8b69de70eb9"
+  },
+  {
+   "file": "inferno-housing-4.webp",
+   "realm": "inferno",
+   "type": "housing",
+   "level": 4,
+   "width": 508,
+   "height": 376,
+   "bytes": 83756,
+   "sha256": "60b52a38914735456b821055939343b6d49258861e737d0ee797fb316b3893c8"
+  },
+  {
+   "file": "inferno-housing-5.webp",
+   "realm": "inferno",
+   "type": "housing",
+   "level": 5,
+   "width": 513,
+   "height": 397,
+   "bytes": 92352,
+   "sha256": "8d98a2d51ad8b89a4a9654934a9d705e4522b0519f9f767dc4516d771d042b23"
+  },
+  {
+   "file": "inferno-housing-6.webp",
+   "realm": "inferno",
+   "type": "housing",
+   "level": 6,
+   "width": 507,
+   "height": 393,
+   "bytes": 95126,
+   "sha256": "c73469e310448c2fa9d774e0002fd2b3b37dca5446f07b50531a62d6a12bab8a"
+  },
+  {
+   "file": "inferno-flinger-2.webp",
+   "realm": "inferno",
+   "type": "flinger",
+   "level": 2,
+   "width": 513,
+   "height": 572,
+   "bytes": 121156,
+   "sha256": "f1daa9259a4772dee0f45951c3a5eb9a8784c47a59020237ae33d644ddff675b"
+  },
+  {
+   "file": "inferno-flinger-3.webp",
+   "realm": "inferno",
+   "type": "flinger",
+   "level": 3,
+   "width": 531,
+   "height": 576,
+   "bytes": 133886,
+   "sha256": "ced45bd155eb1a45e8c543b66cdc8dbc0990c40b5fc57f9402ec28a8e9553f58"
+  },
+  {
+   "file": "inferno-flinger-4.webp",
+   "realm": "inferno",
+   "type": "flinger",
+   "level": 4,
+   "width": 551,
+   "height": 618,
+   "bytes": 153508,
+   "sha256": "33bfb965df9a9e6ee245a966800b751c7221348405cae08a6c6b99459ff0436f"
+  },
+  {
+   "file": "inferno-flinger-5.webp",
+   "realm": "inferno",
+   "type": "flinger",
+   "level": 5,
+   "width": 589,
+   "height": 636,
+   "bytes": 180592,
+   "sha256": "5972bf357d2025f52b09f26143e37196fe2e6874f7c89c5744ee9d9f98daa8b1"
+  },
+  {
+   "file": "inferno-wall-2.webp",
+   "realm": "inferno",
+   "type": "wall",
+   "level": 2,
+   "width": 632,
+   "height": 487,
+   "bytes": 104628,
+   "sha256": "a1ae7d54bf57f47ac978f7bc3d3c405cc63748c4c9795c1086826174e14ec8b4"
+  },
+  {
+   "file": "inferno-wall-3.webp",
+   "realm": "inferno",
+   "type": "wall",
+   "level": 3,
+   "width": 637,
+   "height": 490,
+   "bytes": 112370,
+   "sha256": "fd7314ea15e777fb2376161e4a115bd1a193c993f39734b34cfc2020c247f225"
+  },
+  {
+   "file": "inferno-wall-4.webp",
+   "realm": "inferno",
+   "type": "wall",
+   "level": 4,
+   "width": 636,
+   "height": 518,
+   "bytes": 123704,
+   "sha256": "7e2f9768f17c3ebc60c550fc6b44972e4d4192129631ea2c2d79458a4121ad99"
+  },
+  {
+   "file": "inferno-wall-5.webp",
+   "realm": "inferno",
+   "type": "wall",
+   "level": 5,
+   "width": 638,
+   "height": 533,
+   "bytes": 134944,
+   "sha256": "0a925f9e9c15e8a8b969e134371be3792c57b7761b08d09b9b379426d4bb5d88"
+  },
+  {
+   "file": "inferno-sniper-2.webp",
+   "realm": "inferno",
+   "type": "sniper",
+   "level": 2,
+   "width": 365,
+   "height": 559,
+   "bytes": 89434,
+   "sha256": "e0c754b22d7f34ccfb5136f30466c3a36d3cc53f41c3c56e737f29a869a866f2"
+  },
+  {
+   "file": "inferno-sniper-3.webp",
+   "realm": "inferno",
+   "type": "sniper",
+   "level": 3,
+   "width": 387,
+   "height": 581,
+   "bytes": 99162,
+   "sha256": "14d39b6dd37c4c9311854981b049d2fc971de3af08a767d20f99634cdd464306"
+  },
+  {
+   "file": "inferno-sniper-4.webp",
+   "realm": "inferno",
+   "type": "sniper",
+   "level": 4,
+   "width": 466,
+   "height": 656,
+   "bytes": 127788,
+   "sha256": "27f4ed73100da8ebdf3a4b2ec889a77a6edd4aab64e7c2e55e14cdcfd5e8001c"
+  },
+  {
+   "file": "inferno-sniper-5.webp",
+   "realm": "inferno",
+   "type": "sniper",
+   "level": 5,
+   "width": 500,
+   "height": 681,
+   "bytes": 141508,
+   "sha256": "79db63b2a896accb81ad880b905b00860a4956142a1edf183b4c3d6f66c868a2"
+  },
+  {
+   "file": "inferno-locker-2.webp",
+   "realm": "inferno",
+   "type": "locker",
+   "level": 2,
+   "width": 588,
+   "height": 507,
+   "bytes": 107608,
+   "sha256": "e546afc9f3c88947b9d963e3753d4ebc0b7f5cf4681c4b78b53df71f8210ac5b"
+  },
+  {
+   "file": "inferno-locker-3.webp",
+   "realm": "inferno",
+   "type": "locker",
+   "level": 3,
+   "width": 612,
+   "height": 521,
+   "bytes": 122224,
+   "sha256": "bb5782bf449d3dd7be8f77bc61d3f410f241232d9f74c0a4ea8d19566df02c09"
+  },
+  {
+   "file": "inferno-locker-4.webp",
+   "realm": "inferno",
+   "type": "locker",
+   "level": 4,
+   "width": 614,
+   "height": 536,
+   "bytes": 127798,
+   "sha256": "6340ae669f8251d76fc5f13be6a4c7cf4d88cd6b9fc6d36153d9773d845e232b"
+  },
+  {
+   "file": "inferno-locker-5.webp",
+   "realm": "inferno",
+   "type": "locker",
+   "level": 5,
+   "width": 632,
+   "height": 562,
+   "bytes": 145130,
+   "sha256": "ba544d5e67b42f3e8711390783fe6a209dff467af49702b2215c2c93622b9bc7"
+  },
+  {
+   "file": "inferno-academy-2.webp",
+   "realm": "inferno",
+   "type": "academy",
+   "level": 2,
+   "width": 570,
+   "height": 551,
+   "bytes": 125390,
+   "sha256": "bb04241f1a377fd72f28b1e013ff43fc2e53c1f5ac44a4c42271a3eba5c2f83f"
+  },
+  {
+   "file": "inferno-academy-3.webp",
+   "realm": "inferno",
+   "type": "academy",
+   "level": 3,
+   "width": 587,
+   "height": 572,
+   "bytes": 141490,
+   "sha256": "10a8a75f9c6750e44448f0a1186078b8dd1e2af869fd7538c85ffb05b31abdb8"
+  },
+  {
+   "file": "inferno-academy-4.webp",
+   "realm": "inferno",
+   "type": "academy",
+   "level": 4,
+   "width": 605,
+   "height": 611,
+   "bytes": 162804,
+   "sha256": "e94d6acd4a4ecb92587b1ffdfa7e792548526870c01972516da4f3c29e6dfe8d"
+  },
+  {
+   "file": "inferno-academy-5.webp",
+   "realm": "inferno",
+   "type": "academy",
+   "level": 5,
+   "width": 620,
+   "height": 630,
+   "bytes": 177598,
+   "sha256": "781a001e2219fc4e0d72b01e2c0e1b1ea3a8d1044a28bd90ced5ad9cb06739a7"
+  },
+  {
+   "file": "inferno-infernocannon-2.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 2,
+   "width": 344,
+   "height": 441,
+   "bytes": 57076,
+   "sha256": "d7571503ebbc704b386caa7850a8a9cad47a28f2a861387e8fda63d1969ecf13"
+  },
+  {
+   "file": "inferno-infernocannon-3.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 3,
+   "width": 343,
+   "height": 447,
+   "bytes": 63830,
+   "sha256": "6be9ebd2362e7217b7fcd035c79877fc0a530391d704d298203db17854e6e9b4"
+  },
+  {
+   "file": "inferno-infernocannon-4.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 4,
+   "width": 343,
+   "height": 452,
+   "bytes": 67284,
+   "sha256": "159169fedd4ec5d412a2614ede209ffd88df8804ccf7a919b09e63a15e946614"
+  },
+  {
+   "file": "inferno-infernocannon-5.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 5,
+   "width": 347,
+   "height": 457,
+   "bytes": 71868,
+   "sha256": "7849eb698ad1e9b517779dfd46aa19ff3bd1b11e9dad503c069c6901a696da1f"
+  },
+  {
+   "file": "inferno-infernocannon-6.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 6,
+   "width": 357,
+   "height": 461,
+   "bytes": 76250,
+   "sha256": "0901bf410eb347657241572753b7ac83d1fba4b770aca99e11408ba85dd4b02b"
+  },
+  {
+   "file": "inferno-infernocannon-7.webp",
+   "realm": "inferno",
+   "type": "infernocannon",
+   "level": 7,
+   "width": 394,
+   "height": 479,
+   "bytes": 87718,
+   "sha256": "19abcbca823b73e7cb91ee60803f6036f07c6e72876152e2a2450e0ed8a69f02"
+  },
+  {
+   "file": "inferno-quaketower-2.webp",
+   "realm": "inferno",
+   "type": "quaketower",
+   "level": 2,
+   "width": 281,
+   "height": 402,
+   "bytes": 52982,
+   "sha256": "5e8e418ae3d848c69f622ed65360e88e8ee1bebbfb60300f96512f037f41289a"
+  },
+  {
+   "file": "inferno-quaketower-3.webp",
+   "realm": "inferno",
+   "type": "quaketower",
+   "level": 3,
+   "width": 299,
+   "height": 436,
+   "bytes": 61788,
+   "sha256": "642ef63ebf971ab73e8d1b23eca7754f342bb7449605da1bab8cf43b2e1dae24"
+  },
+  {
+   "file": "inferno-quaketower-4.webp",
+   "realm": "inferno",
+   "type": "quaketower",
+   "level": 4,
+   "width": 315,
+   "height": 443,
+   "bytes": 66576,
+   "sha256": "48eefa3247d95e5d06dfbf11606f3fde2a8b2cbb3ca06e3cd6ac098759685984"
+  },
+  {
+   "file": "inferno-quaketower-5.webp",
+   "realm": "inferno",
+   "type": "quaketower",
+   "level": 5,
+   "width": 351,
+   "height": 509,
+   "bytes": 80910,
+   "sha256": "a61f31636e5a94071b0b2d398401be0056c71213d506a8f543e45c1fcd1f7aa5"
+  },
+  {
+   "file": "inferno-quaketower-6.webp",
+   "realm": "inferno",
+   "type": "quaketower",
+   "level": 6,
+   "width": 396,
+   "height": 527,
+   "bytes": 98090,
+   "sha256": "bad3b74c2652587333a5aaab4bdf3299ee43851840cefaedefb300dee78eba5f"
+  },
+  {
+   "file": "inferno-magmatower-2.webp",
+   "realm": "inferno",
+   "type": "magmatower",
+   "level": 2,
+   "width": 356,
+   "height": 460,
+   "bytes": 60602,
+   "sha256": "50fd67c10c9331fda594854603e6e81c5df6abad5ad49593c8a785e3b4dd55d4"
+  },
+  {
+   "file": "inferno-magmatower-3.webp",
+   "realm": "inferno",
+   "type": "magmatower",
+   "level": 3,
+   "width": 369,
+   "height": 461,
+   "bytes": 68116,
+   "sha256": "2625fed4002069e7a86cbc45c597264549becab6d28852277c46a5583740e888"
+  },
+  {
+   "file": "inferno-magmatower-4.webp",
+   "realm": "inferno",
+   "type": "magmatower",
+   "level": 4,
+   "width": 381,
+   "height": 462,
+   "bytes": 72580,
+   "sha256": "776b141bc9077c8df5774beb22a062f52b156612d6f033f792a7ade6304763a7"
+  },
+  {
+   "file": "inferno-magmatower-5.webp",
+   "realm": "inferno",
+   "type": "magmatower",
+   "level": 5,
+   "width": 407,
+   "height": 485,
+   "bytes": 82908,
+   "sha256": "1b01aa51a8658e685712af2e1f375bb11cb55b8e01defb5830a2e84f5671ec5f"
+  },
+  {
+   "file": "inferno-magmatower-6.webp",
+   "realm": "inferno",
+   "type": "magmatower",
+   "level": 6,
+   "width": 429,
+   "height": 483,
+   "bytes": 90020,
+   "sha256": "6d84dd6c0efb8b41532716126c3a6dbcf2daacadd789c30967dabd8bd69a6411"
+  },
+  {
+   "file": "surface-townhall-6.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 6,
+   "width": 889,
+   "height": 1144,
+   "bytes": 342386,
+   "sha256": "d35350d4bb72e6d6de619584361fd53405fab723e8eb4fc2ad6edc00c01494e6"
+  },
+  {
+   "file": "surface-townhall-7.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 7,
+   "width": 992,
+   "height": 1144,
+   "bytes": 364882,
+   "sha256": "08d09949a03c2f9729e98e7781d0bfdf49278982e816a54e37b5c178cbb8b8c0"
+  },
+  {
+   "file": "surface-townhall-8.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 8,
+   "width": 953,
+   "height": 1144,
+   "bytes": 372706,
+   "sha256": "6a505bf60adf69bec9822b82829690e63062af05067713671892c82a0b96164d"
+  },
+  {
+   "file": "surface-townhall-9.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 9,
+   "width": 913,
+   "height": 1144,
+   "bytes": 363966,
+   "sha256": "511fb463e62012e4c49de653547474291239f9cf2899370883de7414b85dd98b"
+  },
+  {
+   "file": "surface-townhall-10.webp",
+   "realm": "surface",
+   "type": "townhall",
+   "level": 10,
+   "width": 893,
+   "height": 1144,
+   "bytes": 367040,
+   "sha256": "ae5e430e74d9cfa286e51cb98e460eb2a7e5027fcacc88cbef5101d9dec40aec"
+  }
+ ]
+}
