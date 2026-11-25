@@ -6,6 +6,16 @@ A new HTML5 Canvas / PHP / MySQL implementation built from a study of the suppli
 
 The original-game comparison and outstanding systems are in `docs/PARITY.md`.
 
+<img width="3840" height="2083" alt="1" src="https://github.com/user-attachments/assets/5372218e-c162-470e-b38d-6c954efee654" />
+
+<img width="3840" height="2039" alt="5" src="https://github.com/user-attachments/assets/5fbfe4a1-7c7b-4886-8610-d64148f65354" />
+
+<img width="3840" height="2072" alt="2" src="https://github.com/user-attachments/assets/68903e41-c5b6-4ade-8eed-d65a88031bda" />
+
+<img width="3840" height="2079" alt="3" src="https://github.com/user-attachments/assets/95d9a851-5a77-4394-b1c7-4401cc3bc39e" />
+
+<img width="3840" height="2053" alt="4" src="https://github.com/user-attachments/assets/8488798b-ace6-4874-b692-d76cf7d39a54" />
+
 ## XAMPP setup on Windows
 
 1. Extract the game folder into XAMPP's `htdocs`, for example `C:\xampp\htdocs\backyard-monsters`. Keep `app`, `public`, `bin` and `var` together.
