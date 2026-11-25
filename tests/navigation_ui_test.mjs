@@ -7,7 +7,7 @@ const [{createTerritories},{createYardPlanner},{createHomeRepair},{createBaiter}
   {createQuests},{createAlliances},{createNeighbors},{createTruces},{createSiegeWorkshop},{createSiegeCombat,siegeLog},{createInferno},{createAscension},{createYardUtilities},{createMushrooms},{createDecorations,decorationSelection},{createYardMessages}] = await Promise.all(
     ['territories','planner','repairs','baiter','tribes','quests','alliances','neighbors','truces','siege-workshop','siege-combat','inferno','ascension','yard-utilities','mushrooms','decorations','yard-messages'].map(gameModule)
   );
-const mainSource = (await readFile(new URL('../public/assets/main.js', import.meta.url), 'utf8')).replace(/^import .*;\n/gm, '').replace(/\nboot\(\);\s*$/, '\n');
+const mainSource = (await readFile(new URL('../public/assets/main.js', import.meta.url), 'utf8')).replace(/^import .*;\r?\n/gm, '').replace(/\nboot\(\);\s*$/, '\n');
 let checks = 0;
 const check = (condition, label) => { assert.ok(condition, label); checks++; console.log(`PASS ${label}`); };
 const deferred = () => { let resolve, reject; const promise = new Promise((yes, no) => { resolve = yes; reject = no; }); return {promise, resolve, reject}; };

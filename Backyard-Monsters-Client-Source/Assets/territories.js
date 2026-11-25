@@ -1,4 +1,4 @@
-import {icon, esc, num, duration} from './ui.js?v=0.13.0';
+import {icon, esc, num, duration} from './ui.js?v=0.13.1';
 
 // Territory controls use the server's ownership, costs and attack eligibility.
 export function createTerritories({state, api, art, costHTML, now, toast, showModal, closeModal, showSite, choosePlacement, cancelPlacement, updateSite = () => {}, beginBattle, refreshHome, refreshMap, audio, onNavigate = () => {}}) {

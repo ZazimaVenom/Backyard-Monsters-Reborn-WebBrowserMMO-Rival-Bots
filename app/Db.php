@@ -20,7 +20,7 @@ final class Db
 
     public static function connect(array $config, bool $withDatabase = true): PDO
     {
-        $database = $config['database'] ?? 'backyard_reborn';
+        $database = $config['database'] ?? 'backyard_rehatched';
         if (!preg_match('/^[a-zA-Z0-9_]{1,64}$/', $database)) { throw new InvalidArgumentException('Use letters, numbers and underscores for the database name.'); }
         if (!empty($config['socket'])) {
             $dsn = 'mysql:unix_socket='.$config['socket'];

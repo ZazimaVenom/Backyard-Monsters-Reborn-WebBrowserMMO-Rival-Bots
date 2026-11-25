@@ -1,4 +1,4 @@
-import {duration,esc,icon,num} from './ui.js?v=0.13.0';
+import {duration,esc,icon,num} from './ui.js?v=0.13.1';
 
 const facilities = {siegelab:'research',siegefactory:'build'};
 const titles = {research:'Chaos Lab',build:'Chaos Factory'};

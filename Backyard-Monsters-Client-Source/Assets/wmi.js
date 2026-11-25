@@ -1,4 +1,4 @@
-import {esc, num} from './ui.js?v=0.13.0';
+import {esc, num} from './ui.js?v=0.13.1';
 
 const awards = [1,10,20,30,31,32];
 const sides = {t:'north',r:'east',b:'south',l:'west'};

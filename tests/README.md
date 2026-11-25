@@ -1,4 +1,6 @@
-# Testing 0.13.0
+# Testing 0.13.1
+
+Run `python tests/rehatched_sync_test.py` to verify matching browser/client assets, hashes and release versions. Python 3 is needed only for these development checks. `python tests/branding_http_test.py` uses PHP 8.2+ and a temporary application copy to exercise new and migrated browser sessions without a database. Set `PHP_EXE` if PHP is outside PATH.
 
 The current results and exact platform coverage are in [the release validation record](../docs/VALIDATION.md). The game is playable with PHP, PDO MySQL and a database. The JavaScript, Python and asset checks below are development tools.
 

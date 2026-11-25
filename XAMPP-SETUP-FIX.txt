@@ -1,4 +1,4 @@
-BACKYARD MONSTERS REBORN 0.13.0 - XAMPP INSTALLATION AND UPGRADE
+BACKYARD MONSTERS REHATCHED 0.13.1 - XAMPP INSTALLATION AND UPGRADE
 
 Keep app, public, bin and var together in the game folder beneath htdocs.
 Do not copy the whole game folder inside public. Keep your existing database
@@ -9,13 +9,13 @@ EXISTING WORLD - UPGRADE WITHOUT RUNNING SETUP
 1. Stop Apache in the XAMPP Control Panel and any optional world worker.
    Leave MySQL running. Back up the game folder and database.
 2. Replace application files with the new release, keeping the existing var
-   folder intact. Use the update archive only with an existing 0.12.0
-   installation. Older supported worlds need the complete 0.13.0 release.
+   folder intact. This complete package supports existing 0.13.0 and older
+   supported worlds. Keep the database name in the saved configuration.
 3. Open Command Prompt in the game folder and run:
       UPGRADE-WORLD.cmd --check
       UPGRADE-WORLD.cmd --apply
    The first command checks the installed world. The second saves SQL/JSON
-   backups and updates the installed world. Version 0.13.0 uses schema 3.
+   backups and updates the installed world. Version 0.13.1 uses schema 3.
 4. Once the upgrade completes, restart Apache and open your usual localhost
    game URL. Sign in with your existing keeper.
    Read docs/UPGRADING.md for migration, backup and recovery details.
@@ -30,7 +30,7 @@ NEW WORLD - LOCAL DATABASE SETUP ONLY
 3. For an unchanged local XAMPP installation use:
       Host: 127.0.0.1
       Port: 3306 (or the MySQL port shown in XAMPP)
-      Database: backyard_reborn
+      Database: backyard_rehatched
       Database user: root
       Database password: leave empty
    Use your own database credentials if you changed them.

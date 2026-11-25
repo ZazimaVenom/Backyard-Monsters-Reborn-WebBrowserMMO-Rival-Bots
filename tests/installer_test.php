@@ -57,7 +57,7 @@ try{
         installerCheck((int)$pdo->query('SELECT COUNT(*) FROM users WHERE password_hash IS NOT NULL')->fetchColumn()===0,'bots receive no human login passwords');
         installerCheck((int)$pdo->query('SELECT COUNT(DISTINCT name) FROM users')->fetchColumn()===1000,'bot identities are distinct');
         installerCheck($pdo->query("SELECT value FROM settings WHERE name='schema_version'")->fetchColumn()==='3','fresh schema is version 3');
-        installerCheck($pdo->query("SELECT value FROM settings WHERE name='content_version'")->fetchColumn()==='0.13.0','fresh content is version 0.13.0');
+        installerCheck($pdo->query("SELECT value FROM settings WHERE name='content_version'")->fetchColumn()==='0.13.1','fresh content is version 0.13.1');
         $activity=json_decode((string)$pdo->query("SELECT value FROM settings WHERE name='world_activity_v1'")->fetchColumn(),true,512,JSON_THROW_ON_ERROR);
         installerCheck($activity['epoch']>0&&$activity['active_seconds']===0&&$activity['leases']===[]&&$activity['last_dispatch_at']===null,'installation creates a paused clock without signing in or dispatching bots');
         installerCheck((int)$pdo->query("SELECT COUNT(*) FROM world_sites WHERE kind='home'")->fetchColumn()===1000,'all bots have persistent home map markers');
@@ -117,6 +117,8 @@ try{
     installerCheck($validation['code']==='validation'&&str_contains($validation['message'],'empty database'),'explicit safe setup validation remains actionable');
     $validate=new ReflectionMethod(Installer::class,'connectionConfig');
     $defaults=$validate->invoke(null,[]);
+    installerCheck($defaults['database']==='backyard_rehatched','fresh default uses current game identity');
+    installerCheck($validate->invoke(null,['database'=>'existing_saved_world'])['database']==='existing_saved_world','explicit existing database name is preserved');
     installerCheck($defaults['username']==='root'&&$defaults['password']===''&&$defaults['host']==='127.0.0.1'&&$defaults['port']===3306,'defaults match ordinary local XAMPP');
     installerCheck($validate->invoke(null,['database'=>'by_test','username'=>' myuser ','port'=>'3307'])['username']==='myuser','valid custom connection accepted');
     foreach([['database'=>'bad; DROP'],['database'=>'bad\nname'],['database'=>[]],['host'=>'localhost;dbname=other'],['host'=>''],['port'=>0],['port'=>65536],['port'=>'abc'],['username'=>''],['password'=>[]],['socket'=>'a;host=remote']] as $bad){

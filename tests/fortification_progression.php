@@ -50,7 +50,7 @@ foreach(['hp','max_hp','level','x','y','stored'] as $key){verify($completed[$key
 $once=$base;Game::accrueFortifications($base,1100);verify($base===$once,'repeat completion is idempotent');
 $base['buildings'][1]['fortify_ready_at']=1200;$base['buildings'][1]['fortify_to']=3;$base['buildings'][1]['hp']=0;Game::accrueFortifications($base,1200);verify($base['buildings'][1]['hp']===0,'paid completion never revives a destroyed building');
 $old=fixtureBase();unset($old['buildings'][0]['fortification'],$old['buildings'][0]['fortify_ready_at'],$old['buildings'][0]['fortify_to'],$old['buildings'][0]['fortify_paid']);$old['buildings'][0]['custom']='preserved';$old['champions']=['gorgo'=>['level'=>6,'hp'=>12345,'feeds'=>23,'bonusFeeds'=>3,'next_feed_at'=>2000,'last_heal_at'=>1000]];$old['activeChampion']='gorgo';
-$new=Game::normalizeBase($old);verify($new['content_version']==='0.13.0','content advances to v0.13.0');verify(Game::normalizeBase($new)===$new,'normalization idempotent');
+$new=Game::normalizeBase($old);verify($new['content_version']==='0.13.1','content advances to v0.13.1');verify(Game::normalizeBase($new)===$new,'normalization idempotent');
 foreach($old['buildings'][0] as $key=>$value){verify($new['buildings'][0][$key]===$value,'migration retains old building field '.$key);}
 verify($new['buildings'][0]['fortification']===0&&$new['buildings'][0]['fortify_to']===null,'migration grants no fortification');
 verify($new['champions']['gorgo']['bonus_feeds']===0&&$new['champions']['gorgo']['bonusFeeds']===3,'legacy counter grants no bonus power');

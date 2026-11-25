@@ -1,10 +1,10 @@
-import { ProducerMotion } from './producer-motion.js?v=0.13.0';
-import { CombatPerformances, ordinaryVoices, performanceSheets, defeatKey, defeatPose, articulatedFrame } from './combat-performances.js?v=0.13.0';
-import { entranceTexture } from './emergence.js?v=0.13.0';
-import { buildingTierKey } from './building-tiers.js?v=0.13.0';
-import { directionSheets, yardBearing, directionalFrame, screenStep } from './monster-directions.js?v=0.13.0';
+import { ProducerMotion } from './producer-motion.js?v=0.13.1';
+import { CombatPerformances, ordinaryVoices, performanceSheets, defeatKey, defeatPose, articulatedFrame } from './combat-performances.js?v=0.13.1';
+import { entranceTexture } from './emergence.js?v=0.13.1';
+import { buildingTierKey } from './building-tiers.js?v=0.13.1';
+import { directionSheets, yardBearing, directionalFrame, screenStep } from './monster-directions.js?v=0.13.1';
 import { drawBurning, drawDefenseEvent, drawQuakeCharge, drawQuakeMechanism } from './expanded-defenses.js';
-import { creatureWidths, creaturePose, makeCreatureFrame, drawCreatureAbility } from './creature-motion.js?v=0.13.0';
+import { creatureWidths, creaturePose, makeCreatureFrame, drawCreatureAbility } from './creature-motion.js?v=0.13.1';
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const lerp = (a, b, amount) => a + (b - a) * amount;

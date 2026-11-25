@@ -1,4 +1,4 @@
-import {esc,icon,num,duration} from './ui.js?v=0.13.0';
+import {esc,icon,num,duration} from './ui.js?v=0.13.1';
 
 const supplies=wallet=>Object.entries(wallet||{}).filter(([,amount])=>amount>0).map(([key,amount])=>num(amount)+' '+esc(key)).join(' · ');
 const token=()=>Array.from(crypto.getRandomValues(new Uint8Array(16)),n=>n.toString(16).padStart(2,'0')).join('');

@@ -1,4 +1,4 @@
-import { voicedSpecies } from './combat-performances.js?v=0.13.0';
+import { voicedSpecies } from './combat-performances.js?v=0.13.1';
 /** Gesture-unlocked, decoded audio with seamless loops and bounded effect voices. */
 export class GameAudio {
   constructor(){

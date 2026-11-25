@@ -1,6 +1,6 @@
-import {icon,esc,num,duration} from './ui.js?v=0.13.0';
+import {icon,esc,num,duration} from './ui.js?v=0.13.1';
 
-import {huntPanel} from './krallen.js?v=0.13.0';
+import {huntPanel} from './krallen.js?v=0.13.1';
 
 export function madnessReceipt(result,role){
   const m=result?.monsterMadness;

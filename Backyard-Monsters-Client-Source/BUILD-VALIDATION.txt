@@ -1,4 +1,21 @@
-Default full-folder build completed successfully through scripts/Build-Client.ps1.
-46 core checks and 17 embedded-pack checks passed.
-Windows x64 executable, icon, native/.NET/WPF/WebView2 supporting files and all 1,136 assets were produced.
-Validation used the installed .NET 10 SDK and PowerShell on Linux to cross-compile Windows output. Windows SDK bootstrap and live Windows gameplay were not run here.
+BACKYARD MONSTERS REHATCHED - CLIENT VALIDATION
+Game release: 0.13.1
+Client application release: 1.2.0
+
+The default full-folder build completed through scripts/Build-Client.ps1,
+with no -GameSource or -GameVersion arguments. It detected the adjacent web
+source, read its 0.13.1 release, copied all 1,136 assets and regenerated their
+SHA-256 manifest. Every output asset hash and length was verified.
+
+47 core checks and 17 embedded-pack checks passed.
+All four PowerShell build scripts passed syntax parsing.
+Packaging checks verified automatic release detection, rejected a conflicting
+explicit release, and rejected output overlapping source assets.
+Windows x64 self-contained publish succeeded with the updated assembly branding.
+
+Validation used .NET SDK 10.0.404 and PowerShell 7.4.20 on Linux to cross-compile
+Windows output; the builder used a local SDK command shim for that environment.
+Windows SDK bootstrap, WPF window rendering, WebView2 runtime installation,
+audio playback and live Windows multiplayer login were not run here.
+
+Rebuild using Build-Client.cmd on Windows x64 to generate the full client folder.

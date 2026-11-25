@@ -1,16 +1,16 @@
 {
-  "gameVersion": "0.13.0",
+  "gameVersion": "0.13.1",
   "files": [
     {
       "path": "alliances.css",
-      "size": 3075,
-      "sha256": "655af0da4b07834e05cf638f8a617485e530fbdd12b0f6217c9221c257d2bfcc",
+      "size": 3117,
+      "sha256": "788fb564593fa4070aaa25f011435c74e068e37a36a3dd559720e525a65fc512",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "alliances.js",
-      "size": 22946,
-      "sha256": "710c8df5718943ce73cb374d50e129672214be016806dd4c8783e5f98f9cac6e",
+      "size": 23248,
+      "sha256": "df5d419224496684fd513eb05e9528be32c1873913128c6a565f98ddc12fb03b",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -927,8 +927,8 @@
     },
     {
       "path": "art/manifest.json",
-      "size": 193298,
-      "sha256": "5fb67b07e446e75ea6f1b65f4278c0ae9d784178911914833c82a3e3b3df4f3a",
+      "size": 203675,
+      "sha256": "fda209ab6c11bc73b70461b1ea1dd4af62025e2aea417fdce17c006c51939bca",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -1437,8 +1437,8 @@
     },
     {
       "path": "ascension.js",
-      "size": 5039,
-      "sha256": "299a4db73e9b6a5d8ad5a65d5602cf3df3461cf7b3871902b1e0c63eb44e6cf2",
+      "size": 5107,
+      "sha256": "2b54ed02eb9f8b6366e5730966d7fe3f9d1806edd660725c548655003504ef1e",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -2223,8 +2223,8 @@
     },
     {
       "path": "audio.js",
-      "size": 5884,
-      "sha256": "6461ae1def52f3a56bfcdeca373e797b8862a72d35f213a420628badb827500f",
+      "size": 5956,
+      "sha256": "baef82d5601363c4a1e9f8822c25e85ff8b08ada0531adcb7298cb1aed2fc3b1",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -2241,8 +2241,8 @@
     },
     {
       "path": "audio/battle.ogg",
-      "size": 764969,
-      "sha256": "52a79b7eb0a9e64e3ad5c1155b3c2561892c8899c8f563f1bb1d4b5cd0fb0ba3",
+      "size": 766767,
+      "sha256": "37882593bc17c654bb53b7f26cdb0641bf75c650c4b8724f8d33c9b0c3f661f3",
       "mimeType": "audio/ogg"
     },
     {
@@ -2319,8 +2319,8 @@
     },
     {
       "path": "audio/event.ogg",
-      "size": 531836,
-      "sha256": "cc5d17da868edc0207b6b6291aad1cfb6a30dc9039934e1c77f153e3b4c9bdea",
+      "size": 533400,
+      "sha256": "293e7b86f2bc075f7c0f3fcf8ceb8ff46071824ae3e7b79628fe4cac3be0c78b",
       "mimeType": "audio/ogg"
     },
     {
@@ -2391,8 +2391,8 @@
     },
     {
       "path": "audio/manifest.json",
-      "size": 4907,
-      "sha256": "676b93c72540bf87ad966b2144aecc96b45bb54c07fc5d14a5e2e1f25b636cc7",
+      "size": 5159,
+      "sha256": "001f35b6103aa71587b67713c7dd838ce7d54638ca42788438cd5d6cfe7d0a54",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -2427,8 +2427,8 @@
     },
     {
       "path": "audio/theme.ogg",
-      "size": 856766,
-      "sha256": "968aad8cafd47d1e0ceb69c75ed7ae8a6cb1540f9058d7114eac232c75502075",
+      "size": 858656,
+      "sha256": "84d56947789b1b4869fb5f5630991a542089be7416de5ba71766c7483cf7eeaa",
       "mimeType": "audio/ogg"
     },
     {
@@ -2445,14 +2445,14 @@
     },
     {
       "path": "baiter.js",
-      "size": 33587,
-      "sha256": "72e7e67f171554d8f182cee464ca2918d79602f888d637392fe44748a479a750",
+      "size": 34011,
+      "sha256": "1de49c3a6cdb9443e5274ce7c923d855b192fbfb25a5ce79ad01d102ee4c1164",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "building-tiers.js",
-      "size": 1248,
-      "sha256": "bb7d38fbab4bd9cb17987331b48dc1c64539fbbd0f5585190dc8c82e1746ecff",
+      "size": 1261,
+      "sha256": "fca97d4d86da41ade3ea60688e2f6d6df00be790a8769007ac36b6c22469d5cb",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -2877,8 +2877,8 @@
     },
     {
       "path": "building-tiers/manifest.json",
-      "size": 54373,
-      "sha256": "52befc938ebc7bd45464013693daa2d9527853fe5934e58330cdeb03ee06f0b4",
+      "size": 56621,
+      "sha256": "ad0740c86c2dda87fbb6db751d0b42cbfe9075c2bb7e4aed662a69dd3abcc6d5",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -3807,32 +3807,32 @@
     },
     {
       "path": "champions.js",
-      "size": 17828,
-      "sha256": "a183645ff1b8f1f6fb8a7a9720ba176c97d8f9ca9683e249bb03436a890396c7",
+      "size": 17969,
+      "sha256": "13d41988d4a03a880ab4facd8fc1d028f997fbca9b49ad59022673a600600362",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "combat-performances.js",
-      "size": 5572,
-      "sha256": "8ee65799d2153b9c072d2c0f9dcc362abef8dcfab0108e8f62da1e2d11e76fd8",
+      "size": 5673,
+      "sha256": "79c21a50e565d0d0ffff0ae3aae777cae6e6d8679a97144b798f3ec63a8d5440",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "creature-motion.js",
-      "size": 6702,
-      "sha256": "149b402a9f6615042fe86d2251b1beb88a8b5871fe21a5696b9960855cd6a02a",
+      "size": 6820,
+      "sha256": "05aa0bfc6ebcb74054bd9972e9a548b3e0ec99bb749ff2360266b3b0237717f6",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "decorations.css",
-      "size": 2954,
-      "sha256": "1c016dc5d3109224d1d20836d94b92fb278b9d6d485b8cd751bf87226d3ae2d0",
+      "size": 2969,
+      "sha256": "57d3e4a8663284d59af7a8a2d9f7431be1316b854c6adf5958b36dee0ad35e3d",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "decorations.js",
-      "size": 6487,
-      "sha256": "f386f79288b76ac53008a1f3ff87321ec0387272b2e1f5dced4e50efabdb8ce9",
+      "size": 6561,
+      "sha256": "acf3c3da059e2f816540ac10b82cc5b8c062b95836b5823dcbf6783a0e3f2704",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -4341,8 +4341,8 @@
     },
     {
       "path": "decorations/manifest.json",
-      "size": 24543,
-      "sha256": "2b5af29f93385d6269660179512d300c1a84e468906a1fc2ef8ff941c31b0b24",
+      "size": 25557,
+      "sha256": "ce5903117dab4ed57bef7120fe5c74be7a1fc400165528ef12430b373b620350",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -4587,8 +4587,8 @@
     },
     {
       "path": "defeats/manifest.json",
-      "size": 13859,
-      "sha256": "3f23158e07772ba80da9d2439ab0eeb2723866a12fc2d12f6752c357807938ee",
+      "size": 14405,
+      "sha256": "61af6aec49ba9bb3638a6fa9468852d3cb7e4a2ddd50f4476667fc22a8beb2a4",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -4677,26 +4677,26 @@
     },
     {
       "path": "emergence.js",
-      "size": 5652,
-      "sha256": "4d6114def829bd667e4e289061b55a588b8249f4a1c4c7e5077ddbe179dbf2bf",
+      "size": 5706,
+      "sha256": "3e7c7084449991365969812469a20f24ca958bd0ba391ee8e99121be7a7ee296",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "event-calendar.css",
-      "size": 906,
-      "sha256": "510f0a5b85fc3b966463565d3963e6403ff942ded522f558e34ab60495897025",
+      "size": 907,
+      "sha256": "bb593aa01603006cab71aa55ccfc8577fbe928a09006326c52480af962f056e7",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "event-calendar.js",
-      "size": 4129,
-      "sha256": "e952894f416c53c06406d4bdf295e49d25e7c2a52eda081df615096d8b8fed94",
+      "size": 4177,
+      "sha256": "a65f1ae14363d65cf34d5bb3d7b2257da4f92816c835d2aa8685cd82586eab9a",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "expanded-defenses.js",
-      "size": 5705,
-      "sha256": "d1b8494ae280fb1057855f68cff7710b54e8bd562a14a51455e16510a6b83d9a",
+      "size": 5820,
+      "sha256": "2ca07a7a957f1594c27b4c8ab9b24f24a875f04e8214c00b781f5663cf6fce70",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -4857,8 +4857,8 @@
     },
     {
       "path": "facing-actions/manifest.json",
-      "size": 13829,
-      "sha256": "173dfe31689f14882a552900b29dcf0f2eb32f471560c4e66efd96c3663b71c5",
+      "size": 14375,
+      "sha256": "c162fa0852c5c776ccc9e4f6d6d37e8ba049ad0ec49825fb0f253d508609c24a",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -5031,128 +5031,128 @@
     },
     {
       "path": "favicon.svg",
-      "size": 379,
-      "sha256": "145556d0f3e3ae356041e529ae9247c04cfaefe4b1c902d6d91b319d38de657d",
+      "size": 380,
+      "sha256": "7c647f33f935091bf8addd32cc61ff6b96404391b74ab0f2ce9db3df98328cbc",
       "mimeType": "image/svg+xml"
     },
     {
       "path": "field-guide.css",
-      "size": 1761,
-      "sha256": "4c7e78d6ec97f4f71b423edf824c9dc23cb5efe2edf127acce71241345272862",
+      "size": 1763,
+      "sha256": "b13b876bc34fbcb2ae953815f6e9d65c049c3cc88d131bcf09360c011255da3d",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "field-guide.js",
-      "size": 2577,
-      "sha256": "76f6847ee769810e26b6b5ae98cc2bfa434b00e7dd765d6c4da6fbe89f54285d",
+      "size": 2614,
+      "sha256": "0723a96e52e680ec576f7ef07fe7a074cdc19184cb5ca9fef8ffa80fe268e8da",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "fortifications.js",
-      "size": 7302,
-      "sha256": "93649bbe57b93acc2eecf56d73633c9c450d7769f0268df7110065eababf9842",
+      "size": 7379,
+      "sha256": "f402bd99e7a20e1a72785308f154cd116aed6cfeeba4f53a542b32b68c3de961",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "game.css",
-      "size": 85483,
-      "sha256": "53000c27bf7964a46dd05247c5770dd9e42a957db99d10630fdc991f115e2543",
+      "size": 85672,
+      "sha256": "8965c5d151fc0ce436652fe618a910d94f11ba24f9fd479114a3870741ea88be",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "hell-raisers.js",
-      "size": 4403,
-      "sha256": "5058ff337988ae5e149712d5110b25319faeab574cb96b71033b263f5ecd104d",
+      "size": 4452,
+      "sha256": "64e4235a28466bf6ca03c9c202115a7c1ba5ffcebf2aa11b23573e2dadab3d66",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "inferno-monsters.js",
-      "size": 2879,
-      "sha256": "cbe9eed61cee8bd8843eb76c7d4db72c5a043018e98c537ef23e9ef66a322ef4",
+      "size": 2910,
+      "sha256": "6c4c5824564af14df3c1c3a83d3e0f9cf0d9ecb71a7d81edcda802ac8553fc40",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "inferno.css",
-      "size": 3834,
-      "sha256": "fbf612896ec7aabc4f2c9ea87d35f9ba7fbfd295aa76d6e68d463c1729e5cef9",
+      "size": 3863,
+      "sha256": "a492e80d80bae78c611a6d6da642582533e530140e1b4c6741d0d4c4da1391e9",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "inferno.js",
-      "size": 22213,
-      "sha256": "285e862149cd6b7431e324f78591dbabe2f0abd7f3cc81f437fa4924f546be77",
+      "size": 22466,
+      "sha256": "ee0d3228e3db82f7e70415bf854528ec828a11e3410ccb9767d6855961b7f9c8",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "krallen.js",
-      "size": 3159,
-      "sha256": "4a624c61e3f8b62aa77d11c9fdc87afcd37ffc2e4e2b092f207e1dc9e555fc82",
+      "size": 3192,
+      "sha256": "8f744815c659ca14bfb48da328c0397a9ad07eca131e45adf52ba5b6be15eefa",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "laboratory.js",
-      "size": 12300,
-      "sha256": "f70ee48b6cb6280da960c87973d1951615b3c583425e6a2c637ec53ac646e662",
+      "size": 12383,
+      "sha256": "3dd116a5c8ab8fa9fb9938e87957f054dbc72b9a4fb87e378f9b1bdfb637adf6",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "localize.js",
-      "size": 1967,
-      "sha256": "5e4284282e8dccf680f23104d226eba40a7470f6c7ddaadd77aeeadaab7adc1b",
+      "size": 2004,
+      "sha256": "42daae83255c54041c38f9cc68251aa0d69cf14a0106933d92c52d3570ea6276",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "main.js",
-      "size": 89263,
-      "sha256": "3086cc04e3bf9a034ed8bc55d4da9eb47d4d8378ad38cf24989710156e6157ec",
+      "size": 89615,
+      "sha256": "c48fed164228a7084d69ce62b5392b65a36dfee37761549980a72864d566f4b8",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "moloch-siege.js",
-      "size": 2516,
-      "sha256": "c6e9f8c08150f978fbf9c4627e9512246a40753926db3ec985e458da96798bb0",
+      "size": 2534,
+      "sha256": "a8ab95411ad67f84b0663ca3d6a16b8aeb67671ab66931dcef1a7b31bb40f4c2",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "monster-directions.js",
-      "size": 2143,
-      "sha256": "a8b9ba08093c90bf750bb9bef79a1dd96e41cbdaa8122b40b439db31e6b0c13a",
+      "size": 2182,
+      "sha256": "13b46725dcf057c770d088fee34e10c7a0f97106392a71a7eff0cbf73125b11e",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "mushrooms.css",
-      "size": 1232,
-      "sha256": "662f51f028e1f0d9787f48aebd1800d93335858da96c83f31866a781fd4fa2b0",
+      "size": 1233,
+      "sha256": "079e7aade4aca966ad0c59b266722e440a5145673dabe5182ae9b9ed18acad9e",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "mushrooms.js",
-      "size": 3858,
-      "sha256": "0c5c7c429d3ac877ac2e2cadb699ccb9259b1033b3a1bd0493e2d4927304a0a6",
+      "size": 3921,
+      "sha256": "2cad3fe2d9e59a5fc2a3b708c412db4dae5d9d28056f8cdae8a4a31f93a1e2c6",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "neighbors.css",
-      "size": 1379,
-      "sha256": "915a441daa5ded22000e51bd2f8026af9a4150fa7e5178a7324fe9a552a0f3cb",
+      "size": 1397,
+      "sha256": "5ee10abbb959e0ae0ee6d40746b300c1d3b4d1e829f55c9d9d516328435342eb",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "neighbors.js",
-      "size": 8762,
-      "sha256": "7a3ebea9be05f0a01f704e187541f5b1bafc18453273e1c50d4b7ad70dc0979b",
+      "size": 8867,
+      "sha256": "73a0cb12a97938d58c8a083d59abe072971aeb32fc8b7ed23d66bf698962c1fc",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "package.json",
-      "size": 38,
-      "sha256": "0ce00e635c7b098ef6a307e609de09d4d8a839c66ec4c06777eb830482f72320",
+      "size": 39,
+      "sha256": "529d15e915688f64a71accb3bc10010826c33be05039f266e5b2597d4f674199",
       "mimeType": "application/json; charset=utf-8"
     },
     {
       "path": "planner.js",
-      "size": 19874,
-      "sha256": "bcd6827baf26b054ef642f08d021e3c797197ed88ef130724a96b1d06105cf19",
+      "size": 20032,
+      "sha256": "0cd654a0e544517cbe2805aff02cf77a636b88c5a8c7575be5b35dc915095ad8",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -5985,14 +5985,14 @@
     },
     {
       "path": "producer-frames.js",
-      "size": 4460,
-      "sha256": "062d9116d33c71f1e524ebfd8b768b944120dd3776031100c2991d227803a377",
+      "size": 4913,
+      "sha256": "6570d0c44105a312fcdd029fade96f4d473a2a6b3f0beb18f6680ed5fc68b587",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "producer-motion.js",
-      "size": 4032,
-      "sha256": "22144d3a5727646ecec84b27884350af128f9b3451269217c8b7df08308be5b5",
+      "size": 4111,
+      "sha256": "a9436d03787a333902368ad0e755f6aed72f88f6e01cdd284f867d8dbd32a6ec",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -6297,92 +6297,92 @@
     },
     {
       "path": "quests.css",
-      "size": 3974,
-      "sha256": "be0d6038f4d6187f135fc462a5ff0da5dfaaae5f6fdc7b8621d6a7f74a6d2209",
+      "size": 4019,
+      "sha256": "a1204a89f6b15bfa4e1d7f38107a44dfe177b51541c98f21a37e8e52479f8711",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "quests.js",
-      "size": 9176,
-      "sha256": "92b7c9e9d935a9482f7ede19c670eb3bcf6514f5f1e6cd505875bc3129053b0d",
+      "size": 9317,
+      "sha256": "7d3b3f02f83afc405c73dca19dd1cfe0dc40544279f3a5eb5973dfc0c34dfb6e",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "realm-chat.js",
-      "size": 3839,
-      "sha256": "ea166a309c8c1bd160e8d54d130529552a6e8ae03e30654785c6d7d2468c0de3",
+      "size": 3887,
+      "sha256": "86f4145b7a6c509d3c6ec349b7e762d2ffea246589ea8b43eac3d8a1bab0db78",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "regions.js",
-      "size": 9349,
-      "sha256": "0f7c862644a804c0a65acb3db096cb787f0778b272dca3e104dd09923495e194",
+      "size": 9437,
+      "sha256": "bc6e3a64b5a7417ce3ee892c14248ff6846c56db1281eb486ca7b58dad33a51d",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "renderer.js",
-      "size": 153278,
-      "sha256": "98fa72358d94e0527adac8a4dc9192a6fd9339a6fda5df0628344ee60cbf53f7",
+      "size": 155626,
+      "sha256": "bf4c7a59c4cd13d9858cc312aeb81f62b9b59fd3a1ca7141c22ebfb3667dd54d",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "repairs.js",
-      "size": 3568,
-      "sha256": "baea02e6a79b69959a478f4e8ee205bc908f97b67dfac5219b261199e8cdf386",
+      "size": 3628,
+      "sha256": "d6773d285bc3aea88e3175f55fabdb2a2f80873ff9802c44ab575834e3941e96",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "setup.css",
-      "size": 4025,
-      "sha256": "3cc2dd2ca1720d928aa5b45af163b0e04203ba48907b18e4025ee9e29d3411a2",
+      "size": 4028,
+      "sha256": "829199de1871a60f020ceed5b2a973b26899505e30f506f9f3aa55a71648e44b",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "siege-combat.js",
-      "size": 3481,
-      "sha256": "84a276b771e4068010115cab1a67cf1b21223e18056e5fea982c676b21b5393a",
+      "size": 3539,
+      "sha256": "1297f26467ed4c9ceeb0c4d503c86922d22e5b96c71b5f691ee49f3ef310ee3a",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "siege-workshop.css",
-      "size": 1214,
-      "sha256": "f70a02ed620037394fbcc94b4b8b98d376be4167d8c8203cfe648f12df54b758",
+      "size": 1235,
+      "sha256": "356f1e5d8b215d1ae9d6c4992a87abbb16c155c7e5681bd8f46b748fe788b0e5",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "siege-workshop.js",
-      "size": 6292,
-      "sha256": "214ffc7e4e4d5672791b8d16db558e0b9b35cc6da2baeb8f28184c8661264ee1",
+      "size": 6387,
+      "sha256": "873ef9bab652ad649d78bd1d073f1e8e0cf53c9f27cc2b227eef9ef7c1d92b8c",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "territories.js",
-      "size": 27374,
-      "sha256": "6b581d90ac22f343d3b31b363cb0fda2dc22f43dc811c8fcb865612dc8d4bfed",
+      "size": 27569,
+      "sha256": "527d4a5e70b4850c661734c19457c4cf15df0b66702b5758b36f3b0793f27e8d",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "tribes.css",
-      "size": 2963,
-      "sha256": "470ec7ad3e5c028c1ee53c49b7ea530883b0dc2ddb4aaa0d09c4e9e63b249453",
+      "size": 2987,
+      "sha256": "e5adf3e9de20ffdb344998b866474886a5f17141aea445f16f525df00739d88f",
       "mimeType": "text/css; charset=utf-8"
     },
     {
       "path": "tribes.js",
-      "size": 13935,
-      "sha256": "5a5548aa0205ba8801ce1eaac2216341abf2d6c89bd4f08f78f88f1b2225d28c",
+      "size": 14123,
+      "sha256": "e2aeba24aaf66f15b0ae599997d27741905560f3a62290e1f2b9ef2078a724c8",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "truces.js",
-      "size": 4704,
-      "sha256": "5f81186de313db2a75ab2c1456322fa9d9330ff0f8a625e79139bd7f579b739f",
+      "size": 4785,
+      "sha256": "f7e16557dc726e910d96e748a1fa7f78eb1cdf058bd29efa0cb279d6f2b49587",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "ui.js",
-      "size": 3724,
-      "sha256": "f5bab5558b3df72daab39e4658e29616068c21a64eb27c5e503f77ec4b52c8ad",
+      "size": 3732,
+      "sha256": "22a6513bc22a8bdb3244148cb9284e0785632df4568c38297a995af0cc070221",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
@@ -6603,8 +6603,8 @@
     },
     {
       "path": "voices/manifest.json",
-      "size": 16174,
-      "sha256": "c2c30cd0538b43569d6d0e2cec6b5536796b8b73ccaa21db8da9f78956c3ce30",
+      "size": 16756,
+      "sha256": "086916ff1ede52eba91612922be30475567f9a3594a606ba4a49c6f6a42c751c",
       "mimeType": "application/json; charset=utf-8"
     },
     {
@@ -6777,44 +6777,44 @@
     },
     {
       "path": "wmi.js",
-      "size": 3999,
-      "sha256": "ad390082e3a8a1632da3e2ff166e4ebcdaed24019b826c6099960b6532452daa",
+      "size": 4033,
+      "sha256": "705ea843e3ac35061edbdd384126ff508ac9a480959fa77833c256991182b7a7",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "workers.js",
-      "size": 4940,
-      "sha256": "ea6257b2ea555f14d9ead7759a83a2f36996d903ac3bef01f0a1fb8a456a75d6",
+      "size": 4969,
+      "sha256": "7e8acecc35ec5e0b26162972ac6beb3fcaab5d9d8fdc5bbfd4d26018bb4850cd",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "workshop.js",
-      "size": 13342,
-      "sha256": "a226600b319341bb2e1a7e91367a247f3082c6d5f1660c517cb0b9ad12aea9a3",
+      "size": 13401,
+      "sha256": "6c3bc1c3c0fc11532b9c640275570faca079a74b14bc5030b6de8d43b040573e",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "worldactivity.js",
-      "size": 6183,
-      "sha256": "4cfc6febcfc336f3fde87592617f2d06b38e30e01da83dfa01faee72149b2568",
+      "size": 6281,
+      "sha256": "a1d3341f9376530b289c228808328464bc1f4acf15301e881def3d72720503ea",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "worldmap.js",
-      "size": 28915,
-      "sha256": "1f6b152db9275fa9a942a985eb6e5a47f0f2dc6b03de8fb111616909f62e6dd9",
+      "size": 29281,
+      "sha256": "b18878c159640378bebbdae455a5247811087a88a2572a26379c57195e566877",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "yard-messages.js",
-      "size": 5708,
-      "sha256": "d28300e2200e7a0798d39f12d9efffc9e6c8810188371c8beb29ac9db164b966",
+      "size": 5777,
+      "sha256": "e6aa3cf6961763c66e7175741693f7b0fd1501878544954498b3b3e119601091",
       "mimeType": "text/javascript; charset=utf-8"
     },
     {
       "path": "yard-utilities.js",
-      "size": 8938,
-      "sha256": "45b2b3ed49ea5b83c46afe28a9f9d884465947a471a8e78807cb5f43fc9b8ee8",
+      "size": 9050,
+      "sha256": "f01438881384f340adee707e2667850a12d567031ce2b5082309fc2054ee9050",
       "mimeType": "text/javascript; charset=utf-8"
     }
   ]

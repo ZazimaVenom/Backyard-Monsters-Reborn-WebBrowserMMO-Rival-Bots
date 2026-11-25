@@ -1,0 +1,62 @@
+BACKYARD MONSTERS REHATCHED
+Game source release 0.13.1 / Windows client source release 1.2.0
+
+WHAT CHANGED
+The browser game, setup pages, game settings, Windows window title, launcher
+metadata, command scripts, source documentation and music metadata now use
+Rehatched. Wordless game artwork and icons are retained.
+
+The included Windows client has all 1,136 current browser assets. Their paths,
+file sizes and SHA-256 hashes match the browser files and the client manifest.
+Both packs use game release 0.13.1. Older asset versions fall back to the
+server's current files instead of mixing releases.
+
+The normal client build automatically reads the adjacent web source, discovers
+its game version and regenerates the client asset pack. An explicitly supplied
+version that conflicts with the web source is rejected.
+
+EXTRACTING
+Download all four updated Backyard-Monsters-Rehatched.7z.001 through .004 files
+into the same folder. Do not mix these parts with an older archive. Open .001
+with 7-Zip and extract the complete game folder.
+
+WEB GAME
+For a new XAMPP installation, follow docs/XAMPP.md. New installs suggest the
+database name backyard_rehatched. For an existing world, follow
+docs/UPGRADING.md and keep its config.php, database and private var folder.
+Do not rename or delete the existing database merely to change the game name.
+Existing authenticated sessions migrate to the new cookie name. Only internal
+compatibility code and its regression tests retain the previous identifier.
+
+WINDOWS CLIENT
+Open Backyard-Monsters-Client-Source and run Build-Client.cmd on Windows x64.
+Run out\Backyard-Monsters-Client\BackyardMonstersClient.exe after the build.
+Distribute that whole generated client folder. This archive contains editable
+sources and assets; rebuild to produce the updated executable.
+
+Connect to the same URL used by your browser:
+  Local PHP launcher: http://127.0.0.1:8080/
+  XAMPP folder:       http://127.0.0.1/Backyard-Monsters-Rehatched/
+The client uses the running web game's accounts, database and game logic.
+Its saved server addresses and existing browser profile are preserved.
+
+VALIDATION
+All 1,136 browser/client assets and their manifest match.
+All 93 browser cache-version markers match game release 0.13.1.
+205 PHP files passed syntax validation; 64 independent web test suites passed.
+12 HTTP branding/session checks passed, including authenticated session migration.
+8 MariaDB-backed suites passed: installer, upgrade, and six bot integrations.
+The upgrade includes 1,354 checks and verifies 0.13.0 to 0.13.1 preservation
+of all 1,001 yards and existing database/account/map/battle records.
+47 client core checks and 17 embedded-pack checks passed.
+PowerShell parsing, asset-pack preparation and version-conflict checks passed.
+The complete default client build and Windows x64 self-contained publish passed.
+Music tags changed without changing decoded audio (SHA-256 verified).
+
+Windows GUI rendering, Windows runtime installation and live multiplayer gameplay
+were not run in this Linux validation environment. Database regression checks
+used MariaDB 11.8.9 with PHP 8.4.27; native Windows XAMPP was not executed. Detailed scope is recorded in docs/VALIDATION.md and
+Backyard-Monsters-Client-Source/BUILD-VALIDATION.txt.
+
+Developers can run python tests/rehatched_sync_test.py to repeat the complete
+cross-package asset, manifest, title and cache-version check.

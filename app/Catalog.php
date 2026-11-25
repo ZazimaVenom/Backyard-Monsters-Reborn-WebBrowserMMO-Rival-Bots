@@ -342,6 +342,6 @@ final class Catalog
 
     public static function all(): array
     {
-        return ['buildings'=>self::buildings(),'monsters'=>self::monsters(),'champions'=>self::champions(),'labAbilities'=>self::labAbilities(),'catapultBombs'=>self::catapultBombs(),'worldSize'=>32,'maxBuildings'=>100,'maxMonsterLevel'=>6,'ranking'=>['win'=>25,'loss'=>15],'version'=>'0.13.0'];
+        return ['buildings'=>self::buildings(),'monsters'=>self::monsters(),'champions'=>self::champions(),'labAbilities'=>self::labAbilities(),'catapultBombs'=>self::catapultBombs(),'worldSize'=>32,'maxBuildings'=>100,'maxMonsterLevel'=>6,'ranking'=>['win'=>25,'loss'=>15],'version'=>'0.13.1'];
     }
 }

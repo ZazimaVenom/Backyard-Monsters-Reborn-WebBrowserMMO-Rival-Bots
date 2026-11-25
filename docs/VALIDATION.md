@@ -1,3 +1,20 @@
+# Verification of release 0.13.1
+
+This Rehatched branding and client synchronization update was checked on Linux with PHP 8.4.27, Node.js 24.22.3 and an isolated MariaDB 11.8.9 instance.
+
+| Scenario | Verified result |
+| --- | --- |
+| Browser source | All 205 PHP files passed syntax validation. 64 independent PHP/JavaScript suites passed, including all 110 navigation UI checks. The navigation harness now accepts the source archive's Windows line endings. |
+| Session and setup identity | Twelve real HTTP checks passed in a temporary application copy. Fresh setup uses `backyard_rehatched`; legacy authenticated sessions retain their user and CSRF token while receiving the current cookie. Current cookies take precedence, invalid legacy IDs are rejected, and page/header titles and cache versions match the release. Run `python tests/branding_http_test.py` with PHP 8.2+ on PATH, or set `PHP_EXE`. |
+| New installation | Installer pure configuration/diagnostic checks passed (50), followed by 39 database checks covering setup, 1,000 initial bots, human registration, saved configuration, rejected nonempty databases and recovery after a failed seed. |
+| Existing worlds | The upgrade suite passed 1,354 checks, including the explicit 0.13.0 → 0.13.1 path. All 1,001 saved base payloads retain every field except the content-version stamp; users, map sites, battles, reports, authentication records and the selected database name remain unchanged. Repeat apply is a no-op. The suite also verifies earlier supported upgrades, rollback behavior and SQL backup restoration. |
+| Bot regressions | Six database suites passed: 48 activity checks, 55 construction/planner checks, 11,109 fortification/champion-bonus checks, 119 general bot checks, 67 network checks and 50 world checks. They use disposable schemas and preserve the normal game source. |
+| Browser/client pack | `python tests/rehatched_sync_test.py` checks every browser/client asset path, SHA-256 digest, manifest entry and release marker. See `REHATCHED-UPDATE.txt` for the final pack counts and `Backyard-Monsters-Client-Source/BUILD-VALIDATION.txt` for .NET build/publish coverage. |
+
+The database runs use Linux MariaDB, not the native Windows XAMPP Control Panel. Windows GUI execution, Windows prerequisite installation and live multiplayer sessions were not exercised here. The earlier release records below retain their original test dates and scope; their claims are not a substitute for this release's checks.
+
+## Previous release records
+
 # Verification of release 0.13.0
 
 | Scenario | What ran |

@@ -1,4 +1,4 @@
-import {esc, icon, num} from './ui.js?v=0.13.0';
+import {esc, icon, num} from './ui.js?v=0.13.1';
 
 const sections = ['Rewards ready','Getting started','Construction','Monsters','Attacking','Harvests','Juicer','Foraging','Chaos workshop','Cavern buildings','Cavern monsters','Cavern harvests','Neighbors','Achievements'];
 const symbols = ['collect','book','build','monster','swords','leaf','flask','leaf','build','build','monster','collect','mail','trophy'];

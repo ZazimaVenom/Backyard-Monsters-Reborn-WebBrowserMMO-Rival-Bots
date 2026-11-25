@@ -2,7 +2,7 @@
 // Reference only: for a NEW world, public/setup.php creates private var/config.php.
 // For an existing world, preserve var/config.php and run the updater; do not rerun setup.
 return [
-    'host'=>'127.0.0.1','port'=>3306,'database'=>'backyard_reborn',
+    'host'=>'127.0.0.1','port'=>3306,'database'=>'backyard_rehatched',
     // Default local XAMPP: root with no password, unless you changed it.
     'username'=>'root','password'=>'','socket'=>'',
     'game_speed'=>1,'bot_count'=>1000,

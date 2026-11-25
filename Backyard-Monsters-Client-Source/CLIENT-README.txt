@@ -1,4 +1,4 @@
-BACKYARD MONSTERS REBORN - PRECOMPILED WINDOWS x64 CLIENT
+BACKYARD MONSTERS REHATCHED - PRECOMPILED WINDOWS x64 CLIENT
 
 1. Extract the entire client folder.
 2. Open BackyardMonstersClient.exe (the game icon).
@@ -12,7 +12,7 @@ Keep the EXE, supporting DLLs, Assets folder and assets-manifest.json together. 
 Example addresses:
 Game at website root: 127.0.0.1
 Supplied local PHP server: http://127.0.0.1:8080/
-XAMPP game folder: http://127.0.0.1/Backyard-Monsters-Reborn/
+XAMPP game folder: http://127.0.0.1/Backyard-Monsters-Rehatched/
 Remote server: https://your-server.example/
 
 Connect to an already running game server. Game artwork, sounds, scripts and styles load locally; login, multiplayer and saves use the selected server.

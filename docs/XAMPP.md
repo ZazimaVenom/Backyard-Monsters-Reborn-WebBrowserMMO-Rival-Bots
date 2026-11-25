@@ -1,4 +1,4 @@
-# Install 0.13.0 with XAMPP on Windows
+# Install 0.13.1 with XAMPP on Windows
 
 Use XAMPP with PHP 8.2 or newer and its PDO MySQL extension enabled. Apache serves
 the game; the XAMPP module labelled **MySQL** may use MariaDB internally.
@@ -16,7 +16,7 @@ the game; the XAMPP module labelled **MySQL** may use MariaDB internally.
    |---|---|
    | Host | `127.0.0.1` |
    | Port | `3306`, or the MySQL port shown by your XAMPP Control Panel |
-   | Database | `backyard_reborn` |
+   | Database | `backyard_rehatched` |
    | Database user | `root` |
    | Database password | Leave blank unless you set a database root password |
 
@@ -54,17 +54,15 @@ PHP's version and PDO MySQL before starting the worker.
 
 A new human keeper starts at zero rank. **Invasion** lists human and bot opponents, and **Rankings** shows both together. The home **Repair base** control appears when completed buildings need repairs. The 0.13.0 regional, Inferno and event content unlocks through normal play on this same installation.
 
-## Updating an installed world to 0.13.0
+## Updating an installed world to 0.13.1
 
 Keep your database and existing `var` folder. Back up the project and database,
 then stop Apache and any running world worker; leave MySQL running.
 
-- **Already on 0.12.0:** apply `Backyard-Monsters-Reborn-0.13.0-Update-from-0.12.0.zip`
-  over that installation, preserving `var`.
-- **On an older release:** use the complete 0.13.0 release. Replace application
-  files while retaining the existing `var` contents, including `config.php`,
-  sessions and backups. The small 0.12.0-to-0.13.0 update is not a complete upgrade
-  package for earlier versions.
+Use this complete 0.13.1 package. Replace application files while retaining
+the existing `var` contents, including `config.php`, sessions and backups.
+Keep the configured database name, even when it differs from the new-install
+default `backyard_rehatched`. No database rename or fresh setup is required.
 
 Open Command Prompt in the game folder and run:
 
@@ -74,7 +72,7 @@ UPGRADE-WORLD.cmd --apply
 ```
 
 The updater writes private SQL and JSON backups before changing saved content.
-The migrator updates an existing 0.12.0 world on schema 3 and upgrades older schema-2 worlds as needed. Existing map sites, paid timers, purchased workers and saved layouts carry forward. Accounts, passwords, ranks and all 1,000
+The migrator updates an existing 0.13.0 or 0.12.0 world on schema 3 and upgrades older schema-2 worlds as needed. Existing map sites, paid timers, purchased workers and saved layouts carry forward. Accounts, passwords, ranks and all 1,000
 bot identities are preserved. A missing activity clock starts paused; upgrading
 does not run bots or catch up old turns. Earlier releases receive only their
 missing compatibility migrations, as described in `UPGRADING.md`.

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-        Title="Backyard Monsters · Reborn" Icon="Art/app.ico" Width="1360" Height="900"
+        Title="Backyard Monsters Rehatched" Icon="Art/app.ico" Width="1360" Height="900"
         MinWidth="1080" MinHeight="700" WindowStartupLocation="CenterScreen"
         WindowStyle="None" ResizeMode="CanResize" Background="#101F1C"
         Foreground="#EDF1E5" FontFamily="Segoe UI" UseLayoutRounding="True"
@@ -178,7 +178,7 @@
                             <TextBlock Text="B" FontFamily="Georgia" FontSize="43" FontWeight="Bold" Foreground="#D1E7A1" Margin="0,-4,0,0"/>
                             <TextBlock Text="M" FontFamily="Georgia" FontSize="27" FontWeight="Bold" Foreground="#90B078" Margin="20,15,0,0"/>
                         </Grid>
-                        <StackPanel VerticalAlignment="Center"><TextBlock Text="BACKYARD MONSTERS" FontSize="13" FontWeight="ExtraBold"/><TextBlock Text="R E B O R N   /   D E S K T O P" FontSize="8" Foreground="#E4BA71" Margin="0,5,0,0"/></StackPanel>
+                        <StackPanel VerticalAlignment="Center"><TextBlock Text="BACKYARD MONSTERS" FontSize="13" FontWeight="ExtraBold"/><TextBlock Text="R E H A T C H E D   /   D E S K T O P" FontSize="8" Foreground="#E4BA71" Margin="0,5,0,0"/></StackPanel>
                     </StackPanel>
                     <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="18,0">
                         <Border Background="#263A2D" BorderBrush="#40523B" BorderThickness="1" CornerRadius="5" Padding="10,5"><TextBlock Text="YOUR REALM. YOUR RULES." Foreground="#A6BD9F" FontSize="9" FontWeight="SemiBold"/></Border>

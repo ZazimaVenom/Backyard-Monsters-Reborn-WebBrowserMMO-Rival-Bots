@@ -1,4 +1,4 @@
-import {duration,esc,num} from './ui.js?v=0.13.0';
+import {duration,esc,num} from './ui.js?v=0.13.1';
 
 const actionNames={train:'infernoTrain',unlock:'infernoUnlock',research:'infernoResearch'};
 const jobLabels={train:'Hatching',discovery:'Discovering',study:'Studying'};

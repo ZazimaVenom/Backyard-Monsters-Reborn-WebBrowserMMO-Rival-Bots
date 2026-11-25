@@ -9,7 +9,7 @@ $b=Game::normalizeBase($old);
 verify(Game::normalizeBase($b)===$b,'content normalization is idempotent');
 foreach(['buildings','resources','queue','researchQueue','unlocked','unlockQueue','garrison','last_tick','shield_until','next_building_id','next_queue_id','custom_extension'] as $key){verify($key==='buildings'?buildingsPreserved($old[$key],$b[$key]):$old[$key]===$b[$key],'preserve existing '.$key);}
 verify($b['champions']===[]&&$b['activeChampion']===null,'migration never grants champion');
-verify($b['content_version']==='0.13.0','content version is 0.13.0');
+verify($b['content_version']==='0.13.1','content version is 0.13.1');
 foreach(['brain','crabatron'] as $type){verify($b['army'][$type]===0&&!in_array($type,$b['unlocked'],true),'new species locked with no free inventory '.$type);}
 $champions=Catalog::champions();verify(!array_diff(['gorgo','drull','fomor'],array_keys($champions)),'three foundation champions available');
 verify(count(Catalog::homeMonsters())>=15&&!isset(Catalog::monsters()['gorgo']),'champions separate from ordinary army catalog');

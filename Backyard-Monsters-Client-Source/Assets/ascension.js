@@ -1,4 +1,4 @@
-import {esc,icon,num} from './ui.js?v=0.13.0';
+import {esc,icon,num} from './ui.js?v=0.13.1';
 
 export function createAscension({state,api,home,showModal,closeModal,navigationIntent,navigationCurrent,sync,toast,buttonBusy}){
   let data=null,chosen={},owner=null,pending=false,request=null;

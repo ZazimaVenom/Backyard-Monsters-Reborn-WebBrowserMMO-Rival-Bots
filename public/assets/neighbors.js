@@ -1,4 +1,4 @@
-import {esc,num} from './ui.js?v=0.13.0';
+import {esc,num} from './ui.js?v=0.13.1';
 
 const label = {twig:'twigs',pebble:'pebbles',putty:'putty',goo:'goo'};
 const button = (action,text,id=0,link=0) => `<button type="button" class="button subtle small" data-neighbor="${action}" data-id="${id}" data-link="${link}">${text}</button>`;

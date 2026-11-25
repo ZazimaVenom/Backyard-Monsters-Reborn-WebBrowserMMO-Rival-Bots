@@ -1,4 +1,4 @@
-import {num,duration} from './ui.js?v=0.13.0';
+import {num,duration} from './ui.js?v=0.13.1';
 
 const portrait=k=>`<img src="assets/art/krallen-p${Number(k.power)||0}.webp" alt="Krallen">`;
 

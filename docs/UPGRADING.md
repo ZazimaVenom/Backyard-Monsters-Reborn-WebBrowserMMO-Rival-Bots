@@ -1,10 +1,12 @@
-# Upgrade an existing world to 0.13.0
+# Upgrade an existing world to 0.13.1
 
 Keep your existing database and private `var` folder. **Do not run setup again, delete
 that database, or replace `var/config.php`.** Setup is only for a new world and never
 creates a player account.
 
-Version 0.13.0 continues to use SQL schema 3. An installed 0.12.0 world already has the alliance, diplomacy, mail, friend and gift tables. The updater supports installed 0.1–0.12.0 worlds, including the 0.4.1 XAMPP repair. Existing 0.7, 0.8 and 0.9 maps keep every site and their completed Fortification marker.
+Version 0.13.1 continues to use SQL schema 3. The 0.13.0 → 0.13.1 update changes branding, bundled client assets and the content version. Keep the database name stored in `var/config.php`; do not rename a populated database to match the new setup default. Rebuild the Windows client from this complete package so it contains the same 0.13.1 assets as the web game.
+
+An installed 0.12.0 world already has the alliance, diplomacy, mail, friend and gift tables. The updater supports installed 0.1–0.13.0 worlds, including the 0.4.1 XAMPP repair. Existing 0.7, 0.8 and 0.9 maps keep every site and their completed Fortification marker.
 Earlier maps missing the marker receive neutral Fortification sites on available
 neighboring hexes once; older
 schema-1 worlds also receive the original map migration. It preserves every

@@ -97,7 +97,7 @@ final class Installer
         foreach(['host','database','username','password','socket'] as $key){
             if(isset($input[$key])&&!is_string($input[$key])){throw new SetupValidationException('Enter a valid database '.$key.'.');}
         }
-        $database=trim($input['database']??'backyard_reborn');
+        $database=trim($input['database']??'backyard_rehatched');
         if(!preg_match('/^[a-zA-Z0-9_]{1,64}$/D',$database)){throw new SetupValidationException('Use only letters, numbers and underscores in the database name.');}
         $host=trim($input['host']??'127.0.0.1');
         if($host===''||strlen($host)>255||preg_match('/[;\x00-\x20\x7f]/',$host)){throw new SetupValidationException('Enter a database host, such as 127.0.0.1.');}

@@ -1,4 +1,4 @@
-import {icon,esc,num,short,duration} from './ui.js?v=0.13.0';
+import {icon,esc,num,short,duration} from './ui.js?v=0.13.1';
 
 /** Progression dialogs share the same authoritative realm snapshot as the yard. */
 export function createWorkshop({state,art,costHTML,showModal,action,toast,now,hall,audio}) {

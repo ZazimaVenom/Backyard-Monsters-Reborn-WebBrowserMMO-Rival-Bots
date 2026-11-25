@@ -1,4 +1,4 @@
-import {esc,icon,num} from './ui.js?v=0.13.0';
+import {esc,icon,num} from './ui.js?v=0.13.1';
 
 const devices={
   decoy:{name:'Marilyn Monstroe',action:'Place Decoy',hint:'Click clear ground to lure bunker defenders into the blast.'},

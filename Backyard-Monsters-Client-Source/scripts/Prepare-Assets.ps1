@@ -2,12 +2,13 @@
 param(
     [Parameter(Mandatory = $true)][string]$GameSource,
     [Parameter(Mandatory = $true)][string]$OutputDirectory,
-    [string]$GameVersion = '0.13.0'
+    [string]$GameVersion
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $gameRoot = [IO.Path]::GetFullPath($GameSource)
+$GameVersion = & (Join-Path $PSScriptRoot 'Resolve-GameVersion.ps1') -GameSource $gameRoot -GameVersion $GameVersion
 $assetSource = Join-Path $gameRoot 'public\assets'
 if (-not (Test-Path -LiteralPath $assetSource -PathType Container)) {
     throw "No public\assets folder found in '$gameRoot'. Pass the full game source folder."

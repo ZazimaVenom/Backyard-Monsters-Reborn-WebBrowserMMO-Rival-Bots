@@ -1,4 +1,12 @@
-# 0.13.0 · Regional worlds and the Inferno Emergence
+# 0.13.1 · Backyard Monsters Rehatched
+
+- Use the Rehatched name in browser titles, the game header, setup, settings, startup messages and the Windows client source.
+- Match browser asset cache versions, client package metadata and content version at 0.13.1. Older clients detect the new web asset version instead of substituting stale bundled scripts.
+- New installations default to the `backyard_rehatched` database. Existing installations continue to use their saved database configuration without renaming or resetting it.
+- Existing browser sessions move to the current cookie name on first use. New upgrade backup labels use the Rehatched name; existing SQL backups remain usable.
+- Use the complete package for upgrades and keep the existing private `var` folder. Rebuild the Windows client when updating its packaged assets.
+
+## 0.13.0 · Regional worlds and the Inferno Emergence
 
 - Travel among Map Room regions, invite neighbors, use sectors and bookmarks, and claim a separate Map Room 2 headquarters. A field yard has its own structures, paid troop training and Flinger. Advanced bots can settle new regions while a person is online.
 - Five successive Inferno Emergence defenses grow a portal on the home canvas. A mature portal opens the underground game for free. Existing paid entrances remain usable.

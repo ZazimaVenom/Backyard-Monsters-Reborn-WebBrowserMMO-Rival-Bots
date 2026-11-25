@@ -26,8 +26,16 @@ if (PHP_SAPI !== 'cli') {
     $sessionDirectory=dirname(__DIR__).'/var/sessions';
     if(!is_dir($sessionDirectory)&&!mkdir($sessionDirectory,0700,true)&&!is_dir($sessionDirectory)){http_response_code(503);exit('PHP needs write permission for the private var/sessions folder.');}
     session_save_path($sessionDirectory);
-    session_name('backyard_reborn');
-    session_set_cookie_params(['lifetime'=>0,'path'=>'/','secure'=>!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS']!=='off','httponly'=>true,'samesite'=>'Lax']);
+    session_name('backyard_rehatched');
+    $cookieOptions=['path'=>'/','secure'=>!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS']!=='off','httponly'=>true,'samesite'=>'Lax'];
+    session_set_cookie_params(['lifetime'=>0]+$cookieOptions);
+    // Read an existing installation's session once, then issue the current cookie.
+    // The legacy cookie is a compatibility identifier, never player-facing branding.
+    $legacyCookie='backyard_reborn';
+    $legacySession=!isset($_COOKIE[session_name()]) && isset($_COOKIE[$legacyCookie]) && is_string($_COOKIE[$legacyCookie]) && preg_match('/^[A-Za-z0-9,-]{1,256}$/D',$_COOKIE[$legacyCookie]);
+    if($legacySession){session_id($_COOKIE[$legacyCookie]);}
     if (session_status() !== PHP_SESSION_ACTIVE && !session_start()) { http_response_code(503);exit('The local session store is unavailable. Check permissions on var/sessions.'); }
+    if($legacySession){session_regenerate_id(false);}
+    if(isset($_COOKIE[$legacyCookie])){setcookie($legacyCookie,'',['expires'=>time()-3600]+$cookieOptions);}
     if (empty($_SESSION['csrf'])) { $_SESSION['csrf'] = bin2hex(random_bytes(32)); }
 }

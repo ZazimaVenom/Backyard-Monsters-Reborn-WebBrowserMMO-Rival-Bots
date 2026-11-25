@@ -328,7 +328,7 @@ def main():
     with tempfile.TemporaryDirectory(prefix='backyard-audio-') as td:
         for name,composer in [('theme',woodland),('battle',battle)]:
             data=composer();temp=pathlib.Path(td)/(name+'.wav');write_wav(temp,data)
-            subprocess.run([ffmpeg,'-hide_banner','-loglevel','error','-y','-i',str(temp),'-c:a','libvorbis','-q:a','5','-metadata','title='+('Verdant Home' if name=='theme' else 'The Yard Awakens'),'-metadata','artist=Backyard Reborn original synthesized score',str(OUT/(name+'.ogg'))],check=True)
+            subprocess.run([ffmpeg,'-hide_banner','-loglevel','error','-y','-i',str(temp),'-c:a','libvorbis','-q:a','5','-metadata','title='+('Verdant Home' if name=='theme' else 'The Yard Awakens'),'-metadata','artist=Backyard Rehatched original synthesized score',str(OUT/(name+'.ogg'))],check=True)
             if args.wav_music:shutil.copy2(temp,OUT/(name+'.wav'))
             log_file(name+'.ogg',data,True)
         for name in ['build','collect','hatch','hit','shot','victory','defeat','explode','heal','burrow','laser','fling','champion','champion-retreat','feed','evolve','research','catapult','catapult-impact','boost','blink','venom','aerial','heavytrap','baiter','siren']:

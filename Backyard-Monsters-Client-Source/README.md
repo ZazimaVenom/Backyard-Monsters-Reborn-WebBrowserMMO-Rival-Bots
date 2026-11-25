@@ -1,10 +1,10 @@
-# Backyard Monsters Reborn — client source
+# Backyard Monsters Rehatched — client source
 
-This is the separate, editable source package for the Windows x64 game client. It includes the C# code, custom window and toolbar, game icon, tests, build tools, and all **1,136 game assets** from Backyard Monsters Reborn **0.13.0**. The existing precompiled client is unchanged.
+This is the separate, editable source package for the Windows x64 game client. It includes the C# code, custom window and toolbar, game icon, tests, build tools, and the synchronized game assets from Backyard Monsters Rehatched **0.13.1**. The client application release is **1.2.0**. Rebuild the client to obtain the updated Windows executable.
 
 ## Build the full client folder
 
-1. Extract this entire source ZIP to a writable folder on a Windows x64 PC.
+1. Extract this entire source package to a writable folder on a Windows x64 PC.
 2. Double-click **Build-Client.cmd**.
 3. When the build finishes, open **out\Backyard-Monsters-Client\BackyardMonstersClient.exe**.
 
@@ -30,13 +30,17 @@ Edit the C# or XAML files, then run `Build-Client.cmd` again. Paths are portable
 
 ## Use assets from another game release
 
-The included assets are ready to use. To build with assets from an updated copy of the game, open Command Prompt in this source folder and run:
+When this client source is inside the supplied game folder, a normal build automatically copies the current `public/assets` from that game and reads its version from `app/Catalog.php`. This keeps the browser and client game files together after web changes. If the client source is copied out on its own, the builder uses its included asset pack instead.
+
+To build with assets from a different copy of the game, open Command Prompt in this source folder and run:
 
 ```bat
-Build-Client.cmd -GameSource "C:\xampp\htdocs\Backyard-Monsters-Reborn" -GameVersion "0.13.0"
+Build-Client.cmd -GameSource "C:\xampp\htdocs\Backyard-Monsters-Rehatched"
 ```
 
-Use that game's actual version. `GameSource` must contain `public\assets`. The builder copies static assets and regenerates the SHA-256 manifest; it does not change the game server. Update the client asset pack when changing the server's game scripts, styles, sounds, or artwork.
+`GameSource` must contain `public\assets`. The builder copies all static assets and regenerates the SHA-256 manifest. It reads the release automatically; `-GameVersion` is only needed for a source without a readable catalog version, and a value that conflicts with the catalog is rejected. The game server is not modified.
+
+The web asset URLs and local manifest use the same **0.13.1** release. If a server uses another release, the client switches the session to server assets and reloads if local files were already used. When changing the server's scripts, styles, sounds or artwork, update the server release/cache tokens and rebuild the client asset pack together.
 
 The PHP/MySQL game server is separate from this client source. The client connects to a running server; it does not create or run the server database.
 
@@ -54,12 +58,12 @@ The normal build is the full client folder. The optional standalone format extra
 
 Open `BackyardMonstersClient.exe`, type the server address in the toolbar, and click **Connect**. The initial address is `127.0.0.1`. **Connect** remembers the address; **Save** stores an address without connecting. The address remains editable while the client is open.
 
-For the supplied local PHP launcher, use `http://127.0.0.1:8080/`. For an XAMPP game folder, use its full path, such as `http://127.0.0.1/Backyard-Monsters-Reborn/`. Other players need the server's reachable address.
+For the supplied local PHP launcher, use `http://127.0.0.1:8080/`. For an XAMPP game folder, use its full path, such as `http://127.0.0.1/Backyard-Monsters-Rehatched/`. Other players need the server's reachable address.
 
 The game uses Microsoft Edge WebView2. If its runtime is missing, the client obtains Microsoft's runtime automatically when connecting; that download requires internet access. Assets load locally, while login, multiplayer, and saves use the selected server. Saved addresses and browser data are stored under `%LOCALAPPDATA%\BackyardMonstersClient`.
 
 ## Validation
 
-The Windows x64 client has been cross-compiled successfully. Automated core and embedded-pack checks pass, all included assets have been verified, and the PowerShell scripts have passed syntax checks. Actual Windows build bootstrap, window rendering, audio playback, and live multiplayer login still require a Windows end-to-end check.
+See `BUILD-VALIDATION.txt` for checks performed on this release. Windows SDK bootstrap, window rendering, audio playback, and live multiplayer login require a Windows end-to-end check.
 
 Game artwork comes from the supplied game source. Microsoft .NET and WebView2 licence and notice files are included under `THIRD-PARTY` and copied into the generated client package.

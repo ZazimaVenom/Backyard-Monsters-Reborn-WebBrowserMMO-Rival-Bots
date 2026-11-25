@@ -10,23 +10,23 @@ header('X-Content-Type-Options: nosniff');
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#142c28"><meta name="description" content="Build a monster haven. Raise an army. Conquer a living backyard.">
-<title>Backyard Monsters · Reborn</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/game.css?v=0.13.0">
-<link rel="stylesheet" href="assets/field-guide.css?v=0.13.0">
-<link rel="stylesheet" href="assets/event-calendar.css?v=0.13.0">
-<link rel="stylesheet" href="assets/alliances.css?v=0.13.0">
-<link rel="stylesheet" href="assets/quests.css?v=0.13.0">
-<link rel="stylesheet" href="assets/tribes.css?v=0.13.0">
-<link rel="stylesheet" href="assets/neighbors.css?v=0.13.0">
-<link rel="stylesheet" href="assets/siege-workshop.css?v=0.13.0">
-<link rel="stylesheet" href="assets/mushrooms.css?v=0.13.0"><link rel="stylesheet" href="assets/inferno.css?v=0.13.0">
-<link rel="stylesheet" href="assets/decorations.css?v=0.13.0">
+<title>Backyard Monsters Rehatched</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/game.css?v=0.13.1">
+<link rel="stylesheet" href="assets/field-guide.css?v=0.13.1">
+<link rel="stylesheet" href="assets/event-calendar.css?v=0.13.1">
+<link rel="stylesheet" href="assets/alliances.css?v=0.13.1">
+<link rel="stylesheet" href="assets/quests.css?v=0.13.1">
+<link rel="stylesheet" href="assets/tribes.css?v=0.13.1">
+<link rel="stylesheet" href="assets/neighbors.css?v=0.13.1">
+<link rel="stylesheet" href="assets/siege-workshop.css?v=0.13.1">
+<link rel="stylesheet" href="assets/mushrooms.css?v=0.13.1"><link rel="stylesheet" href="assets/inferno.css?v=0.13.1">
+<link rel="stylesheet" href="assets/decorations.css?v=0.13.1">
 </head>
 <body>
-<div id="boot" class="boot"><div class="boot-mark">B<span>M</span></div><h1>BACKYARD MONSTERS</h1><p>Waking up your backyard…</p><div class="loading-line"></div></div>
+<div id="boot" class="boot"><div class="boot-mark">B<span>M</span></div><h1>BACKYARD MONSTERS REHATCHED</h1><p>Waking up your backyard…</p><div class="loading-line"></div></div>
 <div id="app" hidden>
 <header class="topbar">
-<a class="brand" href="#yard" aria-label="Backyard Monsters home"><span class="brand-emblem">B<span>M</span></span><span>BACKYARD<br><b>MONSTERS</b><small>R E B O R N</small></span></a>
+<a class="brand" href="#yard" aria-label="Backyard Monsters Rehatched home"><span class="brand-emblem">B<span>M</span></span><span>BACKYARD<br><b>MONSTERS</b><small>REHATCHED</small></span></a>
 <div id="resources" class="resources"></div>
 <div class="profile"><span class="avatar" data-icon="monster"></span><div><b id="player-name">Keeper</b><span id="player-rank">0 rank points</span></div><button id="menu-button" class="icon-button" data-icon="settings" aria-label="Settings"></button></div>
 </header>
@@ -82,6 +82,6 @@ header('X-Content-Type-Options: nosniff');
 <div id="modal" class="modal" hidden><div class="modal-backdrop"></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close icon-button" id="modal-close" data-icon="close" aria-label="Close dialog"></button><div id="modal-body"></div></section></div>
 <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
 <script type="application/json" id="yard-language-data"><?=json_encode(GameLanguage::shell(),JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_UNESCAPED_UNICODE)?></script>
-<script src="assets/localize.js?v=0.13.0"></script>
-<script type="module" src="assets/main.js?v=0.13.0"></script>
+<script src="assets/localize.js?v=0.13.1"></script>
+<script type="module" src="assets/main.js?v=0.13.1"></script>
 </body></html>

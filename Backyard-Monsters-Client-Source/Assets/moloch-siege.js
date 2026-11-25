@@ -1,4 +1,4 @@
-import {esc,num} from './ui.js?v=0.13.0';
+import {esc,num} from './ui.js?v=0.13.1';
 
 const edges={t:'north',tr:'northeast',r:'east',br:'southeast',b:'south',bl:'southwest',l:'west',tl:'northwest'};
 export function siegeBoard(state) {

@@ -2,7 +2,7 @@
 param(
     [string]$GameSource,
     [string]$OutputDirectory,
-    [string]$GameVersion = '0.13.0',
+    [string]$GameVersion,
     [switch]$Standalone
 )
 
@@ -10,6 +10,14 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 $sourceRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+# This combined source release ships the web game beside the client. Always use
+# that current web asset tree when present, even if an older Assets pack exists.
+if ([string]::IsNullOrWhiteSpace($GameSource)) {
+    $bundledGame = Split-Path -Parent $sourceRoot
+    if (Test-Path -LiteralPath (Join-Path $bundledGame 'public\assets') -PathType Container) {
+        $GameSource = $bundledGame
+    }
+}
 if ([string]::IsNullOrWhiteSpace($OutputDirectory)) {
     $OutputDirectory = Join-Path $sourceRoot 'out\Backyard-Monsters-Client'
 }
@@ -26,6 +34,7 @@ if ([string]::IsNullOrWhiteSpace($outputParent) -or $output -eq $outputParent -o
 }
 if (-not [string]::IsNullOrWhiteSpace($GameSource)) {
     $GameSource = [IO.Path]::GetFullPath($GameSource)
+    $GameVersion = & (Join-Path $PSScriptRoot 'Resolve-GameVersion.ps1') -GameSource $GameSource -GameVersion $GameVersion
     if ($output.Equals($GameSource, [StringComparison]::OrdinalIgnoreCase) -or
         $GameSource.StartsWith($output.TrimEnd('\', '/') + $separator, [StringComparison]::OrdinalIgnoreCase)) {
         throw 'Choose an output folder that does not contain the game source.'
@@ -85,7 +94,7 @@ try {
             }
         }
         if (-not $packSource) {
-            throw 'No packaged Assets folder was found. Run Build-Client.cmd -GameSource "C:\path\to\Backyard-Monsters-Reborn" or put this source folder beside the existing client Assets folder.'
+            throw 'No packaged Assets folder was found. Run Build-Client.cmd -GameSource "C:\path\to\Backyard-Monsters-Rehatched" or put this source folder beside the existing client Assets folder.'
         }
         $packAssetRoot = [IO.Path]::GetFullPath((Join-Path $packSource 'Assets'))
         # Replacing a previous complete output is supported; replacing its source Assets folder is not.

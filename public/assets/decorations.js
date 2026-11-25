@@ -1,4 +1,4 @@
-import {esc, num} from './ui.js?v=0.13.0';
+import {esc, num} from './ui.js?v=0.13.1';
 
 const unlockText={121:'Defend wave 1 of Wild Monster Invasion I',131:'Defend wave 1 of Wild Monster Invasion II',135:'Unlock D.A.V.E. in your Monster Locker'};
 export function decorationSelection(piece){return piece && {...piece,pieceId:piece.id,id:'decoration-'+piece.id,decoration:true};}

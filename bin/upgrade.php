@@ -6,7 +6,7 @@ require_once dirname(__DIR__).'/app/bootstrap.php';
 /** Additive schema upgrade. MySQL/MariaDB DDL commits implicitly; completed DDL is resumable. */
 final class WorldUpgrade
 {
-    private const TARGET='0.13.0';
+    private const TARGET='0.13.1';
     private const SCHEMA='3';
     private const TABLES=['users'=>'id','bases'=>'user_id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash','world_sites'=>'id','alliances'=>'id','alliance_members'=>'user_id','alliance_requests'=>'id','keeper_friends'=>'id','keeper_gifts'=>'id','keeper_mail'=>'id','alliance_stances'=>'id','alliance_wars'=>'id','alliance_war_battles'=>'battle_id'];
     private const ADDITIVE_TABLES=['world_sites','alliances','alliance_members','alliance_requests','keeper_friends','keeper_gifts','keeper_mail','alliance_stances','alliance_wars','alliance_war_battles'];
@@ -29,7 +29,7 @@ final class WorldUpgrade
             if(!in_array($schema,['1','2',self::SCHEMA],true)){throw new RuntimeException('Only installed database schema 1, 2 or 3 is supported. No changes were made.');}
             $source=(string)($settings['content_version']??'0.1.0');
             if(version_compare($source,self::TARGET,'>')){throw new RuntimeException('This world uses newer content; refusing to downgrade it.');}
-            if(!in_array($source,['0.1.0','0.2.0','0.3.0','0.4.0','0.4.1','0.5.0','0.6.0','0.7.0','0.8.0','0.8.1','0.8.2','0.9.0','0.10.0','0.11.0','0.12.0',self::TARGET],true)){throw new RuntimeException('Unsupported source content version. No changes were made.');}
+            if(!in_array($source,['0.1.0','0.2.0','0.3.0','0.4.0','0.4.1','0.5.0','0.6.0','0.7.0','0.8.0','0.8.1','0.8.2','0.9.0','0.10.0','0.11.0','0.12.0','0.13.0',self::TARGET],true)){throw new RuntimeException('Unsupported source content version. No changes were made.');}
             if($tables['users']['count']===0||$tables['bases']['count']!==$tables['users']['count']){throw new RuntimeException('An installed world must contain an existing base for every user. Repair the installation before upgrading.');}
             if((int)$pdo->query('SELECT COUNT(*) FROM users u LEFT JOIN bases b ON b.user_id=u.id WHERE b.user_id IS NULL')->fetchColumn()!==0){throw new RuntimeException('User and base identities do not match. Repair the installation before upgrading.');}
             $changes=self::normalizeBases($pdo,false);
@@ -46,7 +46,7 @@ final class WorldUpgrade
             $preserveActivity=$oldActivity!==false;
             $savedSettings=self::settingsDigest($pdo,$preserveActivity);
             $backup=self::backup($pdo,$backupDirectory??dirname(__DIR__).'/var/backups',[
-                'format'=>'backyard-reborn-world-backup-v2','created_at'=>gmdate('c'),'database'=>$database,
+                'format'=>'backyard-rehatched-world-backup-v2','created_at'=>gmdate('c'),'database'=>$database,
                 'source_version'=>$source,'target_version'=>self::TARGET,'schema_version'=>$schema,
                 'table_schemas'=>$schemas,'tables'=>$tables,
             ]);
@@ -287,7 +287,7 @@ final class WorldUpgrade
                 self::writeAll($handle,"\n}\n}\n");
             });
             self::writeBackup($files['sql'],static function($handle)use($pdo,$snapshot):void{
-                self::writeAll($handle,"-- Backyard Monsters Reborn pre-upgrade backup\n-- Restore only into a NEW EMPTY database selected by your SQL client.\n-- This file deliberately contains no DROP DATABASE or DROP TABLE statements.\n-- Created ".$snapshot['created_at']."; schema ".$snapshot['schema_version']."; content ".$snapshot['source_version']."\nSET NAMES utf8mb4;\nSET FOREIGN_KEY_CHECKS=0;\nSET time_zone='+00:00';\n");
+                self::writeAll($handle,"-- Backyard Monsters Rehatched pre-upgrade backup\n-- Restore only into a NEW EMPTY database selected by your SQL client.\n-- This file deliberately contains no DROP DATABASE or DROP TABLE statements.\n-- Created ".$snapshot['created_at']."; schema ".$snapshot['schema_version']."; content ".$snapshot['source_version']."\nSET NAMES utf8mb4;\nSET FOREIGN_KEY_CHECKS=0;\nSET time_zone='+00:00';\n");
                 foreach($snapshot['table_schemas'] as $schema){self::writeAll($handle,$schema.";\n\n");}
                 self::writeAll($handle,"START TRANSACTION;\n");
                 foreach($snapshot['tables'] as $table=>$summary){
@@ -330,7 +330,7 @@ final class WorldUpgrade
 
 if(realpath($_SERVER['SCRIPT_FILENAME']??'')===__FILE__){
     $options=getopt('',['check','apply','help']);
-    if(isset($options['help'])){echo "Backyard Monsters Reborn 0.13.0 world upgrade\nUsage: php bin/upgrade.php [--check|--apply]\nDefault --check reports needed changes without writing. --apply saves private JSON and SQL backups, adds missing one-worker and empty-planner defaults, and preserves paid concurrent jobs. Schema 3 adds alliance tables. Existing maps and Fortification generation markers are retained; only older maps missing their marker receive one-time neutral sites.\nStop Apache/the HTTP server and world worker before --apply; leave MySQL running. Existing accounts, territories and progress are preserved.\n";exit(0);}
+    if(isset($options['help'])){echo "Backyard Monsters Rehatched 0.13.1 world upgrade\nUsage: php bin/upgrade.php [--check|--apply]\nDefault --check reports needed changes without writing. --apply saves private JSON and SQL backups, adds missing one-worker and empty-planner defaults, and preserves paid concurrent jobs. Schema 3 adds alliance tables. Existing maps and Fortification generation markers are retained; only older maps missing their marker receive one-time neutral sites.\nStop Apache/the HTTP server and world worker before --apply; leave MySQL running. Existing accounts, territories and progress are preserved.\n";exit(0);}
     if(isset($options['check'],$options['apply'])){fwrite(STDERR,"Choose either --check or --apply.\n");exit(2);}
     try{
         if(!Game::configured()){throw new RuntimeException('No installed world was found. New installations should use setup.php.');}

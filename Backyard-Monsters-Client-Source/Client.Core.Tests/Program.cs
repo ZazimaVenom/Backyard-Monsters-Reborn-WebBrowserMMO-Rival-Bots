@@ -55,12 +55,12 @@ try
     var localPath = Path.Combine(root, "assets", "art", "monster.webp");
     File.WriteAllBytes(localPath, content);
     var manifestPath = Path.Combine(root, "manifest.json");
-    File.WriteAllText(manifestPath, JsonSerializer.Serialize(new { gameVersion = "0.13.0", files = new[] { new { path = "art/monster.webp", size = content.Length, sha256 = Convert.ToHexString(SHA256.HashData(content)), mimeType = "image/webp" } } }));
+    File.WriteAllText(manifestPath, JsonSerializer.Serialize(new { gameVersion = "0.13.1", files = new[] { new { path = "art/monster.webp", size = content.Length, sha256 = Convert.ToHexString(SHA256.HashData(content)), mimeType = "image/webp" } } }));
     var catalog = AssetCatalog.Load(manifestPath, Path.Combine(root, "assets"));
     var server = ServerAddress.Normalize("https://example.test/game/");
     bool Resolve(string url, string method = "GET") => catalog.TryResolve(server, url, method, out _);
     Check(catalog.Count == 1 && catalog.TotalBytes == content.Length && catalog.VerifyAll().Count == 0, "manifest and content checks");
-    Check(Resolve("https://example.test/game/public/assets/art/monster.webp?v=0.13.0"), "root redirect to public assets");
+    Check(Resolve("https://example.test/game/public/assets/art/monster.webp?v=0.13.1"), "root redirect to public assets");
     Check(Resolve("https://example.test/game/assets/art/monster.webp?cache=123"), "public document root assets");
     Check(catalog.TryResolve(ServerAddress.Normalize("https://example.test/game/public/index.php"), "https://example.test/game/public/assets/art/monster.webp", "HEAD", out _), "explicit entry page and HEAD");
     Check(!Resolve("https://other.test/game/public/assets/art/monster.webp"), "external origin stays online");
@@ -74,10 +74,11 @@ try
     Check(!Resolve("https://example.test/game/public/assets/art/../art/monster.webp"), "literal traversal rejected before URI normalization");
     Check(!Resolve("https://example.test/game/public/assets/art%2fmonster.webp"), "encoded slash rejected");
     Check(!Resolve("https://example.test/game/public/assets/art%5cmonster.webp"), "encoded backslash rejected");
-    Check(!catalog.IsVersionMismatch("https://example.test/game/assets/main.js?v=0.13.0") && catalog.IsVersionMismatch("https://example.test/game/assets/main.js?v=0.14.0"), "version mismatch detection");
+    Check(!catalog.IsVersionMismatch("https://example.test/game/assets/main.js?v=0.13.1") && catalog.IsVersionMismatch("https://example.test/game/assets/main.js?v=0.14.0"), "version mismatch detection");
+    Check(catalog.IsVersionMismatch("https://example.test/game/assets/main.js?v=0.13.0"), "previous release must use server assets");
     File.WriteAllText(localPath, "corrupted");
     Check(!Resolve("https://example.test/game/public/assets/art/monster.webp"), "corrupted local file falls back online");
-    File.WriteAllText(manifestPath, "{\"gameVersion\":\"0.13.0\",\"files\":[{\"path\":\"../secret.php\",\"size\":1,\"sha256\":\"" + new string('a',64) + "\",\"mimeType\":\"text/plain\"}]}");
+    File.WriteAllText(manifestPath, "{\"gameVersion\":\"0.13.1\",\"files\":[{\"path\":\"../secret.php\",\"size\":1,\"sha256\":\"" + new string('a',64) + "\",\"mimeType\":\"text/plain\"}]}");
     Check(Throws(() => AssetCatalog.Load(manifestPath, root)), "unsafe manifest rejected");
     foreach (var entry in new[]
     {
@@ -87,7 +88,7 @@ try
         "{\"path\":\"art/monster.webp\",\"size\":1,\"sha256\":\"" + new string('a',64) + "\",\"mimeType\":null}"
     })
     {
-        File.WriteAllText(manifestPath, "{\"gameVersion\":\"0.13.0\",\"files\":[" + entry + "]}");
+        File.WriteAllText(manifestPath, "{\"gameVersion\":\"0.13.1\",\"files\":[" + entry + "]}");
         Check(ThrowsInvalidData(() => AssetCatalog.Load(manifestPath, root)), "null manifest entry or required field reports InvalidDataException");
     }
 

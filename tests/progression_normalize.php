@@ -13,7 +13,7 @@ verify(count($normalized['unlocked'])===6,'grandfather original six species');
 foreach(['bolt','eyera','fang','wormzer','teratorn','zafreeti'] as $type){verify($normalized['army'][$type]===0,'new species starts with no free units '.$type);verify(!in_array($type,$normalized['unlocked'],true),'new species starts locked '.$type);}
 verify($normalized['unlockQueue']===[]&&$normalized['garrison']===[],'new queues and garrison initialized');
 verify(count(array_filter($normalized['buildings'],fn($b)=>$b['type']==='flinger'))===0,'migration never inserts a free flinger');
-verify($normalized['content_version']==='0.13.0','base content version recorded');
+verify($normalized['content_version']==='0.13.1','base content version recorded');
 $custom=$normalized;$custom['unlocked'][]='bolt';$custom['unlocked'][]='future_extension_monster';$custom['garrison']=['45'=>['pokey'=>5]];$custom['unlockQueue']=[['type'=>'eyera','ready_at'=>9999999999]];
 verify(Game::normalizeBase($custom)===$custom,'future and current progression state preserved');
 $buildings=Catalog::buildings();$monsters=Catalog::monsters();

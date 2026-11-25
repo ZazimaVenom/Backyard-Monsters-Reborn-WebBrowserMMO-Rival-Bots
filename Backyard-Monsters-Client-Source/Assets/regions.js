@@ -1,4 +1,4 @@
-import {esc, num, duration} from './ui.js?v=0.13.0';
+import {esc, num, duration} from './ui.js?v=0.13.1';
 
 const token=()=>Array.from(crypto.getRandomValues(new Uint8Array(16)),n=>n.toString(16).padStart(2,'0')).join('');
 const btn=(op,label,disabled=false,attrs='')=>`<button type="button" class="button subtle small" data-region-do="${op}" ${attrs} ${disabled?'disabled':''}>${esc(label)}</button>`;

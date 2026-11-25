@@ -106,7 +106,7 @@ if __name__ == "__main__":
         source = Path(tmp)/'event.wav'
         music.write_wav(source, data)
         subprocess.run(['ffmpeg','-loglevel','error','-y','-i',str(source),'-c:a','libvorbis','-q:a','5',
-                        '-metadata','title=Alarm at the Gate','-metadata','artist=Backyard Reborn',
+                        '-metadata','title=Alarm at the Gate','-metadata','artist=Backyard Rehatched',
                         str(music.OUT/'event.ogg')],check=True)
     manifest = music.OUT/'manifest.json'
     content = json.loads(manifest.read_text())

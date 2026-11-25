@@ -9,7 +9,7 @@ $old=['buildings'=>[['id'=>1,'type'=>'townhall','level'=>4,'hp'=>1234,'max_hp'=>
 $b=Game::normalizeBase($old);
 verify(Game::normalizeBase($b)===$b,'normalization remains idempotent');
 foreach(['buildings','resources','queue','researchQueue','unlocked','unlockQueue','garrison','last_tick','shield_until','next_building_id','next_queue_id','custom_extension','champions','activeChampion'] as $key){verify($key==='buildings'?buildingsPreserved($old[$key],$b[$key]):$old[$key]===$b[$key],'preserve existing '.$key);}
-verify($b['content_version']==='0.13.0','0.13.0 content version recorded');
+verify($b['content_version']==='0.13.1','0.13.1 content version recorded');
 verify($b['army']['projectx']===0&&!in_array('projectx',$b['unlocked'],true),'Project X starts locked with zero stock');
 verify($b['lab']['queue']===null&&array_sum($b['lab']['levels'])===0&&count($b['lab']['levels'])===10,'no free lab research or queue');
 verify(count(Catalog::buildings())>=33&&count(Catalog::homeMonsters())>=15,'catalog preserves existing structures and species');

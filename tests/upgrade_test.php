@@ -97,14 +97,14 @@ try{
     $usersBefore=upgradeRows($pdo,'users','id');$basesBefore=upgradeRows($pdo,'bases','user_id');$settingsBefore=upgradeRows($pdo,'settings','name');
     $battlesBefore=upgradeRows($pdo,'battles','id');$reportsBefore=upgradeRows($pdo,'reports','id');$authBefore=upgradeRows($pdo,'auth_attempts','identity_hash');
     $report=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($report['source_version']==='0.1.0'&&$report['target_version']==='0.13.0','0.1 world is accepted for direct upgrade to 0.13.0');
+    upgradeCheck($report['source_version']==='0.1.0'&&$report['target_version']==='0.13.1','0.1 world is accepted for direct upgrade to 0.13.1');
     upgradeCheck($report['changed_bases']===1001,'dry run finds all old bases');
     upgradeCheck($report['bots']===1000&&$report['users']===1001,'dry run counts existing humans and bots');
     upgradeCheck(!$report['applied']&&!is_dir($temporary),'dry run creates no backup files');
     upgradeCheck(upgradeRows($pdo,'users','id')===$usersBefore&&upgradeRows($pdo,'bases','user_id')===$basesBefore&&upgradeRows($pdo,'settings','name')===$settingsBefore,'dry run changes no rows');
     $pdo->exec("INSERT INTO settings(name,value) VALUES('content_version','0.2.0')");$settingsBefore=upgradeRows($pdo,'settings','name');
     $report=WorldUpgrade::run($pdo,true,$temporary);
-    upgradeCheck($report['source_version']==='0.2.0'&&$report['target_version']==='0.13.0','0.2 world is accepted for upgrade to 0.13.0');
+    upgradeCheck($report['source_version']==='0.2.0'&&$report['target_version']==='0.13.1','0.2 world is accepted for upgrade to 0.13.1');
     upgradeCheck($report['applied']&&$report['changed_bases']===1001,'all old bases upgraded in apply');
     upgradeCheck(is_file($report['backup']),'private backup exists before completed upgrade');
     $firstSqlBackup=$report['backup_sql'];
@@ -114,7 +114,7 @@ try{
     upgradeCheck(hash_file('sha256',$report['backup'])===$report['backup_sha256'],'backup checksum matches');
     if(DIRECTORY_SEPARATOR==='/'){upgradeCheck((fileperms($report['backup'])&0777)===0600,'private backup permissions');upgradeCheck((fileperms($temporary)&0777)===0700,'private backup directory permissions');}
     $backup=json_decode(file_get_contents($report['backup']),true,512,JSON_THROW_ON_ERROR);
-    upgradeCheck($backup['format']==='backyard-reborn-world-backup-v2'&&count($backup['table_schemas'])===6,'complete schema-backed backup format');
+    upgradeCheck($backup['format']==='backyard-rehatched-world-backup-v2'&&count($backup['table_schemas'])===6,'complete schema-backed backup format');
     upgradeCheck($backup['tables']['users']===$usersBefore&&$backup['tables']['bases']===$basesBefore,'backup contains exact original users and base JSON');
     upgradeCheck($backup['tables']['battles']===$battlesBefore&&$backup['tables']['reports']===$reportsBefore&&$backup['tables']['settings']===$settingsBefore&&$backup['tables']['auth_attempts']===$authBefore,'backup preserves exact battle report settings and throttle rows');
     upgradeCheck(upgradeRows($pdo,'users','id')===$usersBefore,'IDs passwords ranks wins and all account fields preserved');
@@ -143,7 +143,7 @@ try{
     upgradeCheck((int)$pdo->query('SELECT COUNT(*) FROM world_sites')->fetchColumn()===(int)$pdo->query('SELECT COUNT(DISTINCT q,r) FROM world_sites')->fetchColumn(),'map coordinates are unique');
     upgradeCheck($saved['fixture_custom_field']===['preserve'=>true,'note'=>'not part of normalizer'],'unknown extension fields preserved');
     upgradeCheck($pdo->query("SELECT value FROM settings WHERE name='schema_version'")->fetchColumn()==='3','SQL schema advanced to 3 only after map initialization');
-    upgradeCheck($pdo->query("SELECT value FROM settings WHERE name='content_version'")->fetchColumn()==='0.13.0','content version advanced to 0.13.0');
+    upgradeCheck($pdo->query("SELECT value FROM settings WHERE name='content_version'")->fetchColumn()==='0.13.1','content version advanced to 0.13.1');
     upgradeCheck(upgradeOriginalRows($pdo,'battles','id',$battlesBefore)===$battlesBefore&&upgradeRows($pdo,'reports','id')===$reportsBefore,'active and completed battle records are untouched');
     upgradeCheck(upgradeRows($pdo,'auth_attempts','identity_hash')===$authBefore,'authentication throttle state untouched');
     $upgraded=upgradeRows($pdo,'bases','user_id');$files=glob($temporary.'/*');$sitesAfter=upgradeRows($pdo,'world_sites','id');
@@ -174,7 +174,7 @@ try{
     $labRowsBefore=upgradeRows($pdo,'bases','user_id');
     $labReport=WorldUpgrade::run($pdo,true,$temporary);
     $labSaved=upgradeBase($pdo,2);
-    upgradeCheck($labReport['source_version']==='0.3.0'&&$labReport['target_version']==='0.13.0'&&$labReport['applied'],'0.3 world upgrades directly to 0.13.0');
+    upgradeCheck($labReport['source_version']==='0.3.0'&&$labReport['target_version']==='0.13.1'&&$labReport['applied'],'0.3 world upgrades directly to 0.13.1');
     upgradeCheck($labSaved['lab']['levels']['bolt']===2&&$labSaved['lab']['levels']['dave']===1&&$labSaved['lab']['levels']['extension_species']===7,'existing Lab levels and extension species remain unchanged');
     upgradeCheck($labSaved['lab']['queue']===$labBase['lab']['queue'],'Lab paid cost due timer and queue extensions are preserved without completion');
     upgradeCheck($labSaved['lab']['fixture_extension']===$labBase['lab']['fixture_extension'],'Lab extension history survives');
@@ -243,7 +243,7 @@ try{
     upgradeFixtureSchema2($pdo);
     $v5Before=[];foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){$v5Before[$table]=upgradeRows($pdo,$table,$key);}
     $v5Files=glob($temporary.'/*');$v5Check=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($v5Check['source_version']==='0.5.0'&&$v5Check['target_version']==='0.13.0'&&$v5Check['source_schema']==='2'&&$v5Check['target_schema']==='3','v0.5 upgrades content while adding schema-3 tables');
+    upgradeCheck($v5Check['source_version']==='0.5.0'&&$v5Check['target_version']==='0.13.1'&&$v5Check['source_schema']==='2'&&$v5Check['target_schema']==='3','v0.5 upgrades content while adding schema-3 tables');
     upgradeCheck($v5Check['schema_steps']===9&&$v5Check['world_update']&&$v5Check['fortifications_update']&&$v5Check['changed_bases']===1001,'existing v0.5 map needs additive forts alongside schema 3');
     upgradeCheck(glob($temporary.'/*')===$v5Files&&upgradeRows($pdo,'bases','user_id')===$v5Before['bases']&&upgradeRows($pdo,'world_sites','id')===$v5Before['world_sites'],'v0.5 dry run writes no backups base data or territories');
     $v5Apply=WorldUpgrade::run($pdo,true,$temporary);
@@ -264,7 +264,7 @@ try{
     upgradeCheck($v5Battle['formatVersion']===5&&$v5Battle['status']==='active'&&count($v5Battle['units'])>=2&&!isset($v5Battle['buildings'][0]['_fortificationReduction']),'real v0.5 deployed invasion keeps its original combat snapshot');
     $v5Backup=json_decode(file_get_contents($v5Apply['backup']),true,512,JSON_THROW_ON_ERROR);
     foreach($v5Before as $table=>$rows){upgradeCheck($v5Backup['tables'][$table]===$rows,'schema2 JSON backup includes exact old '.$table.' rows');}
-    $v5Again=WorldUpgrade::run($pdo,true,$temporary);upgradeCheck(!$v5Again['applied']&&$v5Again['changed_bases']===0,'v0.13.0 repeat after v0.5 upgrade is a no-op');
+    $v5Again=WorldUpgrade::run($pdo,true,$temporary);upgradeCheck(!$v5Again['applied']&&$v5Again['changed_bases']===0,'v0.13.1 repeat after v0.5 upgrade is a no-op');
     foreach($tables as $table){$pdo->exec('DROP TABLE IF EXISTS `'.$table.'`');}
     upgradeRestoreSql($pdo,$v5Apply['backup_sql']);
     foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v5Before[$table],'v0.5 SQL backup restores exact '.$table.' data');}
@@ -280,7 +280,7 @@ try{
     $pdo->exec("UPDATE settings SET value='0.6.0' WHERE name='content_version'");
     $v6Before=[];foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){$v6Before[$table]=upgradeRows($pdo,$table,$key);}
     $v6Files=glob($temporary.'/*');$v6Check=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($v6Check['source_version']==='0.6.0'&&$v6Check['target_version']==='0.13.0'&&$v6Check['schema_steps']===9&&$v6Check['fortifications_update'],'v0.6 receives one-time additive fortification content and nine new tables');
+    upgradeCheck($v6Check['source_version']==='0.6.0'&&$v6Check['target_version']==='0.13.1'&&$v6Check['schema_steps']===9&&$v6Check['fortifications_update'],'v0.6 receives one-time additive fortification content and nine new tables');
     upgradeCheck($v6Check['world_sites']===1321&&$v6Check['fortifications']===0&&$v6Check['changed_bases']===1001,'v0.6 check reports actual pre-upgrade world population');
     upgradeCheck(glob($temporary.'/*')===$v6Files,'v0.6 check writes no backup');
     foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v6Before[$table],'v0.6 dry run preserves every '.$table.' row');}
@@ -297,7 +297,7 @@ try{
     upgradeCheck((int)$pdo->query("SELECT COUNT(*) FROM world_sites WHERE kind='fortification' AND owner_id IS NOT NULL")->fetchColumn()===0,'new forts begin neutral without granting any existing keeper ownership');
     upgradeCheck($pdo->query("SELECT value FROM settings WHERE name='world_fortifications_version'")->fetchColumn()==='1','successful generation commits its one-time marker');
     foreach($fixture6['bases'] as $id=>$old){
-        $saved6=upgradeBase($pdo,(int)$id);$expected6=$old;$expected6['content_version']='0.13.0';$expected6['workers']=1;$expected6['planner']=['slots'=>[]];
+        $saved6=upgradeBase($pdo,(int)$id);$expected6=$old;$expected6['content_version']='0.13.1';$expected6['workers']=1;$expected6['planner']=['slots'=>[]];
         upgradeCheck($saved6===upgradeExpectedRoster($expected6),'frozen v0.6 base '.$id.' retains all old data with worker, planner and empty new species defaults');
         $hall=array_values(array_filter($saved6['buildings'],static fn($b)=>$b['type']==='townhall'))[0];
         upgradeCheck($hall['fortification']===1&&$hall['fortify_to']===2&&$hall['fortify_ready_at']===2000000600&&is_array($hall['fortify_paid']),'v0.6 completed fortification and fully paid future work survive for '.$id);
@@ -308,8 +308,8 @@ try{
     $v6Backup=json_decode(file_get_contents($v6Apply['backup']),true,512,JSON_THROW_ON_ERROR);
     foreach($v6Before as $table=>$rows){upgradeCheck($v6Backup['tables'][$table]===$rows,'v0.6 JSON backup includes exact original '.$table);}
     $v7Sites=upgradeRows($pdo,'world_sites','id');$v7Files=glob($temporary.'/*');$v6Again=WorldUpgrade::run($pdo,true,$temporary);
-    upgradeCheck(!$v6Again['applied']&&!$v6Again['world_update']&&!$v6Again['fortifications_update']&&$v6Again['world_sites']===$v6Apply['world_sites'],'v0.13.0 repeat recognizes completed generation and reports actual population');
-    upgradeCheck(upgradeRows($pdo,'world_sites','id')===$v7Sites&&glob($temporary.'/*')===$v7Files,'v0.13.0 repeat neither regenerates forts nor writes redundant backups');
+    upgradeCheck(!$v6Again['applied']&&!$v6Again['world_update']&&!$v6Again['fortifications_update']&&$v6Again['world_sites']===$v6Apply['world_sites'],'v0.13.1 repeat recognizes completed generation and reports actual population');
+    upgradeCheck(upgradeRows($pdo,'world_sites','id')===$v7Sites&&glob($temporary.'/*')===$v7Files,'v0.13.1 repeat neither regenerates forts nor writes redundant backups');
     foreach($tables as $table){$pdo->exec('DROP TABLE IF EXISTS `'.$table.'`');}
     upgradeRestoreSql($pdo,$v6Apply['backup_sql']);
     foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v6Before[$table],'v0.6 SQL backup restores exact '.$table);}
@@ -336,13 +336,13 @@ try{
     $pdo->exec("DELETE FROM settings WHERE name IN ('world_activity_v1','bots_schedule_clock')");
     $v7Before=[];foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){$v7Before[$table]=upgradeRows($pdo,$table,$key);}
     $v7OldFiles=glob($temporary.'/*');$v7Check=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($v7Check['source_version']==='0.7.0'&&$v7Check['target_version']==='0.13.0'&&$v7Check['schema_steps']===9,'v0.7 upgrades to v0.13.0 with nine additive tables');
+    upgradeCheck($v7Check['source_version']==='0.7.0'&&$v7Check['target_version']==='0.13.1'&&$v7Check['schema_steps']===9,'v0.7 upgrades to v0.13.1 with nine additive tables');
     upgradeCheck(!$v7Check['world_update']&&!$v7Check['fortifications_update']&&$v7Check['world_sites']===$fixture7['map_sites'],'v0.7 completed map is counted exactly without regeneration');
     upgradeCheck($v7Check['changed_bases']===1001&&$v7Check['bots']===1000,'v0.7 check finds all existing bases and keeps 1000 bots');
     upgradeCheck(glob($temporary.'/*')===$v7OldFiles,'v0.7 check writes no backup');
     foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v7Before[$table],'v0.7 dry run preserves '.$table);}
     $pdo->exec("CREATE TRIGGER upgrade_fail_workers BEFORE UPDATE ON bases FOR EACH ROW BEGIN IF NEW.user_id=3 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Intentional worker-default migration failure'; END IF; END");
-    upgradeReject(static fn()=>WorldUpgrade::run($pdo,true,$temporary),'failed v0.13.0 normalization rolls back earlier base changes');
+    upgradeReject(static fn()=>WorldUpgrade::run($pdo,true,$temporary),'failed v0.13.1 normalization rolls back earlier base changes');
     $pdo->exec('DROP TRIGGER upgrade_fail_workers');
     foreach(['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v7Before[$table],'failed v0.7 upgrade preserves '.$table);}
     $v7Apply=WorldUpgrade::run($pdo,true,$temporary);
@@ -352,7 +352,7 @@ try{
     upgradeCheck((int)$pdo->query("SELECT COUNT(*) FROM settings WHERE name='bots_schedule_clock'")->fetchColumn()===0,'cold upgrade does not initialize a bot scheduler baseline or advance its deadlines');
     foreach(['users'=>'id','world_sites'=>'id','battles'=>'id','reports'=>'id','auth_attempts'=>'identity_hash'] as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v7Before[$table],'v0.7 upgrade retains every '.$table.' byte and field');}
     foreach($fixture7['bases'] as $id=>$old){
-        $saved7=upgradeBase($pdo,(int)$id);$expected7=$old;$expected7['content_version']='0.13.0';$expected7['workers']=1;$expected7['planner']=['slots'=>[]];
+        $saved7=upgradeBase($pdo,(int)$id);$expected7=$old;$expected7['content_version']='0.13.1';$expected7['workers']=1;$expected7['planner']=['slots'=>[]];
         upgradeCheck($saved7===upgradeExpectedRoster($expected7),'v0.7 base '.$id.' retains all old data with worker, planner and empty new species defaults');
         $construction=Construction::status($saved7,1900000000);
         upgradeCheck($construction['capacity']===1&&$construction['busy']===3&&$construction['available']===0&&$construction['overCapacity']===true,'three previously paid jobs remain running above one-worker capacity for '.$id);
@@ -372,9 +372,9 @@ try{
     $existing8['workers']=4;$existing8['planner']=['slots'=>[1=>['name'=>'Dusk β defense','savedAt'=>1700000030,'positions'=>$positions],2=>['name'=>'Dawn reserve','savedAt'=>1700000040,'positions'=>$positions]],'extension'=>['preserve'=>'private saved-template field']];
     $update->execute([json_encode($existing8,JSON_THROW_ON_ERROR|JSON_UNESCAPED_SLASHES),3]);
     $v8Rows=upgradeRows($pdo,'bases','user_id');$v8Sites=upgradeRows($pdo,'world_sites','id');$v8Files=glob($temporary.'/*');$v8Again=WorldUpgrade::run($pdo,true,$temporary);
-    upgradeCheck(!$v8Again['applied']&&$v8Again['changed_bases']===0&&!$v8Again['world_update'],'current v0.13.0 world with purchased workers and saved layouts is a no-op');
+    upgradeCheck(!$v8Again['applied']&&$v8Again['changed_bases']===0&&!$v8Again['world_update'],'current v0.13.1 world with purchased workers and saved layouts is a no-op');
     upgradeCheck(upgradeBase($pdo,3)===$existing8,'both named layout slots hired workers and extension fields remain exact');
-    upgradeCheck(upgradeRows($pdo,'bases','user_id')===$v8Rows&&upgradeRows($pdo,'world_sites','id')===$v8Sites&&glob($temporary.'/*')===$v8Files,'v0.13.0 no-op makes no row changes or redundant backup');
+    upgradeCheck(upgradeRows($pdo,'bases','user_id')===$v8Rows&&upgradeRows($pdo,'world_sites','id')===$v8Sites&&glob($temporary.'/*')===$v8Files,'v0.13.1 no-op makes no row changes or redundant backup');
     unset($v7Backup,$v8Rows,$v8Sites,$existing8,$active7,$positions,$old,$saved7,$later);
     foreach($tables as $table){$pdo->exec('DROP TABLE IF EXISTS `'.$table.'`');}
     upgradeRestoreSql($pdo,$v7Apply['backup_sql']);
@@ -407,7 +407,7 @@ try{
     $recordKeys=['users'=>'id','bases'=>'user_id','world_sites'=>'id','battles'=>'id','reports'=>'id','settings'=>'name','auth_attempts'=>'identity_hash'];
     $v8Before=[];foreach($recordKeys as $table=>$key){$v8Before[$table]=upgradeRows($pdo,$table,$key);}
     $v8Files=glob($temporary.'/*');$v8Check=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($v8Check['source_version']==='0.8.0'&&$v8Check['target_version']==='0.13.0'&&$v8Check['source_schema']==='2'&&$v8Check['target_schema']==='3'&&$v8Check['schema_steps']===9,'0.8.0 is accepted for the 0.13.0 update with nine additive tables');
+    upgradeCheck($v8Check['source_version']==='0.8.0'&&$v8Check['target_version']==='0.13.1'&&$v8Check['source_schema']==='2'&&$v8Check['target_schema']==='3'&&$v8Check['schema_steps']===9,'0.8.0 is accepted for the 0.13.1 update with nine additive tables');
     upgradeCheck($v8Check['changed_bases']===1001&&$v8Check['bots']===1000&&!$v8Check['world_update']&&!$v8Check['fortifications_update'],'hotfix changes version metadata without generating bots or map cells');
     foreach($recordKeys as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$v8Before[$table],'0.8.0 clock-aware check preserves every '.$table.' row');}
     upgradeCheck(glob($temporary.'/*')===$v8Files,'clock-aware read-only check writes no backup');
@@ -420,10 +420,10 @@ try{
     upgradeCheck($v8Apply['applied']&&$v8Apply['changed_bases']===1001&&$v8Apply['fortifications_added']===0&&$v8Apply['world_sites']===$fixture7['map_sites'],'hotfix applies to all existing yards without extra sites');
     foreach(['users','world_sites','battles','reports','auth_attempts'] as $table){upgradeCheck(upgradeRows($pdo,$table,$recordKeys[$table])===$v8Before[$table],'hotfix preserves complete '.$table.' records including ranks timers and clock metadata');}
     $allBaseStateExact=true;$actualBases=upgradeRows($pdo,'bases','user_id');
-    foreach($v8Before['bases'] as $index=>$original){$expected=json_decode($original['state_json'],true,512,JSON_THROW_ON_ERROR);$expected['content_version']='0.13.0';$actual=json_decode($actualBases[$index]['state_json'],true,512,JSON_THROW_ON_ERROR);$allBaseStateExact=$allBaseStateExact&&$actual===upgradeExpectedRoster($expected)&&$actualBases[$index]['user_id']===$original['user_id'];}
+    foreach($v8Before['bases'] as $index=>$original){$expected=json_decode($original['state_json'],true,512,JSON_THROW_ON_ERROR);$expected['content_version']='0.13.1';$actual=json_decode($actualBases[$index]['state_json'],true,512,JSON_THROW_ON_ERROR);$allBaseStateExact=$allBaseStateExact&&$actual===upgradeExpectedRoster($expected)&&$actualBases[$index]['user_id']===$original['user_id'];}
     upgradeCheck($allBaseStateExact,'all 1001 bases retain every field except the content version, including saved layouts and paid work');
     unset($actualBases,$actual,$expected);
-    $expectedSettings=$v8Before['settings'];foreach($expectedSettings as &$savedSetting){if($savedSetting['name']==='schema_version'){$savedSetting['value']='3';}if($savedSetting['name']==='content_version'){$savedSetting['value']='0.13.0';}}unset($savedSetting);
+    $expectedSettings=$v8Before['settings'];foreach($expectedSettings as &$savedSetting){if($savedSetting['name']==='schema_version'){$savedSetting['value']='3';}if($savedSetting['name']==='content_version'){$savedSetting['value']='0.13.1';}}unset($savedSetting);
     upgradeCheck(upgradeRows($pdo,'settings','name')===$expectedSettings,'presence leases clock counters scheduler baseline and unknown settings remain byte-for-byte unchanged');
     $v8Backup=json_decode(file_get_contents($v8Apply['backup']),true,512,JSON_THROW_ON_ERROR);
     foreach($recordKeys as $table=>$key){upgradeCheck($v8Backup['tables'][$table]===$v8Before[$table],'hotfix JSON backup preserves exact clock-aware '.$table);}
@@ -443,10 +443,10 @@ try{
     // Retain a direct compatibility check for the earlier online-activity release.
     $setting->execute(['content_version','0.8.1']);
     $onlineVersion = WorldUpgrade::run($pdo, false, $temporary);
-    upgradeCheck($onlineVersion['source_version'] === '0.8.1' && $onlineVersion['target_version'] === '0.13.0', '0.8.1 supports a direct upgrade');
+    upgradeCheck($onlineVersion['source_version'] === '0.8.1' && $onlineVersion['target_version'] === '0.13.1', '0.8.1 supports a direct upgrade');
     $setting->execute(['content_version','0.8.2']);
     $repairVersion = WorldUpgrade::run($pdo, false, $temporary);
-    upgradeCheck($repairVersion['source_version'] === '0.8.2' && $repairVersion['target_version'] === '0.13.0', '0.8.2 supports a direct upgrade');
+    upgradeCheck($repairVersion['source_version'] === '0.8.2' && $repairVersion['target_version'] === '0.13.1', '0.8.2 supports a direct upgrade');
     $setting->execute(['content_version','0.9.0']);
     $defenseVersion = WorldUpgrade::run($pdo, false, $temporary);
     upgradeCheck($defenseVersion['source_version']==='0.9.0'&&$defenseVersion['schema_steps']===9,'0.9.0 supports a direct upgrade');
@@ -460,21 +460,21 @@ try{
     $setting->execute(['content_version','0.10.0']);
     $repairBefore=[];foreach($recordKeys as $table=>$key){$repairBefore[$table]=upgradeRows($pdo,$table,$key);}
     $repairFiles=glob($temporary.'/*');$repairCheck=WorldUpgrade::run($pdo,false,$temporary);
-    upgradeCheck($repairCheck['source_version']==='0.10.0'&&$repairCheck['target_version']==='0.13.0'&&$repairCheck['schema_steps']===9&&!$repairCheck['world_update'],'released 0.10.0 accepts the 0.11 update with nine tables and no map changes');
+    upgradeCheck($repairCheck['source_version']==='0.10.0'&&$repairCheck['target_version']==='0.13.1'&&$repairCheck['schema_steps']===9&&!$repairCheck['world_update'],'released 0.10.0 accepts the 0.11 update with nine tables and no map changes');
     foreach($recordKeys as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$repairBefore[$table],'0.10.0 0.11 update check preserves every '.$table.' row');}
     upgradeCheck(glob($temporary.'/*')===$repairFiles,'0.11 update check creates no backup or other files');
     $repairApply=WorldUpgrade::run($pdo,true,$temporary);
     upgradeCheck($repairApply['applied']&&$repairApply['bots']===1000&&$repairApply['changed_bases']===1001&&$repairApply['fortifications_added']===0,'0.11 update changes content version for all existing bases without reseeding or adding map sites');
     foreach($damagedBefore as $damagedId=>$old){
-        $expected=$old;$expected['content_version']='0.13.0';$actual=upgradeBase($pdo,$damagedId);
+        $expected=$old;$expected['content_version']='0.13.1';$actual=upgradeBase($pdo,$damagedId);
         upgradeCheck($actual===upgradeExpectedRoster($expected),'0.11 update preserves destroyed and damaged buildings, paid jobs and every saved field for keeper '.$damagedId);
         upgradeCheck($actual['buildings'][0]['hp']===0&&$actual['buildings'][1]['hp']===1,'0.11 update does not heal the human or bot before a normal repair action for keeper '.$damagedId);
     }
     $repairExact=true;$actualBases=upgradeRows($pdo,'bases','user_id');
-    foreach($repairBefore['bases'] as $index=>$original){$expected=json_decode($original['state_json'],true,512,JSON_THROW_ON_ERROR);$expected['content_version']='0.13.0';$repairExact=$repairExact&&json_decode($actualBases[$index]['state_json'],true,512,JSON_THROW_ON_ERROR)===upgradeExpectedRoster($expected)&&$actualBases[$index]['user_id']===$original['user_id'];}
+    foreach($repairBefore['bases'] as $index=>$original){$expected=json_decode($original['state_json'],true,512,JSON_THROW_ON_ERROR);$expected['content_version']='0.13.1';$repairExact=$repairExact&&json_decode($actualBases[$index]['state_json'],true,512,JSON_THROW_ON_ERROR)===upgradeExpectedRoster($expected)&&$actualBases[$index]['user_id']===$original['user_id'];}
     upgradeCheck($repairExact,'0.10.0 0.11 update preserves all 1001 complete base payloads except their content version');
     foreach(['users','world_sites','battles','reports','auth_attempts'] as $table){upgradeCheck(upgradeRows($pdo,$table,$recordKeys[$table])===$repairBefore[$table],'0.11 update preserves complete '.$table.' including ranks, active invasions and ownership');}
-    $expectedSettings=$repairBefore['settings'];foreach($expectedSettings as &$savedSetting){if($savedSetting['name']==='schema_version'){$savedSetting['value']='3';}if($savedSetting['name']==='content_version'){$savedSetting['value']='0.13.0';}}unset($savedSetting);
+    $expectedSettings=$repairBefore['settings'];foreach($expectedSettings as &$savedSetting){if($savedSetting['name']==='schema_version'){$savedSetting['value']='3';}if($savedSetting['name']==='content_version'){$savedSetting['value']='0.13.1';}}unset($savedSetting);
     upgradeCheck(upgradeRows($pdo,'settings','name')===$expectedSettings,'0.11 update leaves private presence and bot clocks byte-for-byte intact');
     $repairAfter=[];foreach($recordKeys as $table=>$key){$repairAfter[$table]=upgradeRows($pdo,$table,$key);}
     $repairFiles=glob($temporary.'/*');$repairAgain=WorldUpgrade::run($pdo,true,$temporary);
@@ -484,6 +484,21 @@ try{
     foreach($tables as $table){$pdo->exec('DROP TABLE IF EXISTS `'.$table.'`');}
     upgradeRestoreSql($pdo,$repairApply['backup_sql']);
     foreach($recordKeys as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$repairBefore[$table],'0.10.0 SQL backup restores exact pre-update '.$table);}
+    // The immediately previous release must remain accepted after TARGET changes.
+    WorldUpgrade::run($pdo,true,$temporary);
+    $pdo->exec("UPDATE settings SET value='0.13.0' WHERE name='content_version'");
+    $stamp=$pdo->prepare('UPDATE bases SET state_json=? WHERE user_id=?');
+    foreach(upgradeRows($pdo,'bases','user_id') as $row){$state=json_decode($row['state_json'],true,512,JSON_THROW_ON_ERROR);$state['content_version']='0.13.0';$stamp->execute([json_encode($state,JSON_THROW_ON_ERROR),$row['user_id']]);}
+    $priorRelease=[];foreach($recordKeys as $table=>$key){$priorRelease[$table]=upgradeRows($pdo,$table,$key);}
+    $brandingCheck=WorldUpgrade::run($pdo,false,$temporary);
+    upgradeCheck($brandingCheck['source_version']==='0.13.0'&&$brandingCheck['target_version']==='0.13.1'&&$brandingCheck['schema_steps']===0,'0.13.0 is accepted for the Rehatched release without schema changes');
+    foreach($recordKeys as $table=>$key){upgradeCheck(upgradeRows($pdo,$table,$key)===$priorRelease[$table],'Rehatched preview preserves every '.$table.' row');}
+    $brandingApply=WorldUpgrade::run($pdo,true,$temporary);
+    upgradeCheck($brandingApply['applied']&&$brandingApply['bots']===1000&&$brandingApply['database']===$name,'branding update preserves the selected database and all 1,000 bot identities');
+    foreach($priorRelease['bases'] as $row){$expected=json_decode($row['state_json'],true,512,JSON_THROW_ON_ERROR);$expected['content_version']='0.13.1';upgradeCheck(upgradeBase($pdo,(int)$row['user_id'])===$expected,'branding update changes only the base content version for keeper '.$row['user_id']);}
+    foreach(['users','world_sites','battles','reports','auth_attempts'] as $table){upgradeCheck(upgradeRows($pdo,$table,$recordKeys[$table])===$priorRelease[$table],'branding update preserves complete '.$table.' records');}
+    $brandingAgain=WorldUpgrade::run($pdo,true,$temporary);
+    upgradeCheck(!$brandingAgain['applied']&&$brandingAgain['changed_bases']===0,'reapplying the branding release is a no-op');
     echo "Upgrade integration: $assertions assertions passed, including 1,000-bot preservation.\n";
 }finally{
     if($pdo->inTransaction()){$pdo->rollBack();}

@@ -8,9 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>BackyardMonstersClient</AssemblyName>
     <RootNamespace>BackyardMonsters.Client</RootNamespace>
-    <Version>1.1.0</Version>
-    <Product>Backyard Monsters Reborn Client</Product>
-    <Description>Local asset client for Backyard Monsters Reborn</Description>
+    <Version>1.2.0</Version>
+    <Title>Backyard Monsters Rehatched Client</Title>
+    <Product>Backyard Monsters Rehatched Client</Product>
+    <Description>Local asset client for Backyard Monsters Rehatched</Description>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon Condition="Exists('Art/app.ico')">Art/app.ico</ApplicationIcon>
     <PublishTrimmed>false</PublishTrimmed>

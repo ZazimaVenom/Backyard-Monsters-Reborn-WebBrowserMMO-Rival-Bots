@@ -1,4 +1,4 @@
-import {esc} from './ui.js?v=0.13.0';
+import {esc} from './ui.js?v=0.13.1';
 
 export function createTruces({state,api,showModal,toast,loadRivals}) {
   let revision = 0, busy = false;

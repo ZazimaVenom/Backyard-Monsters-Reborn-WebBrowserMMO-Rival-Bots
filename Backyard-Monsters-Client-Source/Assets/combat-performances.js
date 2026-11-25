@@ -1,4 +1,4 @@
-import { directionCell } from './monster-directions.js?v=0.13.0';
+import { directionCell } from './monster-directions.js?v=0.13.1';
 
 export const ordinaryVoices = new Set('pokey octo bolt fink eyera ichi bandito fang brain crabatron projectx dave wormzer teratorn zafreeti vorg slimeattikus slimeattikusmini rezghul spurtz zagnoid malphus valgos balthazar grokus sabnox kingwormzer'.split(' '));
 const guardians = new Set(['gorgo','drull','fomor','korath','krallen']);

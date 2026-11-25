@@ -1,4 +1,4 @@
-import {icon, esc, num, duration} from './ui.js?v=0.13.0';
+import {icon, esc, num, duration} from './ui.js?v=0.13.1';
 
 // Costs, eligibility and completed protection come from the saved owner snapshot.
 export function createFortifications({state, costHTML, showModal, closeModal, action, toast, now, audio}) {

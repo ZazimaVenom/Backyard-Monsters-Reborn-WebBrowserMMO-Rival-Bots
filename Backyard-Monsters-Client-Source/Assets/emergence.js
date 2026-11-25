@@ -1,4 +1,4 @@
-import {esc,num,icon} from './ui.js?v=0.13.0';
+import {esc,num,icon} from './ui.js?v=0.13.1';
 
 const portraits=['portal-rift','portal-rift','portal-stage2','portal-stage3','portal-stage4','portal-gate'];
 

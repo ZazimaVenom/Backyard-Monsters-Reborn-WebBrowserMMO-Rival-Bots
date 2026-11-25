@@ -1,4 +1,4 @@
-import {num, duration} from './ui.js?v=0.13.0';
+import {num, duration} from './ui.js?v=0.13.1';
 
 const names = ['Ruby cap','Amber chanterelle','Violet bell','Copper bolete','Mooncap cluster'];
 const cap = item => `<span aria-hidden="true" class="mushroom-art" style="background-position:${(Number(item.variant)-1)*25}% bottom"></span>`;

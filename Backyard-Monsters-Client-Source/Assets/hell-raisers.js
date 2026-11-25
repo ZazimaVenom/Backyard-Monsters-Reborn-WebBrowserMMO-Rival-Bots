@@ -1,4 +1,4 @@
-import {esc, icon, num} from './ui.js?v=0.13.0';
+import {esc, icon, num} from './ui.js?v=0.13.1';
 
 const stamp = time => esc(new Date(time*1000).toLocaleString());
 

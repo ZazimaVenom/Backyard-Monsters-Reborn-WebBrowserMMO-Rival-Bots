@@ -1,8 +1,8 @@
-import {esc, icon, num} from './ui.js?v=0.13.0';
+import {esc, icon, num} from './ui.js?v=0.13.1';
 
-import {siegeBoard,siegeResult} from './moloch-siege.js?v=0.13.0';
-import {emergenceBoard, emergenceDebrief} from './emergence.js?v=0.13.0';
-import {wmiBoard, wmiTitle, wmiResult} from './wmi.js?v=0.13.0';
+import {siegeBoard,siegeResult} from './moloch-siege.js?v=0.13.1';
+import {emergenceBoard, emergenceDebrief} from './emergence.js?v=0.13.1';
+import {wmiBoard, wmiTitle, wmiResult} from './wmi.js?v=0.13.1';
 
 const approaches = {
   tl: ['↘', 'Upper left'], t: ['↓', 'Top'], tr: ['↙', 'Upper right'],

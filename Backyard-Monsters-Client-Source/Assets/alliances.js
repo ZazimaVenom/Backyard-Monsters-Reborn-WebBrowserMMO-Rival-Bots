@@ -1,4 +1,4 @@
-import {esc, icon, num} from './ui.js?v=0.13.0';
+import {esc, icon, num} from './ui.js?v=0.13.1';
 
 const btn = (text, op, props='', style='subtle') => `<button type="button" class="button small ${style}" data-a="${op}" ${props}>${text}</button>`;
 const target = id => `data-id="${Number(id)}"`;

@@ -211,7 +211,7 @@ public partial class MainWindow : Window
         core.Settings.IsStatusBarEnabled = false;
         core.Settings.IsPasswordAutosaveEnabled = false;
         core.Settings.IsGeneralAutofillEnabled = false;
-        core.Settings.UserAgent += " BackyardMonstersClient/1.1";
+        core.Settings.UserAgent += " BackyardMonstersRehatchedClient/1.2";
         core.AddWebResourceRequestedFilter("*", CoreWebView2WebResourceContext.All, CoreWebView2WebResourceRequestSourceKinds.All);
         core.WebResourceRequested += OnResourceRequested;
         core.NavigationStarting += OnNavigationStarting;

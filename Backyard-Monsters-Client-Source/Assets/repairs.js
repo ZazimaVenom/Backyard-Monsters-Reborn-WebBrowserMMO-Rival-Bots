@@ -1,4 +1,4 @@
-import {icon, num} from './ui.js?v=0.13.0';
+import {icon, num} from './ui.js?v=0.13.1';
 
 /** Home recovery always uses the server's confirmed snapshot, never optimistic HP. */
 export function createHomeRepair({state, request, applyState, refreshHome, renderPanel, toast, audio, isPlanning, showRestored}) {

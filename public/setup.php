@@ -7,12 +7,12 @@ if(!backyardLocalPeer($_SERVER['REMOTE_ADDR']??'')){
 }
 if(version_compare(PHP_VERSION,'8.2.0','<')){
     http_response_code(503);header('Content-Type: text/plain; charset=utf-8');
-    exit('Backyard Monsters Reborn requires PHP 8.2 or newer. Apache is currently running PHP '.PHP_VERSION.'. Start the Apache service from your PHP 8.2+ XAMPP installation, then reload this page.');
+    exit('Backyard Monsters Rehatched requires PHP 8.2 or newer. Apache is currently running PHP '.PHP_VERSION.'. Start the Apache service from your PHP 8.2+ XAMPP installation, then reload this page.');
 }
 require_once __DIR__.'/../app/Installer.php';
 $installed=Game::configured();$error=null;$connection=null;$success=false;
 $checks=['PHP 8.2 or newer'=>version_compare(PHP_VERSION,'8.2.0','>='),'PDO MySQL extension'=>extension_loaded('pdo_mysql'),'Writable private var folder'=>is_writable(__DIR__.'/../var')];
-$values=['host'=>'127.0.0.1','port'=>'3306','database'=>'backyard_reborn','username'=>'root'];
+$values=['host'=>'127.0.0.1','port'=>'3306','database'=>'backyard_rehatched','username'=>'root'];
 $createDatabase=true;
 if(($_SERVER['REQUEST_METHOD']??'GET')==='POST'&&!$installed){
     foreach($values as $key=>$default){if(isset($_POST[$key])&&is_string($_POST[$key])){$values[$key]=substr(trim($_POST[$key]),0,100);}}
@@ -35,8 +35,8 @@ if(($_SERVER['REQUEST_METHOD']??'GET')==='POST'&&!$installed){
 }
 function e(string $value):string{return htmlspecialchars($value,ENT_QUOTES|ENT_SUBSTITUTE,'UTF-8');}
 ?><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Local setup · Backyard Monsters Reborn</title><link rel="stylesheet" href="assets/setup.css?v=0.13.0"></head>
-<body><main class="setup"><div class="eyebrow">BACKYARD MONSTERS / REBORN</div>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Local setup · Backyard Monsters Rehatched</title><link rel="stylesheet" href="assets/setup.css?v=0.13.1"></head>
+<body><main class="setup"><div class="eyebrow">BACKYARD MONSTERS / REHATCHED</div>
 <h1><?= $installed?'Your world is ready.':'Set up your<br>local world.' ?></h1>
 <p class="intro">Database installation and 1,000 persistent bots. No player account is created during setup.</p>
 <?php if($installed): ?>
@@ -65,5 +65,5 @@ function e(string $value):string{return htmlspecialchars($value,ENT_QUOTES|ENT_S
 <div class="setup-actions"><button class="secondary" type="submit" name="intent" value="test" <?= in_array(false,$checks,true)?'disabled':'' ?>>Test database connection</button><button class="primary" type="submit" name="intent" value="install" <?= in_array(false,$checks,true)?'disabled':'' ?>>Install world <span>→</span></button></div>
 <p class="muted fine">Local installation only. Existing populated databases are never overwritten. After installation, setup locks and the game provides its own registration and login screen.</p>
 </form><?php endif ?>
-<footer>PHP 8.2+ · MySQL / MariaDB · XAMPP local setup · 0.13.0</footer>
+<footer>PHP 8.2+ · MySQL / MariaDB · XAMPP local setup · 0.13.1</footer>
 </main></body></html>

@@ -63,7 +63,7 @@ final class Game
         $base['workers']=Construction::normalizeWorkers($base['workers']??1);
         $base['planner']=$base['planner']??['slots'=>[]];
         if(is_array($base['planner'])){$base['planner']+=['slots'=>[]];}
-        $base['content_version']='0.13.0';
+        $base['content_version']='0.13.1';
         return $base;
     }
     /** Highest completed, living building of this type. Upgrade timers temporarily disable its service. */

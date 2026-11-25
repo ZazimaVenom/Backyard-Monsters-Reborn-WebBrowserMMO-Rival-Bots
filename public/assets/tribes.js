@@ -1,5 +1,5 @@
-import {hellBoard, hellScout, hellResult, hellPlan} from './hell-raisers.js?v=0.13.0';
-import {esc, icon, num} from './ui.js?v=0.13.0';
+import {hellBoard, hellScout, hellResult, hellPlan} from './hell-raisers.js?v=0.13.1';
+import {esc, icon, num} from './ui.js?v=0.13.1';
 
 const supplies = amounts => Object.entries(amounts || {}).filter(([,n])=>n>0)
   .map(([key,n])=>`${num(n)} ${esc(key)}`).join(' · ');

@@ -1,4 +1,4 @@
-import {icon, esc, num} from './ui.js?v=0.13.0';
+import {icon, esc, num} from './ui.js?v=0.13.1';
 
 const copyPositions = positions => positions.map(p => ({id:Number(p.id),type:p.type,x:Number(p.x),y:Number(p.y)}));
 const key = positions => JSON.stringify([...positions].sort((a,b)=>a.id-b.id));
