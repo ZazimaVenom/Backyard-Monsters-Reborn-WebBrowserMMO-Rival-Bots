@@ -1,12 +1,14 @@
 # Backyard Monsters Rehatched
 
-A new HTML5 Canvas / PHP / MySQL implementation built from a study of the supplied Backyard Monsters Refitted source. No Flash, Bun, Redis, Node.js, Composer, or frontend build step is required to run this game.
+<img width="3840" height="2026" alt="1" src="https://github.com/user-attachments/assets/baf78cf6-13be-4a21-abcf-46a6017492d3" />
 
-**0.13.1 synchronizes the Rehatched branding and packaged assets across the browser game and Windows client source.** Build the included client from `Backyard-Monsters-Client-Source/Build-Client.cmd` and select this installation’s game URL. Existing worlds keep their database and private `var` folder; follow `docs/UPGRADING.md`.
+<img width="3840" height="2027" alt="2" src="https://github.com/user-attachments/assets/560fb7a4-942b-4d09-9956-23615238a158" />
 
-**The included 0.13.0 gameplay adds regional worlds and buildable outpost yards.** Move to a Frontier or Highlands, settle near a friend, or fight for a native field headquarters. The world event calendar runs shared, scored campaigns. The five-stage Inferno Emergence opens a free cavern after the fifth defense resolves. Keepers can read the searchable field guide in six languages, chat by map edition and use earned Shiny to expand their yards. See [the changes](docs/CHANGELOG.md) and [verified gameplay](docs/VALIDATION.md).
+<img width="3840" height="2029" alt="3" src="https://github.com/user-attachments/assets/d45efc93-9714-4fc8-9258-f3ff781fa5be" />
 
-The original-game comparison and outstanding systems are in `docs/PARITY.md`.
+<img width="3840" height="2031" alt="4" src="https://github.com/user-attachments/assets/026b04a5-6dbc-4277-ba8d-2a9fe0f4cd28" />
+
+<img width="3840" height="2032" alt="5" src="https://github.com/user-attachments/assets/da7639bc-f662-4445-ae44-906d450fb686" />
 
 ## Playing
 
